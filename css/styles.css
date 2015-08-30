@@ -51,8 +51,7 @@ body {
 }
 
 .navbar-inverse {
-  background: #3b5998; /* Для старых браузров */
-  background: linear-gradient(to bottom, #174567, #2b5998);
+  background: #3b5998;
   border-color: #3b5998;
 }
 
