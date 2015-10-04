@@ -1,78 +1,11 @@
-/*
-#3b5998 - main color
-#174567 - target color
-#bfc7c7 - body
-*/
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #bfc7c7;
+.fix-top {
+  padding-top: 60px;
 }
 
-/* Search */
-.starter-template {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 20px 10px 20px !important;
+.search {
+  width: 100% !important;
 }
 
-.form-control {
-  padding: 0px 10px 0px 10px;
-}
-
-/* Центрирование */
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.login {
-  font-size: 14px;
-}
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #262626;
-  text-decoration: none;
-  background-color: #174567;
-}
-
-.dropdown-menu {
-  background-color: #3b5998;
-}
-
-.img-thumbnail {
-  margin: -5px 8px -5px -4px;
-}
-
-.navbar {
-  margin-bottom: 20px;
-}
-
-.navbar-inverse {
-  background: #3b5998;
-  border-color: #3b5998;
-}
-
-.navbar-inverse .navbar-brand {
-  color: #fff;
-}
-
-.navbar-inverse .navbar-nav>li>a{
-  color: #fff;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-  color: #fff;
-  border-color: #3b5998;
-  background-color: #174567;
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-  color: #fff;
-}
-
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
-  background-color: #174567;
+.fix-tag {
+  padding-right: 5px;
 }
