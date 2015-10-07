@@ -1,15 +1,15 @@
 [{
   "heading": "Шпаргалка к PostgreSQL (обновляется)",
-  "content": "partials/news/postgresql-topic.html",
+  "content": "partials/docs/postgresql-topic.html",
   "tags": ["PostgreSQL 9.4", "database", "RU"],
   "haveOriginal": false
 }, {
   "heading": "Готовим Ruby+Bundler",
-  "content": "partials/news/ruby-rbenv-bundler.html",
+  "content": "partials/docs/ruby-rbenv-bundler.html",
   "tags": ["Ubuntu 14.04 LTS", "Ruby 2.2.3","rbenv","bundler", "RU"]
 }, {
   "heading": "Установка PostgreSQL с официального репозитория",
-  "content": "partials/news/postgresql-latest.html",
+  "content": "partials/docs/postgresql-latest.html",
   "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "RU"],
   "url": "http://www.postgresql.org/download/linux/ubuntu/",
   "haveOriginal": true
