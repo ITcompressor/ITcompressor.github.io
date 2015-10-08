@@ -1,0 +1,24 @@
+<input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search" placeholder="Search">
+
+<div ng-repeat="doc in docs|filter:search" class="row">
+  <h2>{{ doc.heading }}</h2>
+  <span ng-repeat="tag in doc.tags">
+    <span class="label label-default">
+      {{ tag }}
+    </span> &nbsp;
+  </span>
+  <p>
+    <div ng-include="doc.content"></div>
+  </p>
+  <div ng-show="doc.haveButtons">
+    <span ng-repeat="link in doc.buttons">
+      <span ng-show="link.isExternal">
+        <a class="btn btn-default" ng-href="{{ link.url }}" role="button"> {{ link.text }} &raquo; </a>
+      </span>
+      <span ng-show="!link.isExternal">
+        <button class="btn btn-default" ng-click="clickdocs(link.url)"> {{ link.text }}&raquo;</a>
+        </span>
+      </span>
+    </div>
+    <br>
+  </div>
