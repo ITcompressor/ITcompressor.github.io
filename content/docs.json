@@ -1,7 +1,16 @@
 [{
-  "heading": "Интересное у Android",
-  "content": "partials/docs/android.html",
-  "tags": ["Android", "mobile", "RU"]
+  "heading": "Шпаргалка к GIT (обновляется)",
+  "content": "partials/docs/git.html",
+  "tags": ["git", "version control system", "РУ"]
+  },{
+  "heading": "Шпаргалка к Android (обновляется)",
+  "content": "partials/docs/mini/android.html",
+  "tags": ["Android", "mobile", "РУ"],
+  "buttons": [{
+    "text": "Подробнее",
+    "url": "partials/docs/android.html"
+    }],
+  "haveButtons": true
   },{
   "heading": "Wi-fi hotspot Ubuntu",
   "content": "partials/docs/mini/ubuntu-hotspot.html",
@@ -18,11 +27,11 @@
 },{
   "heading": "Готовим Ruby+Bundler",
   "content": "partials/docs/ruby-rbenv-bundler.html",
-  "tags": ["Ubuntu 14.04 LTS", "Ruby 2.2.3","rbenv","bundler", "RU"]
+  "tags": ["Ubuntu 14.04 LTS", "Ruby 2.2.3","rbenv","bundler", "РУ"]
 },{
   "heading": "Установка PostgreSQL с официального репозитория",
   "content": "partials/docs/postgresql-latest.html",
-  "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "RU"],
+  "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "РУ"],
   "buttons":[{
     "text": "Original",
     "url": "http://www.postgresql.org/download/linux/ubuntu/",
@@ -32,5 +41,5 @@
 },{
   "heading": "Шпаргалка к PostgreSQL (обновляется)",
   "content": "partials/docs/postgresql-topic.html",
-  "tags": ["PostgreSQL 9.4", "database", "RU"]
+  "tags": ["PostgreSQL 9.4", "database", "РУ"]
 }]
