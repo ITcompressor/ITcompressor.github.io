@@ -1,4 +1,8 @@
 [{
+  "heading": "Интересное у Android",
+  "content": "partials/docs/android.html",
+  "tags": ["Android", "mobile", "RU"]
+  },{
   "heading": "Wi-fi hotspot Ubuntu",
   "content": "partials/docs/mini/ubuntu-hotspot.html",
   "tags": ["Ubuntu 14.04 LTS", "Hotspot", "Wi-fi", "EN"],
