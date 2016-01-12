@@ -1,4 +1,8 @@
 [{
+  "heading": "Шпаргалка к MySQL (обновляется)",
+  "content": "partials/docs/mysql.html",
+  "tags": ["MySQL 5.5", "database", "РУ"]
+  },{
   "heading": "Шпаргалка к GIT (обновляется)",
   "content": "partials/docs/git.html",
   "tags": ["git", "version control system", "РУ"]

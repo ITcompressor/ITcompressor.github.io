@@ -1,0 +1,15 @@
+Пример создания дампа базы данных:
+<pre>
+  mysqldump --user=root --password --databases database_name > script.sql
+</pre>
+Пример вставки данных:
+<pre>
+  INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+  VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+</pre>
+Пример обновления данных:
+<pre>
+  UPDATE Customers
+  SET ContactName='Alfred Schmidt', City='Hamburg'
+  WHERE CustomerName='Alfreds Futterkiste';
+</pre>
