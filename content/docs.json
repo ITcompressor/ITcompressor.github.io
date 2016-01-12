@@ -1,4 +1,8 @@
 [{
+  "heading": "Шпаргалка к Windows (обновляется)",
+  "content": "partials/docs/windows.html",
+  "tags": ["Windows", "OS", "РУ"]
+  },{
   "heading": "Шпаргалка к MySQL (обновляется)",
   "content": "partials/docs/mysql.html",
   "tags": ["MySQL 5.5", "database", "РУ"]
