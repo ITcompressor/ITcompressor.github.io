@@ -1,4 +1,8 @@
-[{
+[ {
+  "heading": "Всего понемножку",
+  "content": "partials/docs/any-command.html",
+  "tags": ["cmd", "bash", "aes", "OS", "РУ"]
+  },{
   "heading": "Шпаргалка к Windows (обновляется)",
   "content": "partials/docs/windows.html",
   "tags": ["Windows", "OS", "РУ"]
