@@ -1,0 +1,17 @@
+<h4>Использование утилиты nmap</h4>
+<pre>nmap -A -T4 ya.ru</pre>
+ICMP пинг
+<pre>nmap -sn 192.168.1.0/24</pre>
+TCP SYN Пинг
+<pre>nmap -sn -PS 192.168.1.0/24</pre>
+TCP ACK Пинг
+<pre>nmap -sn -PA 192.168.1.0/24</pre>
+UDP Пинг
+</pre>nmap -sn -PU 192.168.1.0/24</pre>
+Пинг по IP Протоколу
+<pre>nmap -sn -PO 192.168.1.0/24</pre>
+ARP Пинг
+<pre>nmap -sn -PR 192.168.1.0/24</pre>
+<h4>Другие способы сканирования</h4>
+Сканирование локальной сети на доступные машины
+<pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"</pre>

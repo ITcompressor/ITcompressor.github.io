@@ -1,7 +1,25 @@
 [ {
+  "heading": "Утилита screen",
+  "content": "partials/docs/screen.html",
+  "tags": ["screen", "linux", "bash", "РУ"]
+  },{
+  "heading": "Сканирование. Скрипты и утилиты",
+  "content": "partials/docs/scanning.html",
+  "tags": ["nmap", "bash", "РУ"]
+  },{
   "heading": "Всего понемножку (обновляется)",
-  "content": "partials/docs/any-command.html",
-  "tags": ["cmd", "bash", "aes", "OS", "РУ"]
+  "content": "partials/docs/mini/any-command.html",
+  "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find",
+     "autostart", "chmod","hosts","grep", "dd", "ssh", "sass", "linux", "РУ"],
+  "buttons": [{
+    "text": "Подробнее",
+    "url": "partials/docs/any-command.html"
+    }],
+  "haveButtons": true
+  },{
+  "heading": "Полезные установки (обновляется)",
+  "content": "partials/docs/any-install.html",
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"]
   },{
   "heading": "Шпаргалка к Windows (обновляется)",
   "content": "partials/docs/windows.html",
