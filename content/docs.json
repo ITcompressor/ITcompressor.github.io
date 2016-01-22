@@ -3,7 +3,7 @@
   "content": "partials/docs/screen.html",
   "tags": ["screen", "linux", "bash", "РУ"]
   },{
-  "heading": "Сканирование. Скрипты и утилиты",
+  "heading": "Сканирование сетей. Скрипты и утилиты",
   "content": "partials/docs/scanning.html",
   "tags": ["nmap", "bash", "РУ"]
   },{
