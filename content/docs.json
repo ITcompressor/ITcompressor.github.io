@@ -10,7 +10,7 @@
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find",
-     "autostart", "chmod","hosts","grep", "dd", "ssh", "sass", "linux", "VPN" "РУ"],
+     "autostart", "chmod","hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
   "buttons": [{
     "text": "Подробнее",
     "url": "partials/docs/any-command.html"
