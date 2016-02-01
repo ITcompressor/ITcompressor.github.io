@@ -39,6 +39,8 @@ dd if=kali.iso of=/dev/sdb bs=512k
 sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync</pre>
 Использование ssh
 <pre>ssh -p 22 steeldriver@192.168.1.102</pre>
+Подключение к VPN по конфиг файлу
+<pre>sudo openvpn --config /path/to/config.ovpn</pre>
 Создание soft ссылки(ярлыка) файла
 <pre>ln -s /webroot/home/httpd/test.com/index.php /home/vivek/index.php</pre>
 Автокомпиляция SCSS в CSS
