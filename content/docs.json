@@ -1,7 +1,7 @@
 [ {
   "heading": "Сброс пароля в Linux при физическом доступе",
   "content": "partials/docs/reset-password.html",
-  "tags": ["linux", "grub", "bash", "hack", "РУ"]
+  "tags": ["debian", "ubuntu", "grub", "bash", "hack", "РУ"]
   },{
   "heading": "Утилита screen",
   "content": "partials/docs/screen.html",
