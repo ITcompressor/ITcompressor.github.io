@@ -1,0 +1,100 @@
+<h4>Работа с бекапами</h4>
+Делаем бекап(дамп базы данных)
+<pre>mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
+</pre>или
+<pre>
+  mysqldump --user=root --password --databases database_name > script.sql
+</pre>
+Создаём структуру базы без данных
+<pre>mysqldump —no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql
+</pre>
+Если нужно сделать дамп только одной или нескольких таблиц
+<pre>mysqldump -u USER -pPASSWORD DATABASE TABLE1 TABLE2 TABLE3 > /path/to/file/dump_table.sql
+</pre>
+Создаём бекап и сразу его архивируем
+<pre>mysqldump -u USER -pPASSWORD DATABASE | gzip > /path/to/outputfile.sql.gz
+</pre>
+Создание бекапа с указанием его даты
+<pre>mysqldump -u USER -pPASSWORD DATABASE | gzip > `date +/path/to/outputfile.sql.%Y%m%d.%H%M%S.gz`
+</pre>
+Заливаем бекап в базу данных
+<pre>mysql -u USER -pPASSWORD DATABASE < /path/to/dump.sql
+</pre>
+Заливаем архив бекапа в базу
+<pre>gunzip < /path/to/outputfile.sql.gz | mysql -u USER -pPASSWORD DATABASE
+</pre>
+или так
+<pre>zcat /path/to/outputfile.sql.gz | mysql -u USER -pPASSWORD DATABASE
+</pre>
+Создаём новую базу данных
+<pre>mysqladmin -u USER -pPASSWORD create NEWDATABASE
+</pre>
+Удобно использовать бекап с дополнительными опциями -Q -c -e, т.е.
+<pre>mysqldump -Q -c -e -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
+</pre>, где:<br>
+-Q оборачивает имена обратными кавычками<br>
+-c делает полную вставку, включая имена колонок<br>
+-e делает расширенную вставку. Итоговый файл получается меньше и делается он чуть быстрее<br>
+<br>
+Для просмотра списка баз данных можно использовать команду:
+<pre>mysqlshow -u USER -pPASSWORD
+</pre>
+А так же можно посмотреть список таблиц базы:
+<pre>mysqlshow -u USER -pPASSWORD DATABASE
+</pre>
+Для таблиц InnoDB надо добавлять —single-transaction, это гарантирует целостность данных бекапа.
+Для таблиц MyISAN это не актуально, ибо они не поддерживают транзакционность.
+<br><br>
+<h4>Общие факты:</h4>
+-Полезно под каждую базу на боевом сервере создавать своего пользователя
+<br>-Кодировка базы может быть любой, если она UTF8
+<br>-В большинстве случаев лучше использовать движок InnoDB
+<br>-В php лучше забыть про сильно устаревшее расширение mysql и по-возможности использовать pdo или mysqli
+<br>-Новую копию MySQL всегда можно настроить и оптимизировать
+<br>-Без особой нужды не стоит открывать MySQL наружу. Вместо этого можно сделать проброс портов
+<pre>ssh -fNL LOCAL_PORT:localhost:3306 REMOTE_USER@REMOTE_HOST
+</pre><br>
+<h4>Работа с данными:</h4>
+<h5><b>Числа</b></h5>
+-На 32-битных системах практически нет смысла ставить для типа INTEGER свойство UNSIGNED, так как такие большие числа в php не поддерживаются.
+<br>-На 64-битных системах, php поддерживает большие числа, вплоть до MySQL BIGINT со знаком.
+<br>-Связанные таблицы («Foreign keys») должны иметь полное сходство по структуре ключей. Т.е. если у нас на одной таблице для поля указано «INTEGER UNSIGNED DEFAULT 0 NOT NULL» то и на другой должно быть указано аналогично
+<br>-Для хранения булевых значений, нужно использовать TINYINT(1)
+<br>-А деньги лучше хранить в DECIMAL(10, 2), где первое число обозначает количество всех знаков, включая запятую, а второе — количество знаков после запятой. Итого, у нас получится что DECIMAL(10,2) может сохранить 9999999,99
+<br>
+<h5><b>Строки</b></h5>
+-В старых версиях (до 5.0.3) VARCHAR была ограничена 255 символами, но сейчас можно указывать до 65535 символов
+<br>-Помните, что тип TEXT ограничен только 64 килобитами, поэтому что бы сохранять «Войну и Мир» пользуйтесь «LONGTEXT»
+<br>-Самая правильная кодировка для вашей БД UTF8
+<br>
+<h5><b>Даты</b></h5>
+-Не забывайте, что
+<br>-DATE, TIME, DATETIME — выводятся в виде строк, поэтому поиск и сравнение дат происходит через преобразование
+<br>-TIMESTAMP — хранится в виде UNIX_TIMESTAMP, и можно указать автоматически обновлять колонку
+<br>-Сравнивая типы данных DATETIME и TIMESTAMP, не забывайте делать преобразование типов, например:
+<pre>SELECT * FROM table WHERE `datetime` = DATE(`timestamp`)
+</pre>
+<h5><b>Перечисления</b></h5>
+-Для перечислений правильно использовать тип ENUM
+<br>-Правильно пишется так: ENUM('мама', 'мыла', 'раму')
+<br>-Можно ставить значение по-умолчанию, как и для любой строки
+<br>-В базе поле с перечислением хранится как число, поэтому скорость работы — потрясающе высокая
+<br>-Количество перечислений ~ 65 тысяч
+<br>
+<h5><b>Отладка</b></h5>
+-Если запросы тормозят, то можно включить лог для медленных запросов в /etc/mysql/my.cnf
+<br>-А потом оптимизировать запросы через EXPLAIN
+<br>-И наблюдать за запросами удобно через программу mytop
+<br><br>
+<h4> Примеры запросов </h4>
+Пример вставки данных
+<pre>
+  INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+  VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+</pre>
+Пример обновления данных
+<pre>
+  UPDATE Customers
+  SET ContactName='Alfred Schmidt', City='Hamburg'
+  WHERE CustomerName='Alfreds Futterkiste';
+</pre>

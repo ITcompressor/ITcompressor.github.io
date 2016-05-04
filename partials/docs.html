@@ -1,12 +1,13 @@
 <input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search" placeholder="Search">
 
-<div ng-repeat="doc in docs|filter:search" class="row">
+<div ng-repeat="doc in docs|filter:search| orderBy: '-created_at':false" class="row">
   <h2>{{ doc.heading }}</h2>
   <span ng-repeat="tag in doc.tags">
     <span class="label label-default">
       {{ tag }}
     </span> &nbsp;
   </span>
+  <span>⌚ {{ doc.created_at | date:'medium' }}</span>
   <p>
     <div ng-include="doc.content"></div>
   </p>

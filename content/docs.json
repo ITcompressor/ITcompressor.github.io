@@ -1,61 +1,81 @@
 [{
   "id": 13,
+  "created_at": 1462387001693,
   "heading": "Сброс пароля в Linux при физическом доступе",
   "content": "partials/docs/reset-password.html",
   "tags": ["debian", "ubuntu", "grub", "bash", "hack", "РУ"]
   },{
   "id": 12,
+  "created_at": 1462387001693,
   "heading": "Утилита screen",
   "content": "partials/docs/screen.html",
   "tags": ["screen", "linux", "bash", "РУ"]
   },{
   "id": 11,
+  "created_at": 1462387400851,
   "heading": "Сканирование сетей. Скрипты и утилиты",
-  "content": "partials/docs/scanning.html",
-  "tags": ["nmap", "bash", "РУ"]
+  "content": "partials/docs/mini/scanning.html",
+  "tags": ["traceroute","nmap", "bash", "РУ"],
+  "haveButtons": true,
+  "buttons":[{
+    "text": "Подробнее",
+    "url": "partials/docs/full/scanning.html"
+    }]
   },{
   "id": 10,
+  "created_at": 1462387001693,
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find",
      "autostart", "chmod","hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
   "buttons": [{
     "text": "Подробнее",
-    "url": "partials/docs/any-command.html"
+    "url": "partials/docs/full/any-command.html"
     }],
   "haveButtons": true
   },{
   "id": 9,
+  "created_at": 1462387001693,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/any-install.html",
   "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"]
   },{
   "id": 8,
+  "created_at": 1462387001693,
   "heading": "Шпаргалка к Windows (обновляется)",
   "content": "partials/docs/windows.html",
   "tags": ["Windows", "OS", "РУ"]
   },{
   "id": 7,
+  "created_at": 1462387127192,
   "heading": "Шпаргалка к MySQL (обновляется)",
-  "content": "partials/docs/mysql.html",
-  "tags": ["MySQL 5.5", "database", "РУ"]
+  "content": "partials/docs/mini/mysql.html",
+  "tags": ["MySQL", "database", "SQL", "РУ"],
+  "haveButtons": true,
+  "buttons":[{
+    "text": "Подробнее",
+    "url": "partials/docs/full/mysql.html"
+    }]
   },{
   "id": 6,
+  "created_at": 1462387001693,
   "heading": "Шпаргалка к GIT (обновляется)",
   "content": "partials/docs/git.html",
   "tags": ["git", "version control system", "РУ"]
   },{
   "id": 5,
+  "created_at": 1462387001693,
   "heading": "Шпаргалка к Android (обновляется)",
   "content": "partials/docs/mini/android.html",
   "tags": ["Android", "mobile", "РУ"],
   "buttons": [{
     "text": "Подробнее",
-    "url": "partials/docs/android.html"
+    "url": "partials/docs/full/android.html"
     }],
   "haveButtons": true
   },{
   "id": 4,
+  "created_at": 1462387001693,
   "heading": "Wi-fi hotspot Ubuntu",
   "content": "partials/docs/mini/ubuntu-hotspot.html",
   "tags": ["Ubuntu 14.04 LTS", "Hotspot", "Wi-fi", "EN"],
@@ -65,16 +85,18 @@
     "isExternal": true
     },{
     "text": "Read more",
-    "url": "partials/docs/ubuntu-hotspot.html"
+    "url": "partials/docs/full/ubuntu-hotspot.html"
   }],
   "haveButtons": true
 },{
   "id": 3,
+  "created_at": 1462387001693,
   "heading": "Готовим Ruby+Bundler",
   "content": "partials/docs/ruby-rbenv-bundler.html",
   "tags": ["Ubuntu 14.04 LTS", "Ruby 2.2.3","rbenv","bundler", "РУ"]
 },{
   "id": 2,
+  "created_at": 1462387001693,
   "heading": "Установка PostgreSQL с официального репозитория",
   "content": "partials/docs/postgresql-latest.html",
   "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "РУ"],
@@ -86,6 +108,7 @@
   "haveButtons": true
 },{
   "id": 1,
+  "created_at": 1462387001693,
   "heading": "Шпаргалка к PostgreSQL (обновляется)",
   "content": "partials/docs/postgresql-topic.html",
   "tags": ["PostgreSQL 9.4", "database", "РУ"]
