@@ -1,4 +1,19 @@
 [{
+  "id":15,
+  "updated_at":1469903758253,
+  "heading": "Регулярные выражения",
+  "content": "partials/docs/mini/regular.html",
+  "tags": ["regular", "expressions", "string", "РУ"],
+  "buttons":[{
+    "text": "Подробнее",
+    "url": "partials/docs/full/regular.html"
+  }, {
+    "text": "Оригинал",
+    "url": "https://habrahabr.ru/post/123845/",
+    "isExternal": true
+  }],
+  "haveButtons": true
+  },{
   "id":14,
   "updated_at":1462388470870,
   "heading": "How Phineas Fisher hacked the \"Hacking Team\"?",
