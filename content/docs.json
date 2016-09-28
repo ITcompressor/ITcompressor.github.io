@@ -64,7 +64,12 @@
   "updated_at": 1462387001693,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"]
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"],
+  "buttons":[{
+   "text":"Подробнее",
+   "url": "partials/docs/full/any-install.html" 
+   }],
+  "haveButtons": true
   },{
   "id": 8,
   "updated_at": 1462387001693,
