@@ -1,4 +1,26 @@
 [{
+  "id":17,
+  "updated_at": 1513432453021,
+  "heading": "Headers for scripts",
+  "content": "partials/docs/mini/headers.html",
+  "tags": ["php", "python","linux", "scripts", "EN"],
+  "buttons": [{
+    "text": "Read more",
+    "url": "partials/docs/full/headers.html"
+  }],
+  "haveButtons": true
+  },{
+    "id":16,
+    "updated_at": 1513431714706,
+    "heading": "Debian\\Ubuntu secrets",
+    "content": "partials/docs/mini/debianubuntu.html",
+    "tags": ["debian", "ubuntu", "scripts", "EN"],
+    "buttons": [{
+      "text": "Read more",
+      "url": "partials/docs/full/debianubuntu.html"
+    }],
+    "haveButtons": true
+  },{
   "id":15,
   "updated_at":1469903758253,
   "heading": "Регулярные выражения",
@@ -67,7 +89,7 @@
   "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"],
   "buttons":[{
    "text":"Подробнее",
-   "url": "partials/docs/full/any-install.html" 
+   "url": "partials/docs/full/any-install.html"
    }],
   "haveButtons": true
   },{
