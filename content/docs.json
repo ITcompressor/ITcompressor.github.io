@@ -1,4 +1,15 @@
 [{
+  "id":18,
+  "updated_at": 1513432453021,
+  "heading": "Шпаргалка к vim",
+  "content": "partials/docs/mini/vim.html",
+  "tags": ["vim","linux", "editor", "РУ"],
+  "buttons": [{
+    "text": "Всё здесь",
+    "url": "partials/docs/full/vim.html"
+  }],
+  "haveButtons": true
+  },{
   "id":17,
   "updated_at": 1513432453021,
   "heading": "Headers for scripts",
