@@ -1,4 +1,15 @@
 [{
+  "id":19,
+  "updated_at": 1513434569337,
+  "heading": "Google search",
+  "content": "partials/docs/mini/google.html",
+  "tags": ["vim","linux", "editor", "РУ"],
+  "buttons": [{
+    "text": "Подробнее",
+    "url": "partials/docs/full/google.html"
+  }],
+  "haveButtons": true
+  },{
   "id":18,
   "updated_at": 1513433548718,
   "heading": "Шпаргалка к vim",
