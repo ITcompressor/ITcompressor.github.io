@@ -139,10 +139,10 @@
   "tags": ["git", "version control system", "РУ"]
   },{
   "id": 5,
-  "updated_at": 1468362052909,
+  "updated_at": 1513700919336,
   "heading": "Шпаргалка к Android (обновляется)",
   "content": "partials/docs/mini/android.html",
-  "tags": ["Android", "adb", "mobile", "РУ"],
+  "tags": ["Android", "fastboot", "adb", "mobile", "РУ"],
   "buttons": [{
     "text": "Подробнее",
     "url": "partials/docs/full/android.html"
