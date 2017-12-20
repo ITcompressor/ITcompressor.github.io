@@ -105,10 +105,10 @@
   "haveButtons": true
   },{
   "id": 9,
-  "updated_at": 1462387001693,
+  "updated_at": 1513763245700,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/full/any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "РУ"],
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "debian","РУ"],
   "buttons":[{
    "text":"Подробнее",
    "url": "partials/docs/full/any-install.html"
