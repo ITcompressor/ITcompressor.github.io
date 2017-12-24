@@ -108,7 +108,7 @@
   "updated_at": 1513763245700,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/full/any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "debian","РУ"],
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "debian","РУ"],
   "buttons":[{
    "text":"Подробнее",
    "url": "partials/docs/full/any-install.html"
