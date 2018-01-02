@@ -3,7 +3,7 @@
   "updated_at": 1513434569337,
   "heading": "Google search",
   "content": "partials/docs/mini/google.html",
-  "tags": ["vim","linux", "editor", "РУ"],
+  "tags": ["search", "РУ"],
   "buttons": [{
     "text": "Подробнее",
     "url": "partials/docs/full/google.html"
@@ -14,7 +14,7 @@
   "updated_at": 1513433548718,
   "heading": "Шпаргалка к vim",
   "content": "partials/docs/mini/vim.html",
-  "tags": ["vim","linux", "editor", "РУ"],
+  "tags": ["vim", "linux", "editor", "РУ"],
   "buttons": [{
     "text": "Всё здесь",
     "url": "partials/docs/full/vim.html"
@@ -36,7 +36,7 @@
     "updated_at": 1513431714706,
     "heading": "Debian\\Ubuntu secrets",
     "content": "partials/docs/mini/debianubuntu.html",
-    "tags": ["debian", "ubuntu", "scripts", "EN"],
+    "tags": ["linux", "debian", "ubuntu", "scripts", "EN"],
     "buttons": [{
       "text": "Read more",
       "url": "partials/docs/full/debianubuntu.html"
@@ -73,7 +73,7 @@
   "updated_at": 1462387001693,
   "heading": "Сброс пароля в Linux при физическом доступе",
   "content": "partials/docs/reset-password.html",
-  "tags": ["debian", "ubuntu", "grub", "bash", "hack", "РУ"]
+  "tags": ["linux", "grub", "bash", "hack", "РУ"]
   },{
   "id": 12,
   "updated_at": 1462387001693,
@@ -85,7 +85,7 @@
   "updated_at": 1462387400851,
   "heading": "Сканирование сетей. Скрипты и утилиты",
   "content": "partials/docs/mini/scanning.html",
-  "tags": ["traceroute","nmap", "bash", "РУ"],
+  "tags": ["traceroute", "nmap", "bash", "РУ"],
   "haveButtons": true,
   "buttons":[{
     "text": "Подробнее",
@@ -97,7 +97,7 @@
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find",
-     "autostart", "chmod","hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
+     "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
   "buttons": [{
     "text": "Подробнее",
     "url": "partials/docs/full/any-command.html"
@@ -108,7 +108,7 @@
   "updated_at": 1513763245700,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/full/any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "debian","РУ"],
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"],
   "buttons":[{
    "text":"Подробнее",
    "url": "partials/docs/full/any-install.html"
