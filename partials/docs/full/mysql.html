@@ -1,6 +1,8 @@
 <h4>Работа с пользователя и правами</h4>
 Разрешаем внешние подключения(remote access)
 <pre>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';</pre>
+Изменение пароля
+<pre>SET PASSWORD FOR 'user-name-here'@'hostname' = PASSWORD('new-password');</pre>
 <h4>Работа с бекапами</h4>
 Делаем бекап(дамп базы данных)
 <pre>mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
