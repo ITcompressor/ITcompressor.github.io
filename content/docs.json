@@ -122,7 +122,7 @@
   "tags": ["Windows", "OS", "РУ"]
   },{
   "id": 7,
-  "updated_at": 1462387127192,
+  "updated_at": 1516954715914,
   "heading": "Шпаргалка к MySQL (обновляется)",
   "content": "partials/docs/mini/mysql.html",
   "tags": ["MySQL", "database", "SQL", "РУ"],
