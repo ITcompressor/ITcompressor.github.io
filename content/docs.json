@@ -96,7 +96,7 @@
   "updated_at": 1462387001693,
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
-  "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find",
+  "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives"
      "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
   "buttons": [{
     "text": "Подробнее",
