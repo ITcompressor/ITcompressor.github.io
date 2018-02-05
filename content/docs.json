@@ -105,7 +105,7 @@
   "haveButtons": true
   },{
   "id": 9,
-  "updated_at": 1515895273981,
+  "updated_at": 1517835546938,
   "heading": "Полезные установки (обновляется)",
   "content": "partials/docs/full/any-install.html",
   "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"],
