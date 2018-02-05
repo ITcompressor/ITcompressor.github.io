@@ -93,10 +93,11 @@
     }]
   },{
   "id": 10,
-  "updated_at": 1517833443330,
+  "updated_at": 1517845399758,
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
-  "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives"
+  "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives",
+    "watch", "tail -f"
      "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
   "buttons": [{
     "text": "Подробнее",
