@@ -93,7 +93,7 @@
     }]
   },{
   "id": 10,
-  "updated_at": 1462387001693,
+  "updated_at": 1517833443330,
   "heading": "Всего понемножку (обновляется)",
   "content": "partials/docs/mini/any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives"
