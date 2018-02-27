@@ -1,5 +1,6 @@
 # About
-Simple site. Use angular and bootstrap.
+Docs and cookbook. Use angular and bootstrap.
 
 # Topics in
 content/docs.json
+
