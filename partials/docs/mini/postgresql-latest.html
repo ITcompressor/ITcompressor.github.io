@@ -1,0 +1,14 @@
+Создадим файл с информацией о репозитории:
+<pre>
+  sudo nano /etc/apt/sources.list.d/pgdg.list
+</pre>
+и добавим в него
+<pre>
+  deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+</pre>
+Обновляем репозиторий и устанавливаем нужную версию postgresql
+<pre>
+  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  sudo apt-get update
+  sudo apt-get install postgresql-9.4
+</pre>

@@ -1,0 +1,18 @@
+Полезная надстройка команд для git:
+<pre>
+git config --global user.name "Username"
+git config --global user.email example@mail.com
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'</pre>
+Откатить уже отправленные изменения:
+<pre>git reset --hard &lt;old-commit-id&gt;
+git push -f</pre>
+Добавление репозитория для отправки изменений
+<pre>git remote add origin git@bitbucket.org:any_user/any_repo.git</pre>
+Генерация ключей для работы через ssh с git:
+<pre>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
