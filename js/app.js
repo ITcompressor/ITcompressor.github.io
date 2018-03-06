@@ -4,17 +4,13 @@ app.controller("CoreController",
 
   $http.get("content/docs.json").success(function(response){
     $scope.docs = response;
+    $scope.docs.forEach(function(doc) {
+      doc.mini_content = "partials/docs/mini/" + doc.content;
+      doc.full_content = "partials/docs/full/" + doc.content;
+    });
     if($scope.target != null) {
       var doc = $filter('filter')($scope.docs, function (d) {return d.id === ($scope.target - 0);})[0];
-      for(var i  = 0; i < doc.buttons.length; i++) {
-        var btn = doc.buttons[i];
-        if(btn.isExternal) {
-
-        } else {
-          $scope.clickDoc(btn.url, doc.id);
-          break;
-        }
-      }
+      $scope.clickDoc(doc.full_content, doc.id);
     }
   });
 

@@ -2,201 +2,123 @@
   "id":20,
   "updated_at": 1520368880741,
   "heading": "Шпаргалка к mongodb",
-  "content": "partials/docs/mini/mongodb.html",
-  "tags": ["database", "mongodb", "РУ"],
-  "buttons": [{
-    "text": "Подробнее",
-    "url": "partials/docs/full/mongodb.html"
-  }],
-  "haveButtons": true
+  "content": "mongodb.html",
+  "tags": ["database", "mongodb", "РУ"]
   },{
   "id":19,
   "updated_at": 1513434569337,
   "heading": "Google search",
-  "content": "partials/docs/mini/google.html",
-  "tags": ["search", "РУ"],
-  "buttons": [{
-    "text": "Подробнее",
-    "url": "partials/docs/full/google.html"
-  }],
-  "haveButtons": true
+  "content": "google.html",
+  "tags": ["search", "РУ"]
   },{
   "id":18,
   "updated_at": 1513433548718,
   "heading": "Шпаргалка к vim",
-  "content": "partials/docs/mini/vim.html",
-  "tags": ["vim", "linux", "editor", "РУ"],
-  "buttons": [{
-    "text": "Всё здесь",
-    "url": "partials/docs/full/vim.html"
-  }],
-  "haveButtons": true
+  "content": "vim.html",
+  "tags": ["vim", "linux", "editor", "РУ"]
   },{
   "id":17,
   "updated_at": 1513432453021,
   "heading": "Headers for scripts",
-  "content": "partials/docs/mini/headers.html",
-  "tags": ["php", "python","linux", "scripts", "EN"],
-  "buttons": [{
-    "text": "Read more",
-    "url": "partials/docs/full/headers.html"
-  }],
-  "haveButtons": true
+  "content": "headers.html",
+  "tags": ["php", "python","linux", "scripts", "EN"]
   },{
     "id":16,
     "updated_at": 1513431714706,
     "heading": "Debian\\Ubuntu secrets",
-    "content": "partials/docs/mini/debianubuntu.html",
-    "tags": ["linux", "debian", "ubuntu", "scripts", "EN"],
-    "buttons": [{
-      "text": "Read more",
-      "url": "partials/docs/full/debianubuntu.html"
-    }],
-    "haveButtons": true
+    "content": "debianubuntu.html",
+    "tags": ["linux", "debian", "ubuntu", "scripts", "EN"]
   },{
   "id":15,
   "updated_at":1469903758253,
   "heading": "Регулярные выражения",
-  "content": "partials/docs/mini/regular.html",
-  "tags": ["regular", "expressions", "string", "РУ"],
-  "buttons":[{
-    "text": "Подробнее",
-    "url": "partials/docs/full/regular.html"
-  }, {
-    "text": "Оригинал",
-    "url": "https://habrahabr.ru/post/123845/",
-    "isExternal": true
-  }],
-  "haveButtons": true
+  "content": "regular.html",
+  "tags": ["regular", "expressions", "string", "РУ"]
   },{
   "id":14,
   "updated_at":1462388470870,
   "heading": "How Phineas Fisher hacked the \"Hacking Team\"?",
-  "content": "partials/docs/mini/hacking-team.html",
-  "tags": ["Hacking Team", "hacking", "docs", "get started", "EN"],
-  "buttons":[{
-    "text": "Read more",
-    "url": "partials/docs/full/hacking-team.html"
-  }],
-  "haveButtons": true
+  "content": "hacking-team.html",
+  "tags": ["Hacking Team", "hacking", "docs", "get started", "EN"]
   },{
   "id": 13,
   "updated_at": 1462387001693,
   "heading": "Сброс пароля в Linux при физическом доступе",
-  "content": "partials/docs/mini/reset-password.html",
+  "content": "reset-password.html",
   "tags": ["linux", "grub", "bash", "hack", "РУ"]
   },{
   "id": 12,
   "updated_at": 1462387001693,
   "heading": "Утилита screen",
-  "content": "partials/docs/mini/screen.html",
+  "content": "screen.html",
   "tags": ["screen", "linux", "bash", "РУ"]
   },{
   "id": 11,
   "updated_at": 1462387400851,
   "heading": "Сканирование сетей. Скрипты и утилиты",
-  "content": "partials/docs/mini/scanning.html",
-  "tags": ["traceroute", "nmap", "bash", "РУ"],
-  "haveButtons": true,
-  "buttons":[{
-    "text": "Подробнее",
-    "url": "partials/docs/full/scanning.html"
-    }]
+  "content": "scanning.html",
+  "tags": ["traceroute", "nmap", "bash", "РУ"]
   },{
   "id": 10,
   "updated_at": 1517845399758,
   "heading": "Шпаргалка по командной строке и утилитам",
-  "content": "partials/docs/mini/any-command.html",
+  "content": "any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives",
     "watch", "tail -f", "terminal",
-     "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"],
-  "buttons": [{
-    "text": "Подробнее",
-    "url": "partials/docs/full/any-command.html"
-    }],
-  "haveButtons": true
+     "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"]
   },{
   "id": 9,
   "updated_at": 1517835546938,
   "heading": "Шпаргалка по полезным установкам",
-  "content": "partials/docs/mini/any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"],
-  "buttons":[{
-   "text":"Подробнее",
-   "url": "partials/docs/full/any-install.html"
-   }],
-  "haveButtons": true
+  "content": "any-install.html",
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"]
   },{
   "id": 8,
   "updated_at": 1462387001693,
   "heading": "Шпаргалка по Windows",
-  "content": "partials/docs/mini/windows.html",
+  "content": "windows.html",
   "tags": ["Windows", "OS", "РУ"]
   },{
   "id": 7,
   "updated_at": 1516954715914,
   "heading": "Шпаргалка по MySQL",
-  "content": "partials/docs/mini/mysql.html",
-  "tags": ["MySQL", "database", "SQL", "РУ"],
-  "haveButtons": true,
-  "buttons":[{
-    "text": "Подробнее",
-    "url": "partials/docs/full/mysql.html"
-    }]
+  "content": "mysql.html",
+  "tags": ["MySQL", "database", "SQL", "РУ"]
   },{
   "id": 6,
   "updated_at": 1462387001693,
   "heading": "Шпаргалка по GIT",
-  "content": "partials/docs/mini/git.html",
+  "content": "git.html",
   "tags": ["git", "version control system", "РУ"]
   },{
   "id": 5,
   "updated_at": 1513700919336,
   "heading": "Шпаргалка по Android",
-  "content": "partials/docs/mini/android.html",
-  "tags": ["Android", "fastboot", "adb", "mobile", "РУ"],
-  "buttons": [{
-    "text": "Подробнее",
-    "url": "partials/docs/full/android.html"
-    }],
-  "haveButtons": true
+  "content": "android.html",
+  "tags": ["Android", "fastboot", "adb", "mobile", "РУ"]
   },{
   "id": 4,
   "updated_at": 1462387001693,
   "heading": "Wi-fi hotspot Ubuntu",
-  "content": "partials/docs/mini/ubuntu-hotspot.html",
-  "tags": ["Ubuntu 14.04 LTS", "Hotspot", "Wi-fi", "EN"],
-  "buttons":[{
-    "text":"Original",
-    "url":"http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
-    "isExternal": true
-    },{
-    "text": "Read more",
-    "url": "partials/docs/full/ubuntu-hotspot.html"
-  }],
-  "haveButtons": true
+  "content": "ubuntu-hotspot.html",
+  "external": "http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
+  "tags": ["Ubuntu 14.04 LTS", "Hotspot", "Wi-fi", "EN"]
 },{
   "id": 3,
   "updated_at": 1462387001693,
   "heading": "Готовим Ruby+Bundler",
-  "content": "partials/docs/mini/ruby-rbenv-bundler.html",
+  "content": "ruby-rbenv-bundler.html",
   "tags": ["Ubuntu 14.04 LTS", "Ruby 2.2.3","rbenv","bundler", "РУ"]
 },{
   "id": 2,
   "updated_at": 1462387001693,
   "heading": "Установка PostgreSQL с официального репозитория",
-  "content": "partials/docs/mini/postgresql-latest.html",
-  "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "РУ"],
-  "buttons":[{
-    "text": "Original",
-    "url": "http://www.postgresql.org/download/linux/ubuntu/",
-    "isExternal": true
-  }],
-  "haveButtons": true
+  "content": "postgresql-latest.html",
+  "tags": ["Ubuntu 14.04 LTS", "PostgreSQL 9.4", "deb", "database", "РУ"]
 },{
   "id": 1,
   "updated_at": 1462387001693,
   "heading": "Шпаргалка по PostgreSQL",
-  "content": "partials/docs/mini/postgresql-topic.html",
+  "content": "postgresql-topic.html",
   "tags": ["PostgreSQL 9.4", "database", "РУ"]
 }]
