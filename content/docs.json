@@ -1,7 +1,7 @@
 [{
   "id":20,
   "updated_at": 1520368880741,
-  "heading": "Шпаргалка к mongodb",
+  "heading": "Mongodb",
   "content": "mongodb.html",
   "tags": ["database", "mongodb", "РУ"]
   },{
@@ -13,7 +13,7 @@
   },{
   "id":18,
   "updated_at": 1513433548718,
-  "heading": "Шпаргалка к vim",
+  "heading": "Vim",
   "content": "vim.html",
   "tags": ["vim", "linux", "editor", "РУ"]
   },{
@@ -61,7 +61,7 @@
   },{
   "id": 10,
   "updated_at": 1517845399758,
-  "heading": "Шпаргалка по командной строке и утилитам",
+  "heading": "Командная строка и утилиты",
   "content": "any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives",
     "watch", "tail -f", "terminal",
@@ -69,31 +69,31 @@
   },{
   "id": 9,
   "updated_at": 1517835546938,
-  "heading": "Шпаргалка по полезным установкам",
+  "heading": "Полезные установки",
   "content": "any-install.html",
   "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"]
   },{
   "id": 8,
   "updated_at": 1462387001693,
-  "heading": "Шпаргалка по Windows",
+  "heading": "Windows",
   "content": "windows.html",
   "tags": ["Windows", "OS", "РУ"]
   },{
   "id": 7,
   "updated_at": 1516954715914,
-  "heading": "Шпаргалка по MySQL",
+  "heading": "MySQL",
   "content": "mysql.html",
   "tags": ["MySQL", "database", "SQL", "РУ"]
   },{
   "id": 6,
   "updated_at": 1462387001693,
-  "heading": "Шпаргалка по GIT",
+  "heading": "GIT",
   "content": "git.html",
   "tags": ["git", "version control system", "РУ"]
   },{
   "id": 5,
   "updated_at": 1513700919336,
-  "heading": "Шпаргалка по Android",
+  "heading": "Android",
   "content": "android.html",
   "tags": ["Android", "fastboot", "adb", "mobile", "РУ"]
   },{
@@ -118,7 +118,7 @@
 },{
   "id": 1,
   "updated_at": 1462387001693,
-  "heading": "Шпаргалка по PostgreSQL",
+  "heading": "PostgreSQL",
   "content": "postgresql-topic.html",
   "tags": ["PostgreSQL 9.4", "database", "РУ"]
 }]
