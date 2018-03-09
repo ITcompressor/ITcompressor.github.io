@@ -12,9 +12,10 @@
   "tags": ["database", "mongodb", "РУ"]
   },{
   "id":19,
-  "updated_at": 1513434569337,
+  "updated_at": 1520606975315,
   "heading": "Google search",
   "content": "google.html",
+  "external": "http://telegra.ph/Samouchitel-po-Google-02-11",
   "tags": ["search", "РУ"]
   },{
   "id":18,
