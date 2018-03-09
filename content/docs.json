@@ -60,7 +60,7 @@
   "tags": ["traceroute", "nmap", "bash", "РУ"]
   },{
   "id": 10,
-  "updated_at": 1517845399758,
+  "updated_at": 1520597513544,
   "heading": "Командная строка и утилиты",
   "content": "any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives",
@@ -68,7 +68,7 @@
      "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"]
   },{
   "id": 9,
-  "updated_at": 1517835546938,
+  "updated_at": 1520597513544,
   "heading": "Полезные установки",
   "content": "any-install.html",
   "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"]
