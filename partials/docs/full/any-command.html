@@ -48,6 +48,8 @@ dd if=kali.iso of=/dev/sdb bs=512k
 sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync</pre>
 Использование ssh
 <pre>ssh -p 22 steeldriver@192.168.1.102</pre>
+Добавление публичного ключа на сервер:
+<pre>cat ~/.ssh/id_rsa.pub | ssh root@your_server "cat >> /home/qwer/.ssh/authorized_keys"</pre>
 Подключение к VPN по конфиг файлу
 <pre>sudo openvpn --config /path/to/config.ovpn</pre>
 Создание soft ссылки(ярлыка) файла
