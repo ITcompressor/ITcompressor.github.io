@@ -75,10 +75,11 @@
      "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"]
   },{
   "id": 9,
-  "updated_at": 1520597513544,
+  "updated_at": 1520685479782,
   "heading": "Полезные установки",
   "content": "any-install.html",
-  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "mysql", "РУ"]
+  "tags": ["cmd", "bash", "maven", "aes", "linux", "lamp", "pip", "python"
+    "mysql", "java", "sdkman", "РУ"]
   },{
   "id": 8,
   "updated_at": 1462387001693,
