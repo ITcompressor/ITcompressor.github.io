@@ -1,2 +1,4 @@
 Поиск not null значений:
 <pre>db.mycollection.find({"IMAGE URL":{$exists:true}});</pre>
+Поиск регуляркой, альтернатива like:
+<pre>db.mycollection.find({name: /regular/});</pre>
