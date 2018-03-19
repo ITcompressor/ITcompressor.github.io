@@ -1,4 +1,6 @@
 <h4>Работа с пользователя и правами</h4>
+Создаём нового пользователя
+<pre>CREATE USER 'qwer'@'%' IDENTIFIED BY 'password';</pre>
 Разрешаем внешние подключения(remote access)
 <pre>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';</pre>
 Даём полный контроль
