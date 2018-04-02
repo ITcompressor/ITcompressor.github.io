@@ -67,11 +67,11 @@
   "tags": ["traceroute", "nmap", "bash", "РУ"]
   },{
   "id": 10,
-  "updated_at": 1520597513544,
+  "updated_at": 1522690634326,
   "heading": "Командная строка и утилиты",
   "content": "any-command.html",
   "tags": ["cmd", "bash", "aes", "cron", "wget", "alternatives","adduser","find", "update-alternatives",
-    "watch", "tail -f", "terminal",
+    "watch", "tail -f", "terminal", "scp",
      "autostart", "chmod", "hosts","grep", "dd", "ssh", "sass", "linux", "VPN", "РУ"]
   },{
   "id": 9,
