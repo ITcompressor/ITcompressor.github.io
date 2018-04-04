@@ -1,17 +1,17 @@
 <input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search" placeholder="Search">
 
 <div ng-repeat="doc in docs|filter:search| orderBy: '-updated_at':false" class="row">
-  <h2>{{ doc.heading }}</h2>
-  <span ng-repeat="tag in doc.tags">
+    <h2>{{ doc.heading }}</h2>
+    <span ng-repeat="tag in doc.tags">
     <span class="label label-default">
       {{ tag }}
     </span> &nbsp;
   </span>
-  <span>⌚ {{ doc.updated_at | date:'medium' }}</span>
-  <p>
+    <span>⌚ {{ doc.updated_at | date:'medium' }}</span>
+    <p>
     <div ng-include="doc.mini_content"></div>
-  </p>
-  <span>
+    </p>
+    <span>
     <span ng-show="doc.external">
       <a class="btn btn-default" ng-href="{{ doc.external }}" role="button"> Original &raquo; </a>
     </span>
