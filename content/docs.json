@@ -124,12 +124,13 @@
   },
   {
     "id": 11,
-    "updated_at": 1462387400851,
-    "heading": "Сканирование сетей. Скрипты и утилиты",
-    "content": "scanning.html",
+    "updated_at": 1524171613468,
+    "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
+    "content": "network.html",
     "tags": [
       "traceroute",
       "nmap",
+      "curl",
       "bash",
       "РУ"
     ]
