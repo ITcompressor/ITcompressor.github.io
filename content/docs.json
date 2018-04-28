@@ -124,7 +124,7 @@
   },
   {
     "id": 11,
-    "updated_at": 1524171613468,
+    "updated_at": 1524924508974,
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content": "network.html",
     "tags": [
@@ -132,6 +132,7 @@
       "nmap",
       "curl",
       "bash",
+      "wget",
       "РУ"
     ]
   },
@@ -145,7 +146,6 @@
       "bash",
       "aes",
       "cron",
-      "wget",
       "alternatives",
       "adduser",
       "find",

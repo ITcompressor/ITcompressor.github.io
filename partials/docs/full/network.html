@@ -19,3 +19,8 @@ ARP Пинг
 <pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"</pre>
 Путь пакета к ресурсу
 <pre>traceroute &lt;any_ip_or_domain&gt;</pre>
+<h4>Использование wget</h4>
+Скачать front-end (без rest запросов)
+<pre>wget -r -k -l 7 -p -E -nc https://itcompressor.github.io/</pre>
+"Скачать и запустить"
+<pre>wget -q -O – https://fixubuntu.com/fixubuntu.sh | bash</pre>
