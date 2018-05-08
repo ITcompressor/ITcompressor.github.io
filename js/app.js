@@ -7,6 +7,7 @@ app.controller("CoreController",
             $scope.docs.forEach(function (doc) {
                 doc.mini_content = "partials/docs/mini/" + doc.content;
                 doc.full_content = "partials/docs/full/" + doc.content;
+                doc.updated_at = new Date(doc.updated_at) - 0;
             });
             if ($scope.target != null) {
                 var doc = $filter('filter')($scope.docs, function (d) {

@@ -1,7 +1,7 @@
 [
   {
     "id": 22,
-    "updated_at": 1525815166956,
+    "updated_at": "2018-05-09 00:36",
     "heading": "SSH и его друзья",
     "content": "ssh.html",
     "tags": [
@@ -15,7 +15,7 @@
   },
   {
     "id": 21,
-    "updated_at": 1520604876999,
+    "updated_at": "2018-03-09 17:14",
     "heading": "Java",
     "content": "java.html",
     "tags": [
@@ -28,7 +28,7 @@
   },
   {
     "id": 20,
-    "updated_at": 1521470308401,
+    "updated_at": "2018-03-19 17:38",
     "heading": "Mongodb",
     "content": "mongodb.html",
     "tags": [
@@ -39,7 +39,7 @@
   },
   {
     "id": 19,
-    "updated_at": 1520606975315,
+    "updated_at": "2018-03-19 17:49",
     "heading": "Google search",
     "content": "google.html",
     "external": "http://telegra.ph/Samouchitel-po-Google-02-11",
