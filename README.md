@@ -1,6 +1,10 @@
-# About
-Docs and cookbook. Use angular and bootstrap.
+# itcompressor
+**tags:** all about all
 
-# Topics in
-content/docs.json
+**Run on any static web server**
 
+**about:** Docs and cookbook. Use angular and bootstrap.
+
+**topics in:** content/docs.json
+
+**content for topics in:** partials/docs/**
