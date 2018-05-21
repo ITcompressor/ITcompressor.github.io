@@ -44,6 +44,8 @@ sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop</pre>
 <pre>
 dd if=kali.iso of=/dev/sdb bs=512k
 sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync</pre>
+Восстановление ntfs
+<pre>sudo ntfsfix  /dev/sdb1</pre>
 Подключение к VPN по конфиг файлу
 <pre>sudo openvpn --config /path/to/config.ovpn</pre>
 Создание soft ссылки(ярлыка) файла
