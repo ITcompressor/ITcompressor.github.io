@@ -152,7 +152,7 @@
   },
   {
     "id": 10,
-    "updated_at": 1522690634326,
+    "updated_at": "2018-05-21 20:09",
     "heading": "Командная строка и утилиты",
     "content": "any-command.html",
     "tags": [
@@ -177,12 +177,14 @@
       "sass",
       "linux",
       "VPN",
+      "ntfsfix",
+      "ntfx",
       "РУ"
     ]
   },
   {
     "id": 9,
-    "updated_at": "2018-05-21 20:09",
+    "updated_at": "2018-04-21 20:09",
     "heading": "Полезные установки",
     "content": "any-install.html",
     "tags": [
@@ -199,8 +201,6 @@
       "sdkman",
       "gnome-shell",
       "desktop",
-      "ntfsfix",
-      "ntfx",
       "РУ"
     ]
   },
