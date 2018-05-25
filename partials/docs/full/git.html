@@ -16,3 +16,5 @@ git push -f</pre>
 <pre>git remote add origin git@bitbucket.org:any_user/any_repo.git</pre>
 Генерация ключей для работы через ssh с git:
 <pre>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
+Посчитать количество строчек кода в *.java:
+<pre>git ls-files | grep -P ".*(java)" | xargs wc -l</pre>
