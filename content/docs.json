@@ -1,5 +1,19 @@
 [
   {
+    "id": 23,
+    "updated_at": "2018-06-12 19:06",
+    "heading": "RabbitMQ",
+    "content": "rabbitmq.html",
+    "tags": [
+      "rabbitmq",
+      "query",
+      "events",
+      "service",
+      "ubuntu",
+      "РУ"
+    ]
+  },
+  {
     "id": 22,
     "updated_at": "2018-05-09 00:36",
     "heading": "SSH и его друзья",
@@ -229,7 +243,7 @@
   },
   {
     "id": 6,
-    "updated_at": 1462387001693,
+    "updated_at": "2018-06-12 19:11",
     "heading": "GIT",
     "content": "git.html",
     "tags": [
