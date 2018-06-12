@@ -1,0 +1,10 @@
+Step 1: Set priveleges
+<pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all</pre>
+Step 2: Allow VNC clients
+<pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvnclegacy -vnclegacy yes</pre>
+Step 3: Set VNC password (change it at the end of the line (i.e. don't use supersecret))
+<pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -clientopts -setvncpw -vncpw supersecret</pre>
+Step 4: Restart service
+<pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console</pre>
+Step 5: If no ARD services have been activated on the machine before, it is also necessary to run the following command
+<pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate</pre>
