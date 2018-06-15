@@ -1,3 +1,6 @@
+<hr>
+<img src="img/sql-joins.png" alt="How use sql join"/>
+<hr>
 <h4>Работа с пользователя и правами</h4>
 Создаём нового пользователя
 <pre>CREATE USER 'qwer'@'%' IDENTIFIED BY 'password';</pre>
@@ -7,6 +10,7 @@
 <pre>GRANT GRANT OPTION ON *.* TO 'qwer'@'%';</pre>
 Изменение пароля
 <pre>SET PASSWORD FOR 'user-name-here'@'hostname' = PASSWORD('new-password');</pre>
+<hr>
 <h4>Работа с бекапами</h4>
 Делаем бекап(дамп базы данных)
 <pre>mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
@@ -62,6 +66,7 @@
 <br>-Без особой нужды не стоит открывать MySQL наружу. Вместо этого можно сделать проброс портов
 <pre>ssh -fNL LOCAL_PORT:localhost:3306 REMOTE_USER@REMOTE_HOST
 </pre><br>
+<hr>
 <h4>Работа с данными:</h4>
 <h5><b>Числа</b></h5>
 -На 32-битных системах практически нет смысла ставить для типа INTEGER свойство UNSIGNED, так как такие большие числа в php не поддерживаются.
