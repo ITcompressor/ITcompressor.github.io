@@ -102,13 +102,16 @@
   },
   {
     "id": 16,
-    "updated_at": 1513431714706,
-    "heading": "Debian\\Ubuntu secrets",
-    "content": "debianubuntu.html",
+    "updated_at": "2018-06-18 10:40",
+    "heading": "Linux",
+    "content": "linux.html",
     "tags": [
       "linux",
       "debian",
       "ubuntu",
+      "fstab",
+      "монтирование",
+      "разлделов",
       "scripts",
       "EN"
     ]
