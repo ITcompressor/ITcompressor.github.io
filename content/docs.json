@@ -1,5 +1,21 @@
 [
   {
+    "id": 25,
+    "updated_at": "2018-07-18 23:26",
+    "heading": "Репликация MySQL",
+    "content": "mysql-replication.html",
+    "tags": [
+      "database",
+      "mysql",
+      "replication",
+      "example",
+      "debian8",
+      "ubuntu14.04",
+      "cooking",
+      "РУ"
+    ]
+  },
+  {
     "id": 24,
     "updated_at": "2018-06-12 19:26",
     "heading": "Start vnc server on mac",
