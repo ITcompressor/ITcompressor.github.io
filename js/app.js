@@ -10,17 +10,20 @@ app.controller("CoreController",
                 doc.updated_at = new Date(doc.updated_at) - 0;
             });
             if ($scope.target != null) {
-                var doc = $filter('filter')($scope.docs, function (d) {
-                    return d.id === ($scope.target - 0);
-                })[0];
+                var doc = getDocById($scope.target)
                 $scope.clickDoc(doc.full_content, doc.id);
             }
         });
 
-        $scope.getQueryParams = function (qs) {
+        var getDocById = function(id) {
+            return $scope.docs.filter(function (d) {
+                return d.id == id;
+            })[0];
+        }
+
+        var getQueryParams = function (qs) {
             qs = qs.split("+").join(" ");
-            var params = {}, tokens,
-                re = /#[?&]?([^=]+)=([^&]*)/g;
+            var params = {}, tokens, re = /#[?&]?([^=]+)=([^&]*)/g;
             while (tokens = re.exec(qs)) {
                 params[decodeURIComponent(tokens[1])]
                     = decodeURIComponent(tokens[2]);
@@ -41,7 +44,7 @@ app.controller("CoreController",
         }
 
         var searchAny = function () {
-            var urlParams = $scope.getQueryParams(document.location.hash);
+            var urlParams = getQueryParams(document.location.hash);
             $scope.search = urlParams["s"];
             $scope.target = urlParams["target"]
         }
@@ -68,9 +71,14 @@ app.controller("CoreController",
         searchAny();
 
         window.onhashchange = function() {
-            if(!document.location.hash) {
+            var params = getQueryParams(document.location.hash);
+            if(!params.target) {
                 setActualHash();
-                $scope.homeRedirect();
+                $scope.backDoc();
+            } else {
+                var doc = getDocById(params.target);
+                setActualHash();
+                $scope.clickDoc(doc.full_content, doc.id);
             }
         }
     }]);
