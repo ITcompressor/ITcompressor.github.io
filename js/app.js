@@ -66,4 +66,11 @@ app.controller("CoreController",
         }
 
         searchAny();
+
+        window.onhashchange = function() {
+            if(!document.location.hash) {
+                setActualHash();
+                $scope.homeRedirect();
+            }
+        }
     }]);
