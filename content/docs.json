@@ -184,12 +184,14 @@
   },
   {
     "id": 11,
-    "updated_at": 1524924508974,
+    "updated_at": "2018-07-20 00:30",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content": "network.html",
     "tags": [
       "traceroute",
       "nmap",
+      "ifconfig",
+      "mac",
       "curl",
       "bash",
       "wget",
