@@ -2,13 +2,58 @@
 <pre>sudo apt-get install apache2 mysql-server php5 php5-mysql phpmyadmin</pre>
 Пример установки библиотеки для maven
 <pre>mvn install:install-file -Dfile=/path_to_jar/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar</pre>
+
 <hr>
+
 <h4>Установка gnome-shell (графическая оболочка)</h4>
 <pre>sudo apt-get install gnome-shell gnome-session gnome-tweak-tool gdm</pre>
 Проверка версии gnome-shell
 <pre>gnome-shell --version</pre>
 Расширение для hotkey win+1..10 в gnome-shell
 <a href="https://extensions.gnome.org/extension/413/dash-hotkeys/">https://extensions.gnome.org/extension/413/dash-hotkeys/</a>
+
+<hr>
+<h4>Установка и настройка WINE</h4>
+Запускаем winetricks- Select the default wineprefix -Install a font в открывшемся окне ставим галочки напротив corefonts, fonfix и жмем ок.Ждем окончания установки! Теперь, опять winetricks- Select the default wineprefix -Install a Windows DLL op component в открывшемся окне выбирает следующие пакеты:
+<pre>
+vcrun 2005
+vcrun 2008
+vcrun 2010
+vcrun 6
+vcrun 6 sp6
+d3dx9
+dotnet 20
+перезагрузка машины
+Из папки Windows/Microsoft.NET/Framework удалите папку v3.0 (если она там есть)
+vb5run, vb6run
+vcrun 2003
+dotnet 30 будет предупреждение,что пакет будет ставится очень долго и будет в трее
+перезагрузка машины
+d3xof
+devenum
+dinрut8
+direckmusik
+direcktplay
+directx9
+dxdiagn
+d3dx11_43
+mfs40, wsh56vb, wsh57. gdiplus
+physx
+gfw
+</pre>
+Настраиваем реестр вайна. Опять нам понадобится winetricks -Select the default wineprefix -Change settings перед нами откроется окно для правки реестра! Ставим галочки напротив:
+<pre>
+1. DirectDrawRender(ddr) opengl
+2. Direct3D Multisampling enabled
+3. OffscreenRenderingMode(orm) fbo
+4. PixelShaderMode(psm) enabled
+5. Render TargetLockMode(rtlm) auto
+6. UseGLSL(glsl) enabled (default)
+7. VertexShaders(vsm) hardware
+8. VideoMemorySize 1024 (выбирете значение ОЗУ вашей видеокарты)
+9. MouseWarpOverride(mwo) enabled (force)
+</pre>
+
 <hr>
 Установка net-tools (ifconfig)
 <pre>apt install net-tools</pre>

@@ -246,7 +246,7 @@
   },
   {
     "id": 9,
-    "updated_at": "2018-04-21 20:09",
+    "updated_at": "2018-07-21 00:45",
     "heading": "Полезные установки",
     "content": "any-install.html",
     "tags": [
@@ -259,6 +259,8 @@
       "pip",
       "python",
       "mysql",
+      "wine",
+      "run win32 apps",
       "java",
       "sdkman",
       "gnome-shell",
