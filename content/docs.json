@@ -1,5 +1,19 @@
 [
   {
+    "id": 26,
+    "updated_at": "2018-07-20 22:41",
+    "heading": "Восстановление Grub2",
+    "content": "grub.html",
+    "tags": [
+      "operation",
+      "system",
+      "loader",
+      "grub",
+      "linux",
+      "РУ"
+    ]
+  },
+  {
     "id": 25,
     "updated_at": "2018-07-18 23:26",
     "heading": "Репликация MySQL",
