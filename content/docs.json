@@ -85,12 +85,15 @@
   },
   {
     "id": 20,
-    "updated_at": "2018-03-19 17:38",
+    "updated_at": "2018-07-30 21:11",
     "heading": "Mongodb",
     "content": "mongodb.html",
     "tags": [
       "database",
       "mongodb",
+      "select",
+      "nosql",
+      "in",
       "РУ"
     ]
   },
