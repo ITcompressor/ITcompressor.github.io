@@ -1,6 +1,10 @@
 Путь к исполняемым файлам
 <pre>/usr/local/bin</pre>
+Просмотр скрытых приложений в автозагрузке
+<pre>cd /etc/xdg/autostart
+sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop</pre>
 <hr>
+
 <h4> Монтирование разделов</h4>
 Посмотреть информацию о подключенных дисках
 <pre>sudo fstab -l</pre>
