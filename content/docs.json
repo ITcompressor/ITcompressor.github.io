@@ -309,13 +309,18 @@
   },
   {
     "id": 5,
-    "updated_at": 1513700919336,
-    "heading": "Android",
+    "updated_at": "2018-08-02 12:58",
+    "heading": "Android и его секреты",
     "content": "android.html",
     "tags": [
       "Android",
       "fastboot",
       "adb",
+      "hosts",
+      "autostart",
+      "autorun",
+      "ban ip",
+      "phone",
       "mobile",
       "РУ"
     ]
