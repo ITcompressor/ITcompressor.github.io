@@ -285,12 +285,14 @@
   },
   {
     "id": 7,
-    "updated_at": "2018-07-18 22:27",
+    "updated_at": "2018-08-11 16:42",
     "heading": "MySQL",
     "content": "mysql.html",
     "tags": [
       "MySQL",
       "database",
+      "queries",
+      "permissions",
       "SQL",
       "РУ"
     ]

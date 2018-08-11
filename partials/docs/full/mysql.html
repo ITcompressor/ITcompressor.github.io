@@ -8,6 +8,9 @@
 <pre>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';</pre>
 Даём полный контроль
 <pre>GRANT GRANT OPTION ON *.* TO 'qwer'@'%';</pre>
+ещё
+<pre>GRANT ALL PRIVILEGES ON * . * TO 'qwer'@'%';
+FLUSH PRIVILEGES;</pre>
 Изменение пароля
 <pre>SET PASSWORD FOR 'user-name-here'@'hostname' = PASSWORD('new-password');</pre>
 
