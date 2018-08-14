@@ -1,5 +1,19 @@
 [
   {
+    "id": 27,
+    "updated_at": "2018-08-14 22:51",
+    "heading": "Настройка https на nginx",
+    "content": "ssl.html",
+    "tags": [
+      "certificates",
+      "https",
+      "ssl",
+      "nginx",
+      "linux",
+      "РУ"
+    ]
+  },
+  {
     "id": 26,
     "updated_at": "2018-07-20 22:41",
     "heading": "Восстановление Grub2",

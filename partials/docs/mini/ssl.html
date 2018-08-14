@@ -1,0 +1,30 @@
+Пример /etc/nginx/sites-available/default для https
+<pre>
+    server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+    
+        # Redirect all HTTP requests to HTTPS with a 301 Moved Permanently response.
+        return 301 https://$host$request_uri;
+    }
+    
+    server {
+            listen 443 ssl http2;
+            listen [::]:443 ssl http2;
+    
+            server_name         next-way.by;
+    
+            ssl on;
+            ssl_certificate     /root/ssl/next-way.by.crt;
+            ssl_certificate_key /root/ssl/device.key;
+            ssl_prefer_server_ciphers on;
+    
+            location / {
+                access_log off;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://localhost:8080;
+            }
+    }    
+</pre>
