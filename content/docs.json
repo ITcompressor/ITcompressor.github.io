@@ -264,7 +264,7 @@
   },
   {
     "id": 9,
-    "updated_at": "2018-07-21 00:45",
+    "updated_at": "2018-08-19 22:23",
     "heading": "Полезные установки",
     "content": "any-install.html",
     "tags": [
@@ -282,6 +282,7 @@
       "java",
       "sdkman",
       "gnome-shell",
+      "insomnia",
       "desktop",
       "РУ"
     ]

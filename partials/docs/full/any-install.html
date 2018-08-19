@@ -13,6 +13,7 @@
 <a href="https://extensions.gnome.org/extension/413/dash-hotkeys/">https://extensions.gnome.org/extension/413/dash-hotkeys/</a>
 
 <hr>
+
 <h4>Установка и настройка WINE</h4>
 Запускаем winetricks- Select the default wineprefix -Install a font в открывшемся окне ставим галочки напротив corefonts, fonfix и жмем ок.Ждем окончания установки! Теперь, опять winetricks- Select the default wineprefix -Install a Windows DLL op component в открывшемся окне выбирает следующие пакеты:
 <pre>
@@ -55,6 +56,7 @@ gfw
 </pre>
 
 <hr>
+
 Установка net-tools (ifconfig)
 <pre>apt install net-tools</pre>
 Установка jdk8
@@ -67,3 +69,20 @@ gfw
 Установка pip для python
 <pre>wget https://bootstrap.pypa.io/get-pip.py</pre>
 <pre>sudo python get-pip.py</pre>
+
+<hr>
+
+Установка insomnia (аналог postman)
+<pre>
+    # Add to sources
+    echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+        | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+    
+    # Add public key used to verify code signature
+    wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+        | sudo apt-key add -
+    
+    # Refresh repository sources and install Insomnia
+    sudo apt-get update
+    sudo apt-get install insomnia
+</pre>
