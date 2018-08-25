@@ -13,6 +13,8 @@
 FLUSH PRIVILEGES;</pre>
 Изменение пароля
 <pre>SET PASSWORD FOR 'user-name-here'@'hostname' = PASSWORD('new-password');</pre>
+Изменение пароля в новых версия mysql 8+
+<pre>ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';</pre>
 
 <hr>
 
