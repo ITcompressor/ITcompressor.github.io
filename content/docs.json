@@ -1,5 +1,19 @@
 [
   {
+    "id": 28,
+    "updated_at": "2018-08-25 21:46",
+    "heading": "VNC сервер для линукса на основе x11vnc",
+    "content": "linux-vnc.html",
+    "tags": [
+      "vnc",
+      "ubuntu",
+      "remote",
+      "desktop",
+      "linux",
+      "РУ"
+    ]
+  },
+  {
     "id": 27,
     "updated_at": "2018-08-14 22:51",
     "heading": "Настройка https на nginx",
