@@ -163,7 +163,7 @@
   },
   {
     "id": 16,
-    "updated_at": "2018-08-01 23:00",
+    "updated_at": "2018-08-26 12:52",
     "heading": "Linux и его секреты",
     "content": "linux.html",
     "tags": [
@@ -171,6 +171,8 @@
       "debian",
       "ubuntu",
       "fstab",
+      "automount",
+      "ext4",
       "монтирование",
       "разлделов",
       "scripts",
