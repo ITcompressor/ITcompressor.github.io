@@ -1,5 +1,18 @@
 [
   {
+    "id": 29,
+    "updated_at": "2018-08-27 00:10",
+    "heading": "Как использовать команду grep в linux",
+    "content": "grep.html",
+    "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
+    "tags": [
+      "grep",
+      "поиск",
+      "linux",
+      "РУ"
+    ]
+  },
+  {
     "id": 28,
     "updated_at": "2018-08-25 21:46",
     "heading": "VNC сервер для линукса на основе x11vnc",
@@ -266,7 +279,6 @@
       "autostart",
       "chmod",
       "hosts",
-      "grep",
       "dd",
       "ssh",
       "sass",
