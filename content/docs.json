@@ -328,7 +328,7 @@
   },
   {
     "id": 7,
-    "updated_at": "2018-08-25 11:42",
+    "updated_at": "2018-08-30 00:22",
     "heading": "MySQL",
     "content": "mysql.html",
     "tags": [
@@ -336,6 +336,8 @@
       "database",
       "queries",
       "permissions",
+      "уровни изоляции",
+      "transaction-isolation-level",
       "SQL",
       "РУ"
     ]
