@@ -126,13 +126,15 @@
   },
   {
     "id": 20,
-    "updated_at": "2018-07-30 21:11",
+    "updated_at": "2018-09-05 20:32",
     "heading": "Mongodb",
     "content": "mongodb.html",
     "tags": [
       "database",
       "mongodb",
       "select",
+      "index",
+      "profiler",
       "nosql",
       "in",
       "РУ"

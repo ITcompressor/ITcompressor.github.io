@@ -1,6 +1,23 @@
+<h4>Запросы</h4>
 Поиск not null значений:
 <pre>db.mycollection.find({"IMAGE URL":{$exists:true}});</pre>
 Поиск регуляркой, альтернатива like:
 <pre>db.mycollection.find({name: /regular/});</pre>
 Поиск 'in':
 <pre>db.mycollection.find({ field: { $in: ["one","two","123"]}});</pre>
+
+<hr>
+
+<h4>Профайлинг</h4>
+1) Включаем профайлинг медленных запросов
+<pre>db.setProfilingLevel(1, { slowms: 2000 })</pre>
+2) Через 1 минуту выключаем
+<pre>db.setProfilingLevel(0)</pre>
+3) Cмотрим последний профайл
+<pre>db.system.profile.find().limit(10).sort( { ts : -1 } ).pretty()</pre>
+
+<h4>Создание индекса</h4>
+1) Устанавливаем index !!!!ванжо!!!!! c background mode иначе залочит все
+<pre>db.getCollection('rawUserStat').createIndex( { "extra.name": 1 }, { background: true } )</pre>
+2) Просмотр статуса создания индекса (Просмотр активностей)
+<pre>db.currentOp()</pre>
