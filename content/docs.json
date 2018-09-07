@@ -1,5 +1,23 @@
 [
   {
+    "id": 30,
+    "updated_at": "2018-09-08 00:24",
+    "heading": "Как раздать файлы на лиунксе с помощью samba",
+    "content": "samba.html",
+    "external": "https://askubuntu.com/questions/321418/how-do-i-share-folders-in-xubuntu",
+    "tags": [folders-in-xubuntu",
+      "tags": [
+        "samba",
+        "share",
+        
+      "samba",
+      "share",
+      "folder",
+      "linux",
+      "РУ"
+    ]
+  },
+  {
     "id": 29,
     "updated_at": "2018-08-27 00:10",
     "heading": "Как использовать команду grep в linux",
