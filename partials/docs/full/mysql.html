@@ -114,6 +114,12 @@ FLUSH PRIVILEGES;</pre>
   SET ContactName='Alfred Schmidt', City='Hamburg'
   WHERE CustomerName='Alfreds Futterkiste';
 </pre>
+Добавление столбца с созданием индекса
+<pre>
+  ALTER TABLE mytable
+  ADD COLUMN myarguments VARCHAR(255),
+  ADD INDEX (myarguments);
+</pre>
 
 <hr>
 
