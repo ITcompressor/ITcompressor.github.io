@@ -4,10 +4,7 @@
     "updated_at": "2018-09-08 00:24",
     "heading": "Как раздать папку с фалами на линуксе в локальной сети с помощью samba",
     "content": "samba.html",
-    "external": "https://askubuntu.com/questions/321418/how-do-i-share-folders-in-xubuntu",
     "tags": [
-      "samba",
-      "share",
       "samba",
       "share",
       "folder",
