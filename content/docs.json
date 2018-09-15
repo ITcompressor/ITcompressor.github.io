@@ -191,7 +191,7 @@
   },
   {
     "id": 16,
-    "updated_at": "2018-08-26 12:52",
+    "updated_at": "2018-09-15 10:02",
     "heading": "Linux и его секреты",
     "content": "linux.html",
     "tags": [
@@ -199,6 +199,9 @@
       "debian",
       "ubuntu",
       "fstab",
+      "df",
+      "память",
+      "memmory",
       "automount",
       "ext4",
       "монтирование",
