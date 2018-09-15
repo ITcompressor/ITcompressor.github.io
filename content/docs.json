@@ -200,6 +200,8 @@
       "ubuntu",
       "fstab",
       "df",
+      "zerofree",
+      "заполнение нулями",
       "память",
       "memmory",
       "automount",
