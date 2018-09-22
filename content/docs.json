@@ -348,7 +348,7 @@
   },
   {
     "id": 7,
-    "updated_at": "2018-09-08 00:22",
+    "updated_at": "2018-09-18 16:22",
     "heading": "MySQL",
     "content": "mysql.html",
     "tags": [
@@ -358,6 +358,7 @@
       "alter",
       "table",
       "index",
+      "unsafe",
       "permissions",
       "уровни изоляции",
       "transaction-isolation-level",

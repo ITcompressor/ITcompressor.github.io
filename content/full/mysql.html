@@ -103,6 +103,13 @@ FLUSH PRIVILEGES;</pre>
 <hr>
 
 <h4> Примеры запросов </h4>
+Для выполнения небезопасных запросов можно использовать
+<pre>
+SET SQL_SAFE_UPDATES = 0;
+... query ...
+SET SQL_SAFE_UPDATES = 1;
+</pre>
+
 Пример вставки данных
 <pre>
   INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
