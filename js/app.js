@@ -5,8 +5,8 @@ app.controller("CoreController",
         $http.get("content/docs.json").success(function (response) {
             $scope.docs = response;
             $scope.docs.forEach(function (doc) {
-                doc.mini_content = "partials/docs/mini/" + doc.content;
-                doc.full_content = "partials/docs/full/" + doc.content;
+                doc.mini_content = "content/mini/" + doc.content;
+                doc.full_content = "content/full/" + doc.content;
                 doc.updated_at = new Date(doc.updated_at) - 0;
             });
             if ($scope.target != null) {
