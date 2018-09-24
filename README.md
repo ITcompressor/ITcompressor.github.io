@@ -7,4 +7,4 @@
 
 **topics in:** content/docs.json
 
-**content for topics in:** partials/docs/**
+**content for topics in:** content/**
