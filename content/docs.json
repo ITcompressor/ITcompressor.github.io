@@ -193,7 +193,7 @@
   },
   {
     "id": 16,
-    "updated_at": "2018-09-15 10:02",
+    "updated_at": "2018-09-30 12:07",
     "heading": "Linux и его секреты",
     "content": "linux.html",
     "tags": [
@@ -209,6 +209,8 @@
       "automount",
       "ext4",
       "монтирование",
+      "smb",
+      "nautilus",
       "разлделов",
       "scripts",
       "РУ"
