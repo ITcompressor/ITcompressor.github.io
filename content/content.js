@@ -1,8 +1,5 @@
 var contents = [
   {
-
-  },
-  {
     "id":"docker-my-image",
     "updated_at": "2018-10-08 23:07",
     "heading": "Собственный docker image",
