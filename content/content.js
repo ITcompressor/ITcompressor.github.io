@@ -365,7 +365,7 @@ var contents = [
   },
   {
     "id": "mysql-info",
-    "updated_at": "2018-10-18 23:14",
+    "updated_at": "2018-10-08 23:14",
     "heading": "MySQL Info",
     "content": "mysql-info.html",
     "tags": [
@@ -377,7 +377,7 @@ var contents = [
   },
   {
     "id": "mysql-backups",
-    "updated_at": "2018-10-18 23:14",
+    "updated_at": "2018-10-08 23:14",
     "heading": "MySQL Backups",
     "content": "mysql-backups.html",
     "tags": [
@@ -388,7 +388,7 @@ var contents = [
   },
   {
     "id": "mysql-queries",
-    "updated_at": "2018-10-18 23:26",
+    "updated_at": "2018-10-08 23:26",
     "heading": "MySQL Queries",
     "content": "mysql-queries.html",
     "tags": [
