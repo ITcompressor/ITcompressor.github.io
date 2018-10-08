@@ -1,0 +1,11 @@
+<pre>
+docker run -it --name myapp --hostname myapp ubuntu bash
+
+apt update
+
+apt install cowsay
+
+docker commit myapp MY_DOCKER_ID/MY_IMAGE
+
+docker push MY_DOCKER_ID/MY_IMAGE
+</pre>

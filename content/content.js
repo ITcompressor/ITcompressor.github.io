@@ -1,5 +1,17 @@
 var contents = [
   {
+    "id":"docker-my-image",
+    "updated_at": "2018-10-08 23:07",
+    "heading": "Собственный docker image",
+    "content": "docker-my-image.html",
+    "tags": [
+      "docker",
+      "containers",
+      "virtualization",
+      "linux"
+    ]
+  },
+  {
     "id": "docker",
     "updated_at": "2018-10-08 22:19",
     "heading": "Команды для docker",
