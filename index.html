@@ -18,25 +18,25 @@
         <div class="container">
             <div ng-show="!isTarget">
                 <input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search"
-                    placeholder="Search">
+                    placeholder="Поиск">
 
                 <div ng-repeat="doc in docs|filter:search| orderBy: '-updated_at':false" class="row">
-                    <h2>{{ doc.heading }}</h2>
+                    <h1>{{ doc.heading }}</h1>
                     <span ng-repeat="tag in doc.tags">
                         <span class="label label-default">
                             {{ tag }}
                         </span> &nbsp;
                     </span>
                     <span>⌚ {{ doc.updated_at | date:'medium' }}</span>
-                    <p>
-                        <div ng-include="doc.mini_content"></div>
-                    </p>
+                        <h4>
+                            {{ doc.content }}
+                        </h4>
                     <span>
                         <span ng-show="doc.external">
-                            <a class="btn btn-default" ng-href="{{ doc.external }}" role="button"> Original &raquo; </a>
+                            <a class="btn btn-default" ng-href="{{ doc.external }}" role="button"> Источник &raquo; </a>
                         </span>
                         <span>
-                            <button class="btn btn-default" ng-click="clickDoc(doc.full_content, doc.id)"> Ream more
+                            <button class="btn btn-default" ng-click="clickDoc(doc.full_content, doc.id)"> Подробнее
                                 &raquo;</a>
                         </span>
                     </span>
@@ -45,11 +45,11 @@
             </div>
             <div ng-show="isTarget">
                 <div class="container">
-                    <button class="btn btn-default" ng-click="backDoc()"> Back</button>
+                    <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
                 </div>
                 <div ng-include="docUrl"></div>
                 <div class="container">
-                    <button class="btn btn-default" ng-click="backDoc()"> Back</button>
+                    <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
                 </div>
             </div>
         </div>

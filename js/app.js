@@ -1,6 +1,6 @@
 var app = angular.module("core-app", []);
 app.controller("CoreController",
-    ["$scope", "$filter", function ($scope, $filter) {
+    ["$scope", "$filter",  function ($scope, $filter) {
 
         var getDocById = function(id) {
             return $scope.docs.filter(function (d) {
@@ -71,8 +71,7 @@ app.controller("CoreController",
 
         $scope.docs = contents;
         $scope.docs.forEach(function (doc) {
-            doc.mini_content = "content/mini/" + doc.content;
-            doc.full_content = "content/full/" + doc.content;
+            doc.full_content = "content/topics/" + doc.uri;
             doc.updated_at = new Date(doc.updated_at) - 0;
         });
         if ($scope.target != null) {

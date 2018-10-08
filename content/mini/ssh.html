@@ -1,8 +1,0 @@
-Использование ssh
-<pre>ssh -p 22 steeldriver@192.168.1.102</pre>
-Загружать и скачивать файлы через ssh
-<pre>scp your_username@remotehost.edu:foobar.txt /local/dir</pre>
-Добавление публичного ключа на сервер:
-<pre>cat ~/.ssh/id_rsa.pub | ssh root@your_server "cat >> /home/qwer/.ssh/authorized_keys"</pre>
-Тунелирование ssh (т.е. проброс порта через подключение ssh)
-<pre>ssh -L 27017:localhost:27017 user@site.com</pre>
