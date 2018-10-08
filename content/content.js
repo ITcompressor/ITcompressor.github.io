@@ -1,5 +1,8 @@
 var contents = [
   {
+
+  },
+  {
     "id":"docker-my-image",
     "updated_at": "2018-10-08 23:07",
     "heading": "Собственный docker image",
@@ -364,21 +367,40 @@ var contents = [
     ]
   },
   {
-    "id": "mysql",
-    "updated_at": "2018-09-18 16:22",
-    "heading": "MySQL",
-    "content": "mysql.html",
+    "id": "mysql-info",
+    "updated_at": "2018-10-18 23:14",
+    "heading": "MySQL Info",
+    "content": "mysql-info.html",
     "tags": [
-      "MySQL",
       "database",
-      "queries",
-      "alter",
-      "table",
+      "mysql",
+      "уровни изоляции",
+      "transaction-isolation-level"
+    ]
+  },
+  {
+    "id": "mysql-backups",
+    "updated_at": "2018-10-18 23:14",
+    "heading": "MySQL Backups",
+    "content": "mysql-backups.html",
+    "tags": [
+      "database",
+      "mysql",
+      "backups"
+    ]
+  },
+  {
+    "id": "mysql-queries",
+    "updated_at": "2018-10-18 23:26",
+    "heading": "MySQL Queries",
+    "content": "mysql-queries.html",
+    "tags": [
+      "database",
+      "mysql",
+      "alter table",
       "index",
       "unsafe",
       "permissions",
-      "уровни изоляции",
-      "transaction-isolation-level"
     ]
   },
   {
