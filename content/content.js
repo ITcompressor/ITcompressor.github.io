@@ -1,4 +1,4 @@
-[
+var contents = [
   {
     "id": "docker",
     "updated_at": "2018-10-08 22:19",

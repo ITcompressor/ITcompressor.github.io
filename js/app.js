@@ -1,19 +1,6 @@
 var app = angular.module("core-app", []);
 app.controller("CoreController",
-    ["$scope", "$http", "$filter", function ($scope, $http, $filter) {
-
-        $http.get("content/docs.json").success(function (response) {
-            $scope.docs = response;
-            $scope.docs.forEach(function (doc) {
-                doc.mini_content = "content/mini/" + doc.content;
-                doc.full_content = "content/full/" + doc.content;
-                doc.updated_at = new Date(doc.updated_at) - 0;
-            });
-            if ($scope.target != null) {
-                var doc = getDocById($scope.target)
-                $scope.clickDoc(doc.full_content, doc.id);
-            }
-        });
+    ["$scope", "$filter", function ($scope, $filter) {
 
         var getDocById = function(id) {
             return $scope.docs.filter(function (d) {
@@ -80,5 +67,16 @@ app.controller("CoreController",
                 setActualHash();
                 $scope.clickDoc(doc.full_content, doc.id);
             }
+        }
+
+        $scope.docs = contents;
+        $scope.docs.forEach(function (doc) {
+            doc.mini_content = "content/mini/" + doc.content;
+            doc.full_content = "content/full/" + doc.content;
+            doc.updated_at = new Date(doc.updated_at) - 0;
+        });
+        if ($scope.target != null) {
+            var doc = getDocById($scope.target)
+            $scope.clickDoc(doc.full_content, doc.id);
         }
     }]);
