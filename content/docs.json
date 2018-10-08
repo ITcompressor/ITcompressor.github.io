@@ -1,21 +1,47 @@
 [
   {
-    "id": 30,
+    "id": "docker",
+    "updated_at": "2018-10-08 22:19",
+    "heading": "Команды для docker",
+    "content": "docker.html",
+    "tags": [
+      "docker",
+      "containers",
+      "virtualization",
+      "linux"
+    ]
+  },
+  {
+    "id": "docker-install",
+    "updated_at": "2018-10-08 22:07",
+    "heading": "Установка docker + docker-compose",
+    "content": "docker-install.html",
+    "tags": [
+      "install",
+      "hello world",
+      "docker",
+      "docker-compose",
+      "containers",
+      "virtualization",
+      "linux"
+    ]
+  },
+  {
+    "id": "samba",
     "updated_at": "2018-09-08 00:24",
-    "heading": "Как раздать папку с фалами на линуксе в локальной сети с помощью samba",
+    "heading": "Раздать папку с фалами на linux в локальной сети с помощью samba",
     "content": "samba.html",
     "tags": [
       "samba",
       "share",
       "folder",
-      "linux",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 29,
+    "id": "grep",
     "updated_at": "2018-09-24 20:40",
-    "heading": "Как использовать команду grep в linux",
+    "heading": "grep в linux",
     "content": "grep.html",
     "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
     "tags": [
@@ -23,12 +49,11 @@
       "egrep",
       "ls",
       "поиск",
-      "linux",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 28,
+    "id": "linux-vnc",
     "updated_at": "2018-08-25 21:46",
     "heading": "VNC сервер для линукса на основе x11vnc",
     "content": "linux-vnc.html",
@@ -37,12 +62,11 @@
       "ubuntu",
       "remote",
       "desktop",
-      "linux",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 27,
+    "id": "ssl",
     "updated_at": "2018-08-14 22:51",
     "heading": "Настройка https на nginx",
     "content": "ssl.html",
@@ -51,69 +75,60 @@
       "https",
       "ssl",
       "nginx",
-      "linux",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 26,
+    "id": "grub",
     "updated_at": "2018-07-20 22:41",
     "heading": "Восстановление Grub2",
     "content": "grub.html",
     "tags": [
-      "operation",
-      "system",
       "loader",
       "grub",
-      "linux",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 25,
+    "id": "mysql-replication",
     "updated_at": "2018-07-18 23:26",
     "heading": "Репликация MySQL",
     "content": "mysql-replication.html",
     "tags": [
+      "replication",
       "database",
       "mysql",
-      "replication",
       "example",
       "debian8",
       "ubuntu14.04",
-      "cooking",
-      "РУ"
+      "linux"
     ]
   },
   {
-    "id": 24,
+    "id": "mac-vnc",
     "updated_at": "2018-06-12 19:26",
     "heading": "Start vnc server on mac",
     "content": "mac-vnc.html",
     "tags": [
       "vnc",
-      "server",
-      "apple",
-      "macOS",
-      "EN"
+      "remote desktop",
+      "macOS"
     ]
   },
   {
-    "id": 23,
+    "id": "rabbitmq",
     "updated_at": "2018-06-12 19:06",
     "heading": "RabbitMQ",
     "content": "rabbitmq.html",
     "tags": [
       "rabbitmq",
-      "query",
       "events",
-      "service",
-      "ubuntu",
-      "РУ"
+      "event bus",
+      "linux"
     ]
   },
   {
-    "id": 22,
+    "id": "ssh",
     "updated_at": "2018-05-09 00:36",
     "heading": "SSH и его друзья",
     "content": "ssh.html",
@@ -121,80 +136,75 @@
       "ssh",
       "scp",
       "tunel",
+      "forwarding",
       "port",
-      "network",
-      "РУ"
+      "network"
     ]
   },
   {
-    "id": 21,
+    "id": "java",
     "updated_at": "2018-03-09 17:14",
     "heading": "Java",
     "content": "java.html",
     "tags": [
       "java",
       "pl",
+      "jdk",
       "jvm",
-      "jmap",
-      "РУ"
+      "jmap"
     ]
   },
   {
-    "id": 20,
+    "id": "mongodb",
     "updated_at": "2018-09-05 20:32",
     "heading": "MongoDB",
     "content": "mongodb.html",
     "tags": [
       "database",
       "mongodb",
-      "select",
       "index",
       "profiler",
-      "nosql",
-      "in",
-      "РУ"
+      "nosql"
     ]
   },
   {
-    "id": 19,
+    "id": "google",
     "updated_at": "2018-03-19 17:49",
     "heading": "Google search",
     "content": "google.html",
     "external": "http://telegra.ph/Samouchitel-po-Google-02-11",
     "tags": [
       "search",
-      "РУ"
+      "google"
     ]
   },
   {
-    "id": 18,
-    "updated_at": 1513433548718,
+    "id": "vim",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Vim",
     "content": "vim.html",
     "tags": [
       "vim",
       "linux",
-      "editor",
-      "РУ"
+      "editor"
     ]
   },
   {
-    "id": 17,
-    "updated_at": 1513432453021,
+    "id": "headers",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Headers for scripts",
     "content": "headers.html",
     "tags": [
       "php",
       "python",
       "linux",
-      "scripts",
-      "EN"
+      "scripts"
     ]
   },
   {
-    "id": 16,
+    "id": "linux",
     "updated_at": "2018-09-30 12:07",
-    "heading": "Linux и его секреты",
+    "heading": "Linux",
     "content": "linux.html",
     "tags": [
       "linux",
@@ -211,63 +221,58 @@
       "монтирование",
       "smb",
       "nautilus",
-      "разлделов",
-      "scripts",
-      "РУ"
+      "разделов",
+      "scripts"
     ]
   },
   {
-    "id": 15,
-    "updated_at": 1469903758253,
+    "id": "regular",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Регулярные выражения",
     "content": "regular.html",
     "tags": [
       "regular",
       "expressions",
-      "string",
-      "РУ"
+      "string"
     ]
   },
   {
-    "id": 14,
-    "updated_at": 1462388470870,
+    "id": "hacking-team",
+    "updated_at": "1999-12-31 23:59",
     "heading": "How Phineas Fisher hacked the \"Hacking Team\"?",
     "content": "hacking-team.html",
     "tags": [
       "Hacking Team",
       "hacking",
       "docs",
-      "get started",
-      "EN"
+      "get started"
     ]
   },
   {
-    "id": 13,
-    "updated_at": 1462387001693,
+    "id": "reset-password",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Сброс пароля в Linux при физическом доступе",
     "content": "reset-password.html",
     "tags": [
       "linux",
       "grub",
       "bash",
-      "hack",
-      "РУ"
+      "hack"
     ]
   },
   {
-    "id": 12,
-    "updated_at": 1462387001693,
+    "id": "screen",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Утилита screen",
     "content": "screen.html",
     "tags": [
       "screen",
       "linux",
-      "bash",
-      "РУ"
+      "bash"
     ]
   },
   {
-    "id": 11,
+    "id": "network",
     "updated_at": "2018-07-20 00:30",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content": "network.html",
@@ -278,12 +283,11 @@
       "mac",
       "curl",
       "bash",
-      "wget",
-      "РУ"
+      "wget"
     ]
   },
   {
-    "id": 10,
+    "id": "any-command",
     "updated_at": "2018-08-01 22:57",
     "heading": "Командная строка и утилиты",
     "content": "any-command.html",
@@ -310,12 +314,11 @@
       "VPN",
       "ntfsfix",
       "ntfx",
-      "zip",
-      "РУ"
+      "zip"
     ]
   },
   {
-    "id": 9,
+    "id": "any-install",
     "updated_at": "2018-08-19 22:23",
     "heading": "Полезные установки",
     "content": "any-install.html",
@@ -335,23 +338,21 @@
       "sdkman",
       "gnome-shell",
       "insomnia",
-      "desktop",
-      "РУ"
+      "desktop"
     ]
   },
   {
-    "id": 8,
-    "updated_at": 1462387001693,
+    "id": "windows",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Windows",
     "content": "windows.html",
     "tags": [
       "Windows",
-      "OS",
-      "РУ"
+      "OS"
     ]
   },
   {
-    "id": 7,
+    "id": "mysql",
     "updated_at": "2018-09-18 16:22",
     "heading": "MySQL",
     "content": "mysql.html",
@@ -365,25 +366,22 @@
       "unsafe",
       "permissions",
       "уровни изоляции",
-      "transaction-isolation-level",
-      "SQL",
-      "РУ"
+      "transaction-isolation-level"
     ]
   },
   {
-    "id": 6,
+    "id": "git",
     "updated_at": "2018-08-01 22:55",
     "heading": "GIT",
     "content": "git.html",
     "tags": [
       "git",
       "ssh",
-      "version control system",
-      "РУ"
+      "version control system"
     ]
   },
   {
-    "id": 5,
+    "id": "android",
     "updated_at": "2018-08-02 12:58",
     "heading": "Android и его секреты",
     "content": "android.html",
@@ -396,58 +394,53 @@
       "autorun",
       "ban ip",
       "phone",
-      "mobile",
-      "РУ"
+      "mobile"
     ]
   },
   {
-    "id": 4,
-    "updated_at": 1462387001693,
+    "id": "ubuntu-hotspot",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Wi-fi hotspot Ubuntu",
     "content": "ubuntu-hotspot.html",
     "external": "http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
     "tags": [
       "Ubuntu 14.04 LTS",
       "Hotspot",
-      "Wi-fi",
-      "EN"
+      "Wi-fi"
     ]
   },
   {
-    "id": 3,
-    "updated_at": 1462387001693,
+    "id": "ruby-rbenv-bundler",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Готовим Ruby+Bundler",
     "content": "ruby-rbenv-bundler.html",
     "tags": [
       "Ubuntu 14.04 LTS",
       "Ruby 2.2.3",
       "rbenv",
-      "bundler",
-      "РУ"
+      "bundler"
     ]
   },
   {
-    "id": 2,
-    "updated_at": 1462387001693,
+    "id": "postgresql-latest",
+    "updated_at": "1999-12-31 23:59",
     "heading": "Установка PostgreSQL с официального репозитория",
     "content": "postgresql-latest.html",
     "tags": [
       "Ubuntu 14.04 LTS",
       "PostgreSQL 9.4",
       "deb",
-      "database",
-      "РУ"
+      "database"
     ]
   },
   {
-    "id": 1,
-    "updated_at": 1462387001693,
+    "id": "postgresql",
+    "updated_at": "1999-12-31 23:59",
     "heading": "PostgreSQL",
     "content": "postgresql-topic.html",
     "tags": [
       "PostgreSQL 9.4",
-      "database",
-      "РУ"
+      "database"
     ]
   }
 ]

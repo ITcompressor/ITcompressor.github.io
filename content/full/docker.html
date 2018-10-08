@@ -1,0 +1,30 @@
+Просмотр всех контейнеров
+<pre>docker ps -a</pre>
+
+Просмотр запущенных контейнеров
+<pre>docker ps</pre>
+
+Запуск контейнера
+<pre>docker start $container_name</pre>
+
+Просмотр информации о контейнере
+<pre>docker inspect $conainer_name</pre>
+
+Собрать контейнер по Dockerfile
+<pre>docker build .</pre>
+
+Просмотр лога контейнера
+<pre>docker log $container_name</pre>
+
+Удаление контейнера
+<pre>docker rm $container_name</pre>
+
+Создание контейнера через имейдж с форвардингом портов, где 8080 порт хоста, а 80 порт контейнера
+<pre>docker run -d -p 8080:80 $container</pre>
+
+Консоль к контейнеру
+<pre>docker exec -it $container_name bash</pre>
+
+Удаление всех неактивных контейнеров
+<pre>docker rm -v $(docker ps -aq -f status=exited)</pre>
+
