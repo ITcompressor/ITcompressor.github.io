@@ -1,5 +1,8 @@
 #!/bin/bash
 
+commit=$*
+
+echo $commit
 git add .
-git commit -m $1
+git commit -m "$commit"
 git push

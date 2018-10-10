@@ -210,7 +210,7 @@ var contents = [
   },
   {
     "id": "headers",
-    "updated_at": "1999-12-31 23:59",
+    "updated_at": "2018-10-10 22:25",
     "heading": "Headers for scripts",
     "content": "Заголовки для исполняемых файлов",
     "uri": "headers.html",
