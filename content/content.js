@@ -198,7 +198,7 @@ var contents = [
   },
   {
     "id": "vim",
-    "updated_at": "1999-12-31 23:59",
+    "updated_at": "2018-10-10 22:19",
     "heading": "Vim",
     "content": "Хоткеи и основы консольной идеи вим",
     "uri": "vim.html",
