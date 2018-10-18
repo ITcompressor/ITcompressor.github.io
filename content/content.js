@@ -125,6 +125,17 @@ var contents = [
     ]
   },
   {
+    "id": "MacOS",
+    "updated_at": "2018-10-18 16:50",
+    "heading": "MacOS",
+    "content": "Кастом и настройка среды для MacOS",
+    "uri": "mac.html",
+    "tags": [
+      "terminal",
+      "macOS"
+    ]
+  },
+  {
     "id": "rabbitmq",
     "updated_at": "2018-06-12 19:06",
     "heading": "RabbitMQ",
