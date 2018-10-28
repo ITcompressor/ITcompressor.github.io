@@ -23,3 +23,8 @@ sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop</pre>
 <pre>df -h</pre>
 Заполнение нулями свободную память на диске (в режиме восстановления)
 <pre>zerofree -v /dev/sdaX</pre>
+
+<hr>
+<h4>Фискы</h4>
+Фикс возможной проблемы с запуском гуи с под рута
+<pre>xhost si:localuser:root</pre>
