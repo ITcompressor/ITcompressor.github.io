@@ -1,5 +1,16 @@
+<h4>Использование утилиты nc</h4>
+Запрос на 80 порт
+<pre>printf "HEAD / HTTP/1.0\r\n\r\n" | nc tut.by 80</pre>
+Запрос с отправкой контента из файла
+<pre>nc localhost 1234 < test.txt</pre>
+
+<hr>
+
 <h4>Использование утилиты curl</h4>
 <pre>curl -X GET -H "Content-Type: [any_headers]" -d "{body=[any_params|body]}" https://itcompressor.github.io</pre>
+
+<hr>
+
 <h4>Использование утилиты nmap</h4>
 <pre>nmap -A -T4 ya.ru</pre>
 ICMP пинг
@@ -14,11 +25,17 @@ UDP Пинг
 <pre>nmap -sn -PO 192.168.1.0/24</pre>
 ARP Пинг
 <pre>nmap -sn -PR 192.168.1.0/24</pre>
+
+<hr>
+
 <h4>Другие способы сканирования</h4>
 Сканирование локальной сети на доступные машины
 <pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"</pre>
 Путь пакета к ресурсу
 <pre>traceroute &lt;any_ip_or_domain&gt;</pre>
+
+<hr>
+
 <h4>Использование wget</h4>
 Скачать front-end (без rest запросов)
 <pre>wget -r -k -l 7 -p -E -nc https://itcompressor.github.io/</pre>
