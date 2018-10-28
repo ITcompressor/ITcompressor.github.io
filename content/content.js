@@ -314,7 +314,8 @@ var contents = [
     "id": "network",
     "updated_at": "2018-10-28 15:30",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
-    "content": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. Изменение mac-адреса.",
+    "content": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
+    "Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
     "uri": "network.html",
     "tags": [
       "traceroute",
@@ -324,7 +325,8 @@ var contents = [
       "mac",
       "curl",
       "bash",
-      "wget"
+      "wget",
+      "netstat"
     ]
   },
   {
