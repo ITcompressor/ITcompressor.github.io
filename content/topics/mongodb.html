@@ -1,10 +1,12 @@
 <h4>Запросы</h4>
-Поиск not null значений:
+Поиск not null значений
 <pre>db.mycollection.find({"IMAGE URL":{$exists:true}});</pre>
 Поиск регуляркой, альтернатива like:
 <pre>db.mycollection.find({name: /regular/});</pre>
-Поиск 'in':
+Поиск 'in'
 <pre>db.mycollection.find({ field: { $in: ["one","two","123"]}});</pre>
+Сортировка
+<pre>db.getCollection('my_collection').find({}).sort({"_id": -1})</pre>
 
 <hr>
 
