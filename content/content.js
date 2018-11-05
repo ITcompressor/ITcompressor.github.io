@@ -366,6 +366,17 @@ var contents = [
     ]
   },
   {
+    "id": "maven",
+    "updated_at": "2018-10-05 22:50",
+    "heading": "Полезные установки",
+    "content": "Работа с мавеном. Устаовка кастомных либ.",
+    "uri": "maven.html",
+    "tags": [
+      "java",
+      "maven"
+    ]
+  },
+  {
     "id": "any-install",
     "updated_at": "2018-08-19 22:23",
     "heading": "Полезные установки",
