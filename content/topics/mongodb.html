@@ -5,8 +5,10 @@
 <pre>db.mycollection.find({name: /regular/});</pre>
 Поиск 'in'
 <pre>db.mycollection.find({ field: { $in: ["one","two","123"]}});</pre>
-Сортировка
+Сортировка desc
 <pre>db.getCollection('my_collection').find({}).sort({"_id": -1})</pre>
+Поиск 'not in' with sort desc
+<pre>db.getCollection('my_collection').find({"any_field": {$nin: ["any_value"]}}).sort({"_id": -1})</pre>
 
 <hr>
 
