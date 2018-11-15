@@ -30,11 +30,9 @@
 
 <hr>
 
-<h4>Полезное </h4>
-Добавить нового пользователя
-<pre>sudo adduser newuser</pre>
-Редактирование привилегий пользователей
-<pre>sudo /usr/sbin/visudo</pre>
+<h4>Find</h4>
+Рекурсивный вывод содержимого файлов
+<pre>find [dir] -type f -exec cat \{} \;</pre>
 Поиск файла или папки с помощью find
 <pre>find -name *file_name*</pre>
 Использование chmod+find.
@@ -46,6 +44,13 @@
 sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
 add "allow-guest=false"
 </pre>
+<hr>
+
+<h4>Полезное </h4>
+Добавить нового пользователя
+<pre>sudo adduser newuser</pre>
+Редактирование привилегий пользователей
+<pre>sudo /usr/sbin/visudo</pre>
 Примеры использования утилиты dd
 <pre>
 dd if=kali.iso of=/dev/sdb bs=512k
