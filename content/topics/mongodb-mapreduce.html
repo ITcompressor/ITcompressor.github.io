@@ -1,0 +1,95 @@
+Основной пример
+<pre>
+db.system.js.save({ _id: "Sum" ,
+value: function(key, values) {
+    var total = 0;
+    for(var i = 0; i &lt; values.length; i++)
+        total += values[i];
+    return total;
+}});
+db.getCollection('my_collection').mapReduce(function() {
+    if(this.value_for_expression == "some_expression") {
+        emit(this.entityType, this.value_for_aggregation - 0) // convert to int
+    }
+},
+function(key, value) {
+    return Sum(key, value)
+},
+{ out: "map_reduce_example" }
+)
+db.getCollection('map_reduce_example').find({})
+</pre>
+
+<hr>
+
+<h3>Основные функции для агрегирования</h3>
+Суммирование
+<pre>
+db.system.js.save({ _id: "Sum" ,
+value: function(key, values) {
+    var total = 0;
+    for(var i = 0; i &lt; values.length; i++)
+        total += values[i];
+    return total;
+}});
+</pre>
+Среднее
+<pre>
+db.system.js.save({ _id: "Avg" ,
+value: function(key, values) {
+    var total = Sum(key, values);
+    var mean = total / values.length;
+    return mean;
+}});
+</pre>
+Максимальное значение
+<pre>
+db.system.js.save({ _id: "Max" ,
+value: function(key, values) {
+    var maxValue = values[0];
+    for(var i=1; i &lt; values.length; i++) {
+        if(values[i] &gt; maxValue) {
+            maxValue = values[i];
+        }
+    }
+    returnmaxValue;
+}});
+</pre>
+Минимальное значение
+<pre>
+db.system.js.save({ _id: "Min" ,
+value: function(key, values) {
+    var minValue=values[0];
+    for(var i=1;i &lt; values.length;i++) {
+        if(values[i] &lt; minValue) {
+            minValue = values[i];
+        }
+    }
+    return minValue;
+}});
+</pre>
+
+<hr>
+
+Интересное
+<pre>
+db.system.js.save( { _id: "Variance" ,
+value: function(key, values) {
+    var squared_Diff = 0;
+    var mean = Avg(key,values);
+    for(var i = 0; i &lt; values.length; i++) {
+        var deviation = values[i] - mean;
+        squared_Diff += deviation * deviation;
+    }
+    var variance = squared_Diff / (values.length);
+    return variance;
+}});
+</pre>
+<pre>
+db.system.js.save( { _id: "Standard_Deviation", 
+value: function(key,values) {
+    var variance = Variance(key,values);
+    return Math.sqrt(variance);
+}});
+</pre>
+

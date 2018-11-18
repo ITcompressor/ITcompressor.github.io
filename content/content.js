@@ -179,6 +179,19 @@ var contents = [
     ]
   },
   {
+    "id": "mongodb-mapreduce",
+    "updated_at": "2018-11-18 12:07",
+    "heading": "MapReduce in MongoDB",
+    "content": "Примеры работы мап редьюс в монге, очень полезная вещь когда хочется avg, sum в nosql",
+    "uri": "mongodb-mapreduce.html",
+    "tags": [
+      "database",
+      "mongodb",
+      "map reduce",
+      "aggregation"
+    ]
+  },
+  {
     "id": "mongodb",
     "updated_at": "2018-11-11 14:16",
     "heading": "MongoDB",
