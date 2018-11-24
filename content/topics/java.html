@@ -1,2 +1,21 @@
 Дамп процесса java с помощью утилиты jmap
 <pre>jmap -dump:format=b,file=cheap.bin pid_value </pre>
+Вывод стека работающего java процесса
+<pre>
+ps aux | grep "java"
+jstack -l [java_pid] > output.txt
+</pre>
+
+<hr>
+
+<h4>Maven</h4>
+Установка кастомных либ
+<pre>
+mvn install:install-file -Dfile=[path-to-file] -DgroupId=[group-id] -DartifactId=[artifact-id] -Dversion=[version] -Dpackaging=jar
+</pre>
+<pre>
+mvn install:install-file -Dfile=[path-to-file] -DpomFile=[path-to-pomfile]
+</pre>
+<pre>
+mvn install:install-file -Dfile=[path-to-file]
+</pre>

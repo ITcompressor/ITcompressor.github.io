@@ -168,13 +168,14 @@ var contents = [
     "id": "java",
     "updated_at": "2018-03-09 17:14",
     "heading": "Java",
-    "content": "Полезности для java. Получения дампа процесса java",
+    "content": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
     "uri": "java.html",
     "tags": [
       "java",
       "pl",
       "jdk",
-      "jvm",
+      "jstack",
+      "maven",
       "jmap"
     ]
   },
@@ -378,18 +379,6 @@ var contents = [
     ]
   },
   {
-    "id": "maven",
-    "updated_at": "2018-11-19 00:50",
-    "heading": "Полезные установки",
-    "content": "Работа с мавеном. Установка кастомных либ.",
-    "uri": "maven.html",
-    "tags": [
-      "java",
-      "jstack",
-      "maven"
-    ]
-  },
-  {
     "id": "any-install",
     "updated_at": "2018-08-19 22:23",
     "heading": "Полезные установки",
@@ -413,7 +402,6 @@ var contents = [
       "mysql",
       "wine",
       "run win32 apps",
-      "java",
       "sdkman",
       "gnome-shell",
       "insomnia",
