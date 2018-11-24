@@ -9,6 +9,57 @@
 <pre>db.getCollection('my_collection').find({}).sort({"_id": -1})</pre>
 Поиск 'not in' with sort desc
 <pre>db.getCollection('my_collection').find({"any_field": {$nin: ["any_value"]}}).sort({"_id": -1})</pre>
+Массовый апдейт
+<pre>
+db.mycollection.updateMany({
+    field5: { $in : ["fieldany","ANY_VALUE"]},
+    $or:[
+        {"fields.field5" : null},
+        {"fields.field3" : null},
+        {"fields.field4" : null}, {
+            $and:[{
+                "fields.field1" : false
+            },{
+                "fields.field2" : null
+            }]
+        }
+]}, { 
+    $set: {
+        "currentStep" : "ANY_FIELD" ,
+        "finished" : false
+    }
+});
+</pre>
+Массовый апдейт c find, используя фишки js
+<pre>
+db.mycollection.find({
+    "fields.snils":/-/
+}).forEach(function(e,i) {
+    e.fields.snils = e.fields.snils.replace(/-/g, '');
+    db.mycollection.save(e);
+});
+</pre>
+Разовые апдейты
+<pre>
+db.mycollection.update({ 
+    _id: id
+}, {
+    $set: { 
+        "finished": false 
+    },
+    $currentDate: { 
+        "lastModified": true 
+    }
+})
+</pre>
+
+<pre>
+db.mycollection.findAndModify({
+    query: {"uuid":"8fd8052e-5377-40ce-a941-76865f178c82"},
+    sort: {"_id": -1 },
+    update: {$set: {"field2": false}}
+})
+</pre>
 
 <hr>
 
@@ -25,3 +76,33 @@
 <pre>db.getCollection('rawUserStat').createIndex( { "extra.name": 1 }, { background: true } )</pre>
 2) Просмотр статуса создания индекса (Просмотр активностей)
 <pre>db.currentOp()</pre>
+
+<hr>
+
+<h4>Примеры агрегации</h4>
+db.getCollection('my_collection').aggregate([{
+    $match: { $and: [
+        { entityType: 'ANY_FIELD' }, 
+        { unloadDate: ISODate("2018-01-04 21:00:00.000Z") }
+    ]}
+}, {
+    $group: {
+        _id: {
+            "entityType": "$entityType",
+            "part": "$part",
+            "unloadDate": "$unloadDate"
+        },
+        aggregate: {
+            $push: {
+                ids: "$ids",
+                value: "$info"
+            }
+        },
+        counts: {
+            $sum: 1
+        }
+    }
+}]);
+
+<hr>
+
