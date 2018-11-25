@@ -1,21 +1,73 @@
 Путь к исполняемым файлам
-<pre>/usr/local/bin</pre>
+<pre>
+/usr/local/bin
+</pre>
+
 Просмотр скрытых приложений в автозагрузке
-<pre>cd /etc/xdg/autostart
-sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop</pre>
+<pre>
+cd /etc/xdg/autostart
+sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
+</pre>
+
 <hr>
 
-<h4> Монтирование разделов</h4>
+<h4>Монтирование разделов</h4>
+
 Посмотреть информацию о подключенных дисках
-<pre>sudo fstab -l</pre>
+<pre>
+sudo fstab -l
+</pre>
 Редактирование автомонтирование разделов
-<pre>sudo nano /etc/fstab</pre>
+<pre>
+sudo nano /etc/fstab
+</pre>
 Атомонтирование раздела ext4
-<pre>/dev/sda1 /home/qwer/DATA   ext4  defaults       0  0</pre>
+<pre>
+/dev/sda1 /home/qwer/DATA   ext4  defaults       0  0
+</pre>
 Пример монтирования расшаренной виндой директорий
-<pre>nautilus smb://192.168.100.3/</pre>
+<pre>
+nautilus smb://winda-pc/
+</pre>
 
 <hr>
+
+<h4>Автозагрука скриптов</h4>
+
+Пример команды для запуска в скрине
+<pre>
+screen -dmS $SCREEN_NAME /bin/bash -c "/opt/somescrip.sh 2>&1 > /opt/mylog.log"
+</pre>
+
+Манипуляции для включения rc.local (актуально для новых версий убунту 18+)
+<pre>
+# touch /etc/rc.local
+# chmod +x /etc/rc.local
+</pre>
+добавляем это
+<pre>
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+exit 0
+</pre>
+аутивируем
+<pre>
+sudo systemctl enable rc-local
+</pre>
+
+<hr>
+
 <h4>Полезное</h4>
 Просмотр запущенных процессов + фильтр по процессу
 <pre>ps aux | grep [command_name]</pre>
