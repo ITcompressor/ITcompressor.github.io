@@ -1,3 +1,19 @@
+<h4>Работа в консоли</h4>
+Коннект к шелу
+<pre>
+mongo --port 27017
+</pre>
+Выбор схемы
+<pre>
+use my_db
+</pre>
+Пример селекта
+<pre>
+db.my_table.find().sort({"_id":-1}).limit(2).pretty()
+</pre>
+
+<hr>
+
 <h4>Запросы</h4>
 Поиск not null значений
 <pre>db.mycollection.find({"IMAGE URL":{$exists:true}});</pre>
