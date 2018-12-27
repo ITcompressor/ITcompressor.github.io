@@ -74,11 +74,13 @@ var contents = [
   },
   {
     "id": "ssl",
-    "updated_at": "2018-08-14 22:51",
+    "updated_at": "2018-12-27 17:01",
     "heading": "Настройка https на nginx",
-    "content": "Конфиг https для nginx",
+    "content": "Конфиг https для nginx для платного кастомного сертификата. Плюс настройка бесплатного летсэнкрипт.",
     "uri": "ssl.html",
+    "external": "https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04",
     "tags": [
+      "letsencrypt",
       "certificates",
       "https",
       "ssl",
