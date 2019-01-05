@@ -1,3 +1,19 @@
+<h4>Установка MongoDB</h4>
+Добавляем ключ
+<pre>
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+</pre>
+Добавляем репозиторий
+<pre>
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+</pre>
+Устанавливаем монгу
+<pre>
+sudo apt-get install -y mongodb-org
+</pre>
+
+<hr>
+
 Установка LAMP (Linux Apache Mysql PHP)
 <pre>sudo apt-get install apache2 mysql-server php5 php5-mysql phpmyadmin</pre>
 Пример установки библиотеки для maven

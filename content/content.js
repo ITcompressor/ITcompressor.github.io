@@ -383,15 +383,16 @@ var contents = [
   },
   {
     "id": "any-install",
-    "updated_at": "2018-08-19 22:23",
+    "updated_at": "2019-01-05 16:41",
     "heading": "Полезные установки",
     "content": "Установка LAMP (Linux Apache Mysql PHP), пример установки библиотеки для maven, " +
       "установка gnome shell (графическая оболочка), установка net-tools (ifconfig), " +
       "установка и настройка wine (для запуска виндовс игр и приложений), " +
-      "установка insomnia (аналог postman), " +
+      "установка insomnia (аналог postman), установка mongoDB, " +
       "установка sdkman для управления версиями утилит, установка pip для python и т.д.",
     "uri": "any-install.html",
     "tags": [
+      "install mongodb",
       "update-alternatives",
       "alternatives",
       "cmd",
