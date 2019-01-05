@@ -80,6 +80,7 @@ db.mycollection.findAndModify({
 <hr>
 
 <h4>Примеры агрегации</h4>
+<pre>
 db.getCollection('my_collection').aggregate([{
     $match: { $and: [
         { entityType: 'ANY_FIELD' }, 
@@ -103,6 +104,6 @@ db.getCollection('my_collection').aggregate([{
         }
     }
 }]);
-
+</pre>
 <hr>
 
