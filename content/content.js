@@ -74,11 +74,13 @@ var contents = [
   },
   {
     "id": "ssl",
-    "updated_at": "2018-08-14 22:51",
+    "updated_at": "2018-12-27 17:01",
     "heading": "Настройка https на nginx",
-    "content": "Конфиг https для nginx",
+    "content": "Конфиг https для nginx для платного кастомного сертификата. Плюс настройка бесплатного летсэнкрипт.",
     "uri": "ssl.html",
+    "external": "https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04",
     "tags": [
+      "letsencrypt",
       "certificates",
       "https",
       "ssl",
@@ -197,9 +199,10 @@ var contents = [
     "updated_at": "2018-11-24 13:07",
     "heading": "MongoDB",
     "content": "Примеры запросов, сортировки, настройка профайлинга для мониторинга медленных запросов, создание индексов, сложные апдейты, "
-      + "легкая агрегация и тп",
+      + "легкая агрегация, пример работы через консоль и тп",
     "uri": "mongodb.html",
     "tags": [
+      "console",
       "database",
       "mongodb",
       "aggregation",
@@ -332,10 +335,10 @@ var contents = [
   },
   {
     "id": "network",
-    "updated_at": "2018-10-28 15:30",
+    "updated_at": "2018-12-27 16:10",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
-      "Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
+      "Сканирование доменов по общему сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
     "uri": "network.html",
     "tags": [
       "traceroute",

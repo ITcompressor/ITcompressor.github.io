@@ -33,6 +33,10 @@ ARP Пинг
 <pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"</pre>
 Путь пакета к ресурсу
 <pre>traceroute &lt;any_ip_or_domain&gt;</pre>
+Сканирование всех доменов по сертификату определенного домена
+<pre>
+true | openssl s_client -showcerts -connect habrahabr.ru:443 2>&1 |openssl x509 -text | grep -o 'DNS:[^,]*' | cut -f2 -d:
+</pre>
 
 <hr>
 

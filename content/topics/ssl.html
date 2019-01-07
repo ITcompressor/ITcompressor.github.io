@@ -1,4 +1,38 @@
-Пример /etc/nginx/sites-available/default для https
+<h4>Получение бесплатных сертификатов через Let's Encrypt</h4>
+Добавляем репозиторий
+<pre>
+sudo add-apt-repository ppa:certbot/certbot
+</pre>
+Обновляем инфо по репозиториям
+<pre>
+sudo apt-get update
+</pre>
+Установка плагина для nginx
+<pre>
+sudo apt-get install python-certbot-nginx
+</pre>
+Добавляем домены, на которые будут перодить по https /etc/nginx/sites-available/default
+<pre>
+. . .
+server_name example.com www.example.com;
+. . .
+</pre>
+Перезагружаем nginx
+<pre>
+sudo systemctl reload nginx
+</pre>
+Получаем сертификаты
+<pre>
+sudo certbot --nginx -d example.com -d www.example.com
+</pre>
+Тестируем
+<pre>
+sudo certbot renew --dry-run
+</pre>
+
+<hr>
+
+<h4>Пример /etc/nginx/sites-available/default для кастомных сертификатов</h4>
 <pre>
     server {
         listen 80 default_server;
