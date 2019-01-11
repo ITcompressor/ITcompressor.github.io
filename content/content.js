@@ -5,6 +5,7 @@ var contents = [
     "heading": "Брутим по взрослому с помощью brutespray.py",
     "content": "Пример брута паролей для различных сервисов с помощью утилиты brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.",
     "uri": "brutespray.html",
+    "external":"https://youtu.be/C-CVLbSEe_g",
     "tags": [
       "brutespray",
       "hacking",
