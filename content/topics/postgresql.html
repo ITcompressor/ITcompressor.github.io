@@ -7,7 +7,7 @@ sudo -u postgres psql
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
 WHERE pg_stat_activity.datname = 'my_database_name'
-AND pid <> pg_backend_pid();
+AND pid &lt;&gt; pg_backend_pid();
 </pre>
 Установка пароля для пользователя:
 <pre>

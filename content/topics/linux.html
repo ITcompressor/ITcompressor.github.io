@@ -2,7 +2,6 @@
 <pre>
 /usr/local/bin
 </pre>
-
 Просмотр скрытых приложений в автозагрузке
 <pre>
 cd /etc/xdg/autostart
@@ -12,7 +11,6 @@ sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
 <hr>
 
 <h4>Монтирование разделов</h4>
-
 Посмотреть информацию о подключенных дисках
 <pre>
 sudo fstab -l
@@ -33,12 +31,10 @@ nautilus smb://winda-pc/
 <hr>
 
 <h4>Автозагрука скриптов</h4>
-
 Пример команды для запуска в скрине
 <pre>
 screen -dmS $SCREEN_NAME /bin/bash -c "/opt/somescrip.sh 2>&1 > /opt/mylog.log"
 </pre>
-
 Манипуляции для включения rc.local (актуально для новых версий убунту 18+)
 <pre>
 # touch /etc/rc.local
@@ -79,6 +75,9 @@ sudo systemctl enable rc-local
 <pre>sudo nano /etc/hosts</pre>
 
 <hr>
+
 <h4>Фискы</h4>
 Фикс возможной проблемы с запуском гуи с под рута
 <pre>xhost si:localuser:root</pre>
+
+<hr>

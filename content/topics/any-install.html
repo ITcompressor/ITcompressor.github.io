@@ -1,37 +1,49 @@
-<h4>Установка MongoDB</h4>
-Добавляем ключ
+Установка net-tools (ifconfig)
 <pre>
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+apt install net-tools
 </pre>
-Добавляем репозиторий
+Установка sdkman для управления версиями утилит
 <pre>
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+curl -s "https://get.sdkman.io" | bash
 </pre>
-Устанавливаем монгу
 <pre>
-sudo apt-get install -y mongodb-org
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 </pre>
-
-<hr>
-
-Установка LAMP (Linux Apache Mysql PHP)
-<pre>sudo apt-get install apache2 mysql-server php5 php5-mysql phpmyadmin</pre>
-Пример установки библиотеки для maven
-<pre>mvn install:install-file -Dfile=/path_to_jar/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar</pre>
+Установка pip для python
+<pre>
+wget https://bootstrap.pypa.io/get-pip.py
+</pre>
+<pre>
+sudo python get-pip.py
+</pre>
+Установка программ для быстрого доступа через консоль + выбор версии
+<pre>
+sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+</pre>
+Один из способов (не всегда работает) удаления сервиса с автозагрузки
+<pre>
+sudo update-rc.d &lt;appname&gt; disable 
+</pre>
 
 <hr>
 
 <h4>Установка gnome-shell (графическая оболочка)</h4>
-<pre>sudo apt-get install gnome-shell gnome-session gnome-tweak-tool gdm</pre>
+<pre>
+sudo apt-get install gnome-shell gnome-session gnome-tweak-tool gdm
+</pre>
 Проверка версии gnome-shell
-<pre>gnome-shell --version</pre>
+<pre>
+gnome-shell --version
+</pre>
 Расширение для hotkey win+1..10 в gnome-shell
 <a href="https://extensions.gnome.org/extension/413/dash-hotkeys/">https://extensions.gnome.org/extension/413/dash-hotkeys/</a>
 
 <hr>
 
 <h4>Установка и настройка WINE</h4>
-Запускаем winetricks- Select the default wineprefix -Install a font в открывшемся окне ставим галочки напротив corefonts, fonfix и жмем ок.Ждем окончания установки! Теперь, опять winetricks- Select the default wineprefix -Install a Windows DLL op component в открывшемся окне выбирает следующие пакеты:
+Запускаем winetricks- Select the default wineprefix -Install a font в открывшемся окне ставим галочки напротив corefonts, fonfix и жмем ок. 
+Ждем окончания установки! Теперь, опять winetricks- Select the default wineprefix -Install a Windows DLL op component в открывшемся окне выбирает 
+следующие пакеты:
 <pre>
 vcrun 2005
 vcrun 2008
@@ -58,7 +70,8 @@ mfs40, wsh56vb, wsh57. gdiplus
 physx
 gfw
 </pre>
-Настраиваем реестр вайна. Опять нам понадобится winetricks -Select the default wineprefix -Change settings перед нами откроется окно для правки реестра! Ставим галочки напротив:
+Настраиваем реестр вайна. Опять нам понадобится winetricks -Select the default wineprefix -Change settings перед нами откроется окно для правки реестра! 
+Ставим галочки напротив:
 <pre>
 1. DirectDrawRender(ddr) opengl
 2. Direct3D Multisampling enabled
@@ -73,39 +86,19 @@ gfw
 
 <hr>
 
-<h4>Полезное</h4>
-Установка net-tools (ifconfig)
-<pre>apt install net-tools</pre>
-Установка jdk8
-<pre>wget repository.jelasticloud.com/scripts/jvm/8/jdk8 && chmod +x jdk8 && ./jdk8 && rm -rf jdk8</pre>
-Установка jdk7 update 51
-<pre>wget repository.jelasticloud.com/scripts/jvm/7u51/jdk7u51 && chmod +x jdk7u51 && ./jdk7u51 && rm -rf jdk7u51</pre>
-Установка sdkman для управления версиями утилит
-<pre>curl -s "https://get.sdkman.io" | bash</pre>
-<pre>source "$HOME/.sdkman/bin/sdkman-init.sh"</pre>
-Установка pip для python
-<pre>wget https://bootstrap.pypa.io/get-pip.py</pre>
-<pre>sudo python get-pip.py</pre>
-Установка программ для быстрого доступа через консоль + выбор версии
-<pre>sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10</pre>
-Установка версии Java по умолчанию
-<pre>sudo update-alternatives --config "java"</pre>
-Один из способов (не всегда работает) удаления сервиса с автозагрузки
-<pre>sudo update-rc.d &lt;appname&gt; disable </pre>
-
-<hr>
-
 Установка insomnia (аналог postman)
 <pre>
-    # Add to sources
-    echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
-        | sudo tee -a /etc/apt/sources.list.d/insomnia.list
-    
-    # Add public key used to verify code signature
-    wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
-        | sudo apt-key add -
-    
-    # Refresh repository sources and install Insomnia
-    sudo apt-get update
-    sudo apt-get install insomnia
+# Add to sources
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+| sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+# Add public key used to verify code signature
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+| sudo apt-key add -
+
+# Refresh repository sources and install Insomnia
+sudo apt-get update
+sudo apt-get install insomnia
 </pre>
+
+<hr>

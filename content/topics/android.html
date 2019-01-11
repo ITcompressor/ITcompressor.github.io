@@ -1,61 +1,58 @@
-<h4>Разное</h4>
 Монтирование раздела system для записи (необходимо для редактирования)
-<pre>mount -o rw,remount /system</pre>
+<pre>
+mount -o rw,remount /system
+</pre>
 Монтирование раздела system для чтения
-<pre>mount -o ro,remount /system</pre>
+<pre>
+mount -o ro,remount /system
+</pre>
 Путь к сохранёным паролям Wi-fi точек
-<pre>/data/misc/wifi/wpa_supplicant.txt</pre>
+<pre>
+/data/misc/wifi/wpa_supplicant.txt
+</pre>
 Файл hosts на андроиде
-<pre>/system/etc/hosts</pre>
+<pre>
+/system/etc/hosts
+</pre>
 Cкрипта в автозагрузке
-<pre>/system/etc/mkshrc</pre>
+<pre>
+/system/etc/mkshrc
+</pre>
 Блокировка ip через iptables (до перезагрузки устройства)
-<pre>iptables -A INPUT -s 65.55.44.100 -j DROP</pre>
+<pre>
+iptables -A INPUT -s 65.55.44.100 -j DROP
+</pre>
 Удаление блокировки
-<pre>iptables -D INPUT -s 65.55.44.100 -j DROP</pre>
-
-<hr>
-
-<h4>Работа с ADB</h4>
-Подключение устройства:
-<pre>adb connect 192.168.0.101:5555</pre>
-Данная команда выведет список устройств, подключенных к ПК:
-<pre>adb devices</pre>
-Проcто перезагрузка устройства
-<pre>adb reboot</pre>
-Быстрая перезагрузка устройства в режим Recovery
-<pre>adb reboot recovery</pre>
-Быстрая перезагрузка устройства в режим Bootloader
-<pre>adb reboot bootloader</pre>
-Установка с компьютера пакета apk
-<pre>adb install &lt;путь_к_apk&gt;</pre>
-Удаление пакета
-<pre>adb uninstall &lt;package&gt;</pre>
-Загрузить файл на устройство
-<pre>adb push /path/to/local/file /mnt/sdcard/path/to/file</pre>
-Скачать файл с устройства
-<pre>adb pull /mnt/sdcard/path/to/file /path/to/local/file</pre>
-Просмотреть лог работы устройства
-<pre>adb logcat</pre>
-После чего вы увидите динамический вывод системных сообщений Android. Если производить с устройством какие-либо манипуляции, это тут же будет отображаться через вывод соответствующих сообщений. Выход из режима отладки через комбинацию клавиш Ctrl+C.
-И при помощи ADB можно запустить на мобильном устройстве самый настоящий шелл Unix.
-<pre>adb shell</pre>
+<pre>
+iptables -D INPUT -s 65.55.44.100 -j DROP
+</pre>
 
 <hr>
 
 <h4>Работа с fastboot(устройство должно быть загруженно в режимe Bootloader)</h4>
 Перепрошивка recovery
-<pre>fastboot flash recovery recovery.img</pre>
+<pre>
+fastboot flash recovery recovery.img
+</pre>
 Разблокировка загрузчика
-<pre>fastboot oem unlock</pre>
-
+<pre>
+fastboot oem unlock
+</pre>
 
 <hr>
 
-<h4>Команды для приложения Телефон(Phone)</h4><br>
+<h4>Команды для приложения Телефон(Phone)</h4>
 Для проверки IMEI вашего устройства:
-<pre>*#06#</pre>
+<pre>
+*#06#
+</pre>
 Для получения информации о батарее, статистике использования и устройством:
-<pre>*#*#4636#*#*</pre>
+<pre>
+*#*#4636#*#*
+</pre>
 Чтобы узнать о КПК и версию прошивки:
-<pre>*#*#1234#*#*</pre>
+<pre>
+*#*#1234#*#*
+</pre>
+
+<hr>

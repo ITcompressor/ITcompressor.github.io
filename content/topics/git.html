@@ -8,19 +8,24 @@ git config --global alias.st status
 git config --global alias.br branch
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 git config --global alias.type 'cat-file -t'
-git config --global alias.dump 'cat-file -p'</pre>
+git config --global alias.dump 'cat-file -p'
+</pre>
 Откатить уже отправленные изменения:
-<pre>git reset --hard origin/master
-git push -f</pre>
+<pre>
+git reset --hard origin/master
+git push -f
+</pre>
 Добавление репозитория для отправки изменений
-<pre>git remote add origin git@bitbucket.org:any_user/any_repo.git</pre>
+<pre>
+git remote add origin git@bitbucket.org:any_user/any_repo.git
+</pre>
 Переименовать ветку
 <pre>
 git branch -m master2 develop # - rename local branch
 git push origin :master2 # - delete old remote branch
 git push --set-upstream origin develop # push renamed branch and change origin to new
 </pre>
-Генерация ключей для работы через ssh с git:
-<pre>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
 Посчитать количество строчек кода в *.java:
-<pre>git ls-files | grep -P ".*(java)" | xargs wc -l</pre>
+<pre>
+git ls-files | grep -P ".*(java)" | xargs wc -l
+</pre>

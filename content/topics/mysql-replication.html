@@ -8,15 +8,25 @@ my_test_db - название выбранной схемы для реплик�
 
 <h4>На мастере</h4>
 1) Редактируем my.cnf, выбираем ID сервера, произвольное число, лучше начинать с 1
-<pre>server-id=1</pre>
+<pre>
+server-id=1
+</pre>
 путь к бинарному логу
-<pre>log_bin = /var/log/mysql/mysql-bin.log</pre>
+<pre>
+log_bin = /var/log/mysql/mysql-bin.log
+</pre>
 название бд для реплики
-<pre>binlog_do_db = my_test_db</pre>
+<pre>
+binlog_do_db = my_test_db
+</pre>
 2) Перезагружаем mysql
-<pre>/etc/init.d/mysql restart</pre>
+<pre>
+/etc/init.d/mysql restart
+</pre>
 3) Входим в консоль mysql
-<pre>mysql -u root -p</pre>
+<pre>
+mysql -u root -p
+</pre>
 4) Выполняем запросы для реплики
 <pre>
 GRANT REPLICATION SLAVE ON *.* TO
@@ -48,15 +58,25 @@ mysqldump -u root -p my_test_db > my_test_db.sql
 
 <h4>На слейве</h4>
 1) Редактируем my.cnf, выбираем ID сервера следующим числом после мастера
-<pre>server-id=2</pre>
+<pre>
+server-id=2
+</pre>
 путь к relay логу
-<pre>relay-log = /var/log/mysql/mysql-relay-bin.log</pre>
+<pre>
+relay-log = /var/log/mysql/mysql-relay-bin.log
+</pre>
 путь к бинарному логу
-<pre>log_bin = /var/log/mysql/mysql-bin.log</pre>
+<pre>
+log_bin = /var/log/mysql/mysql-bin.log
+</pre>
 название бд для реплики
-<pre>binlog_do_db = my_test_db</pre>
+<pre>
+binlog_do_db = my_test_db
+</pre>
 3) Входим в консоль mysql
-<pre>mysql -u root -p</pre>
+<pre>
+mysql -u root -p
+</pre>
 4) Выполняем запросы для реплики (нужно будет создать пользователя для репликации,
 можно посмотреть <a href="https://itcompressor.github.io/#?target=7">тут</a>)
 <pre>
@@ -74,3 +94,5 @@ START SLAVE;
 <pre>
 SHOW SLAVE STATUS;
 </pre>
+
+<hr>

@@ -159,6 +159,7 @@ var contents = [
     "uri": "ssh.html",
     "tags": [
       "ssh",
+      "generate ssh",
       "scp",
       "tunel",
       "forwarding",
@@ -202,6 +203,7 @@ var contents = [
       + "легкая агрегация, пример работы через консоль и тп",
     "uri": "mongodb.html",
     "tags": [
+      "install",
       "console",
       "database",
       "mongodb",
@@ -401,8 +403,7 @@ var contents = [
     "id": "any-install",
     "updated_at": "2019-01-05 16:41",
     "heading": "Полезные установки",
-    "content": "Установка LAMP (Linux Apache Mysql PHP), пример установки библиотеки для maven, " +
-      "установка gnome shell (графическая оболочка), установка net-tools (ifconfig), " +
+    "content": "Установка gnome shell (графическая оболочка), установка net-tools (ifconfig), " +
       "установка и настройка wine (для запуска виндовс игр и приложений), " +
       "установка insomnia (аналог postman), установка mongoDB, " +
       "установка sdkman для управления версиями утилит, установка pip для python и т.д.",
@@ -410,16 +411,13 @@ var contents = [
     "tags": [
       "install mongodb",
       "update-alternatives",
-      "alternatives",
       "cmd",
       "bash",
-      "maven",
       "aes",
       "linux",
       "lamp",
       "pip",
       "python",
-      "mysql",
       "wine",
       "run win32 apps",
       "sdkman",
@@ -503,9 +501,7 @@ var contents = [
     "content": "Полезности для гит + основные команды",
     "uri": "git.html",
     "tags": [
-      "git",
-      "ssh",
-      "version control system"
+      "git"
     ]
   },
   {
@@ -516,15 +512,24 @@ var contents = [
       "Монтирование для записи system раздела. Редактирование автозагрузки.",
     "uri": "android.html",
     "tags": [
-      "Android",
+      "android",
       "fastboot",
-      "adb",
       "hosts",
       "autostart",
       "autorun",
-      "ban ip",
-      "phone",
-      "mobile"
+      "ban ip"
+    ]
+  },
+  {
+    "id": "adb",
+    "updated_at": "2018-08-02 12:58",
+    "heading": "ADB + Android",
+    "content": "Работа с adb (Android Debug Bridge).",
+    "uri": "adb.html",
+    "tags": [
+      "android",
+      "fastboot",
+      "adb"
     ]
   },
   {
