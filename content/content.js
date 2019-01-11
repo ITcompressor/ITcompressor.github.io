@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "brutespray",
+    "updated_at": "2019-01-12 01:07",
+    "heading": "Брут с помощью brutespray",
+    "content": "Пример брута паролей для различных сервисов с помощью утилиыт brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.",
+    "uri": "brutespray.html",
+    "tags": [
+      "brutespray",
+      "hacking",
+      "nmap",
+      "ssh.."
+    ]
+  },
+  {
     "id": "docker-my-image",
     "updated_at": "2018-10-08 23:07",
     "heading": "Собственный docker image",

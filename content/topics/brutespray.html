@@ -1,0 +1,25 @@
+Установка зависимостей
+<pre>
+sudo apt install medusa nmap git
+sudo pip install argcomplete
+</pre>
+Сам скрипт и базовые словари качаются так
+<pre>
+git clone git@github.com:x90skysn3k/brutespray.git
+</pre>
+Для быстрого доступа можно сделать
+<pre>
+sudo cp brutespray/brutespray.py /usr/local/bin/brutespray
+</pre>
+
+<hr>
+
+Собираем нужное с помощью nmap (nmap --help)
+<pre>
+sudo nmap -sS -sV 192.168.1.0/24 -vv -oA test
+</pre>
+Запускаем брутфорс в 5 потоках по 3 хостам (brutespray --help)
+<pre>
+brutespray -f test.nmap -t 5 -T 3
+</pre>
+В brutespray-output/ будут лежать удачные подборы логин+пароль
