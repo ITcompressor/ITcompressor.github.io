@@ -21,6 +21,7 @@ app.controller("CoreController",
         $scope.clickDoc = function (url, id) {
             $scope.isTarget = true;
             $scope.docUrl = url;
+            $scope.docContent = getDocById(id).content
             $scope.target = id;
             setActualHash();
         }
