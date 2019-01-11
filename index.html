@@ -14,6 +14,14 @@
 
 <body id='ng-app' ng-app="core-app" ng-controller="CoreController">
 
+    <h2 ng-show="{{ false }}">
+        Если вы видете этот текст, то у вас мб:<br>
+        -медленный интернет
+        <br>-вы выключили JS 
+        <br>-вам не повезло с браузером (скорее всего у вас Safari). 
+        <br>Включите JS или используйте другой браузер, чтобы пользоваться сайтом! =(
+    </h2>
+
     <div id="center" class="fix-top">
         <div class="container">
             <div ng-show="!isTarget">
@@ -37,7 +45,7 @@
                         </span>
                         <span>
                             <button class="btn btn-default" ng-click="clickDoc(doc.full_content, doc.id)"> Подробнее
-                                &raquo;</a>
+                                &raquo;</button>
                         </span>
                     </span>
                 </div>
