@@ -555,20 +555,6 @@ var contents = [
     ]
   },
   {
-    "id": "postgresql-install",
-    "updated_at": "1999-12-31 23:59",
-    "heading": "Установка PostgreSQL",
-    "content": "Установка PostgreSQL с официального репозитория",
-    "uri": "postgresql-install.html",
-    "tags": [
-      "database",
-      "Ubuntu 14.04 LTS",
-      "PostgreSQL 9.4",
-      "deb",
-      "linux"
-    ]
-  },
-  {
     "id": "postgresql",
     "updated_at": "1999-12-31 23:59",
     "heading": "PostgreSQL",
