@@ -393,6 +393,7 @@ var contents = [
       "cmd",
       "bash",
       "aes",
+      "unrar",
       "cron",
       "adduser",
       "recursively find",
