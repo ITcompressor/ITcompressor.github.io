@@ -6,6 +6,10 @@ sudo adduser newuser
 <pre>
 sudo /usr/sbin/visudo
 </pre>
+Получение списка пользователей имеющих права суперпользователя
+<pre>
+grep -Po '^sudo.+:\K.*$' /etc/group
+</pre>
 Примеры использования утилиты dd
 <pre>
 dd if=kali.iso of=/dev/sdb bs=512k
