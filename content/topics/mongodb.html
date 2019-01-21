@@ -14,6 +14,18 @@ db.my_table.find().sort({"_id":-1}).limit(2).pretty()
 
 <hr>
 
+<h4>Экспорт и импорт</h4>
+Пример экспорта
+<pre>
+mongoexport -h localhost:27017 -d my_db -c my_collection -o output.json
+</pre>
+Пример импорта
+<pre>
+mongoimport -h localhost:27017 -d my2_db -c my_collection --file output.json
+</pre>
+
+<hr>
+
 <h4>Запросы</h4>
 Поиск not null значений
 <pre>
