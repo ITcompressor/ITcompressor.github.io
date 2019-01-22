@@ -372,7 +372,7 @@ var contents = [
     "tags": [
       "traceroute",
       "nmap",
-      "nc,",
+      "nc",
       "ifconfig",
       "mac",
       "curl",
