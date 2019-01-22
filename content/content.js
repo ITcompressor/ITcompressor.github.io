@@ -369,6 +369,7 @@ var contents = [
     "content": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
       "Сканирование доменов по общему сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
     "uri": "network.html",
+    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
     "tags": [
       "traceroute",
       "nmap",
