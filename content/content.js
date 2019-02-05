@@ -285,14 +285,37 @@ var contents = [
   },
   {
     "id": "linux",
-    "updated_at": "2018-11-25 17:04",
+    "updated_at": "2019-02-05 20:04",
     "heading": "Linux",
     "content": "Автомонтирование разделов, просмотр автозапуска, просмотр процессов, "
       + "информации о свободном месте на дисках, заполнение свободного места нулями (для уменьшения размеров виртуалок, где память выделяется динамически)."
-      + "Фикс запуска гуи с под рута. Автозагрузка скриптов.",
+      + "Фикс запуска гуи с под рута. Автозагрузка скриптов. Шифрование файлов, подключение к VPN, работа с Cron (шедулер для unix), " +
+      "добавление пользователей, редактирование их прав, утилита dd, пример создания ссылок, создания архивов, " +
+      "изменение владельцов файлов, использование утилиты find и многое другое.",
     "uri": "linux.html",
     "tags": [
-      "linux",
+      "cmd",
+      "bash",
+      "aes",
+      "unrar",
+      "cron",
+      "adduser",
+      "recursively find",
+      "watch",
+      "tail",
+      "terminal",
+      "scp",
+      "rar",
+      "chmod",
+      "chown",
+      "hosts",
+      "dd",
+      "ssh",
+      "sass",
+      "VPN",
+      "ntfsfix",
+      "ntfx",
+      "zip",
       "debian",
       "ubuntu",
       "fstab",
@@ -380,40 +403,6 @@ var contents = [
       "bash",
       "wget",
       "netstat"
-    ]
-  },
-  {
-    "id": "any-command",
-    "updated_at": "2019-01-20 13:00",
-    "heading": "Командная строка и утилиты",
-    "content": "Шифрование файлов, подключение к VPN, работа с Cron (шедулер для unix), " +
-      "добавление пользователей, редактирование их прав, утилита dd, пример создания ссылок, создания архивов, " +
-      "изменение владельцов файлов, использование утилиты find и многое другое.",
-    "uri": "any-command.html",
-    "tags": [
-      "cmd",
-      "bash",
-      "aes",
-      "unrar",
-      "cron",
-      "adduser",
-      "recursively find",
-      "watch",
-      "tail -f",
-      "terminal",
-      "scp",
-      "rar",
-      "chmod",
-      "chown",
-      "hosts",
-      "dd",
-      "ssh",
-      "sass",
-      "linux",
-      "VPN",
-      "ntfsfix",
-      "ntfx",
-      "zip"
     ]
   },
   {
@@ -523,7 +512,7 @@ var contents = [
   },
   {
     "id": "android",
-    "updated_at": "2018-08-02 12:58",
+    "updated_at": "2019-02-05 12:58",
     "heading": "Android и его секреты",
     "content": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
       "Монтирование для записи system раздела. Редактирование автозагрузки.",
@@ -534,19 +523,8 @@ var contents = [
       "hosts",
       "autostart",
       "autorun",
+      "adb",
       "ban ip"
-    ]
-  },
-  {
-    "id": "adb",
-    "updated_at": "2018-08-02 12:58",
-    "heading": "ADB + Android",
-    "content": "Работа с adb (Android Debug Bridge).",
-    "uri": "adb.html",
-    "tags": [
-      "android",
-      "fastboot",
-      "adb"
     ]
   },
   {
