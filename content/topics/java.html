@@ -1,29 +1,15 @@
 Дамп процесса java с помощью утилиты jmap
-<pre>
-jmap -dump:format=b,file=cheap.bin pid_value 
+<pre>jmap -dump:format=b,file=cheap.bin pid_value 
 </pre>
 Вывод стека работающего java процесса
-<pre>
-ps aux | grep "java"
+<pre>ps aux | grep "java"
 jstack -l [java_pid] > output.txt
 </pre>
-
-<hr>
-
-<h4>Maven</h4>
 Установка кастомных либ
-<pre>
-mvn install:install-file -Dfile=[path-to-file] -DgroupId=[group-id] -DartifactId=[artifact-id] -Dversion=[version] -Dpackaging=jar
-</pre>
-<pre>
+<pre>mvn install:install-file -Dfile=[path-to-file] -DgroupId=[group-id] -DartifactId=[artifact-id] -Dversion=[version] -Dpackaging=jar
 mvn install:install-file -Dfile=[path-to-file] -DpomFile=[path-to-pomfile]
-</pre>
-<pre>
 mvn install:install-file -Dfile=[path-to-file]
 </pre>
 Пример установки библиотеки для maven
-<pre>
-mvn install:install-file -Dfile=/path_to_jar/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
+<pre>mvn install:install-file -Dfile=/path_to_jar/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
 </pre>
-
-<hr>

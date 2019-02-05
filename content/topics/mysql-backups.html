@@ -1,13 +1,11 @@
 Делаем бекап(дамп базы данных)
-<pre>
-mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
-</pre>или
-<pre>
-mysqldump --user=root --password --databases database_name > script.sql
+<pre>mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
+</pre>
+или
+<pre>mysqldump --user=root --password --databases database_name > script.sql
 </pre>
 Создаём структуру базы без данных
-<pre>
-mysqldump —no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql
+<pre>mysqldump —no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql
 </pre>
 Если нужно сделать дамп только одной или нескольких таблиц
 <pre>

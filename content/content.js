@@ -14,45 +14,19 @@ var contents = [
     ]
   },
   {
-    "id": "docker-my-image",
-    "updated_at": "2018-10-08 23:07",
-    "heading": "Собственный docker image",
-    "content": "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
-    "uri": "docker-my-image.html",
-    "tags": [
-      "docker",
-      "containers",
-      "virtualization",
-      "linux"
-    ]
-  },
-  {
     "id": "docker",
-    "updated_at": "2018-10-08 22:19",
-    "heading": "Команды для docker",
-    "content": "Основные команды для докера",
+    "updated_at": "2019-02-05 22:43",
+    "heading": "Docker",
+    "content": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
+      + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
     "uri": "docker.html",
     "tags": [
       "docker",
       "containers",
       "virtualization",
-      "linux"
-    ]
-  },
-  {
-    "id": "docker-install",
-    "updated_at": "2018-10-08 22:07",
-    "heading": "Установка docker + docker-compose",
-    "content": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос",
-    "uri": "docker-install.html",
-    "tags": [
       "install",
       "hello world",
-      "docker",
-      "docker-compose",
-      "containers",
-      "virtualization",
-      "linux"
+      "docker-compose"
     ]
   },
   {
@@ -80,10 +54,8 @@ var contents = [
     "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
     "tags": [
       "grep",
-      "egrep",
       "ls",
-      "поиск",
-      "linux"
+      "поиск"
     ]
   },
   {
@@ -98,8 +70,7 @@ var contents = [
       "certificates",
       "https",
       "ssl",
-      "nginx",
-      "linux"
+      "nginx"
     ]
   },
   {
@@ -110,8 +81,7 @@ var contents = [
     "uri": "grub.html",
     "tags": [
       "loader",
-      "grub",
-      "linux"
+      "grub"
     ]
   },
   {
@@ -129,25 +99,14 @@ var contents = [
     ]
   },
   {
-    "id": "mac-vnc",
-    "updated_at": "2018-06-12 19:26",
-    "heading": "Start vnc server on mac",
-    "content": "Поднятие внс сервера на маке (удаленый гуи\\рабочий стол)",
-    "uri": "mac-vnc.html",
-    "tags": [
-      "vnc",
-      "remote desktop",
-      "macOS"
-    ]
-  },
-  {
     "id": "MacOS",
     "updated_at": "2018-10-18 16:50",
     "heading": "MacOS",
     "content": "Кастом и настройка среды для MacOS",
     "uri": "mac.html",
     "tags": [
-      "terminal",
+      "vnc",
+      "remote desktop",
       "macOS"
     ]
   },
@@ -161,8 +120,7 @@ var contents = [
     "tags": [
       "rabbitmq",
       "events",
-      "event bus",
-      "linux"
+      "event bus"
     ]
   },
   {
@@ -188,8 +146,6 @@ var contents = [
     "content": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
     "uri": "java.html",
     "tags": [
-      "java",
-      "pl",
       "jdk",
       "jstack",
       "maven",
@@ -197,30 +153,16 @@ var contents = [
     ]
   },
   {
-    "id": "mongodb-mapreduce",
-    "updated_at": "2018-11-18 12:07",
-    "heading": "MapReduce in MongoDB",
-    "content": "Примеры работы мап редьюс в монге, очень полезная вещь когда хочется avg, sum в nosql",
-    "uri": "mongodb-mapreduce.html",
-    "tags": [
-      "database",
-      "mongodb",
-      "map reduce",
-      "aggregation"
-    ]
-  },
-  {
     "id": "mongodb",
-    "updated_at": "2019-01-21 21:17",
+    "updated_at": "2019-02-05 23:17",
     "heading": "MongoDB",
     "content": "Примеры запросов, сортировки, настройка профайлинга для мониторинга медленных запросов, создание индексов, " +
       "сложные апдейты, экспорт в файл и импорт из файла, легкая агрегация, пример работы через консоль и тп",
     "uri": "mongodb.html",
     "tags": [
-      "install",
-      "console",
-      "database",
       "mongodb",
+      "map",
+      "reduce",
       "aggregation",
       "sort",
       "select",
@@ -253,21 +195,7 @@ var contents = [
     "uri": "vim.html",
     "tags": [
       "vim",
-      "linux",
       "editor"
-    ]
-  },
-  {
-    "id": "headers",
-    "updated_at": "2018-10-10 22:25",
-    "heading": "Headers for scripts",
-    "content": "Заголовки для исполняемых файлов",
-    "uri": "headers.html",
-    "tags": [
-      "php",
-      "python",
-      "linux",
-      "scripts"
     ]
   },
   {
@@ -294,44 +222,27 @@ var contents = [
       "изменение владельцов файлов, использование утилиты find и многое другое.",
     "uri": "linux.html",
     "tags": [
-      "cmd",
-      "bash",
       "aes",
-      "unrar",
       "cron",
       "adduser",
       "recursively find",
       "watch",
       "tail",
-      "terminal",
-      "scp",
       "rar",
       "chmod",
       "chown",
       "hosts",
       "dd",
-      "ssh",
-      "sass",
       "VPN",
-      "ntfsfix",
-      "ntfx",
+      "ntfs",
       "zip",
-      "debian",
-      "ubuntu",
       "fstab",
       "df",
       "zerofree",
-      "заполнение нулями",
-      "память",
-      "memmory",
       "automount",
       "autostart",
       "ext4",
-      "монтирование",
-      "smb",
-      "nautilus",
-      "разделов",
-      "scripts"
+      "smb"
     ]
   },
   {

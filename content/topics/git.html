@@ -1,6 +1,5 @@
-Полезная надстройка команд для git:
-<pre>
-git config --global user.name "Username"
+Полезная надстройка команд для git
+<pre>git config --global user.name "Username"
 git config --global user.email example@mail.com
 git config --global alias.co checkout
 git config --global alias.ci commit
@@ -11,21 +10,17 @@ git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
 </pre>
 Откатить уже отправленные изменения:
-<pre>
-git reset --hard origin/master
+<pre>git reset --hard origin/master
 git push -f
 </pre>
 Добавление репозитория для отправки изменений
-<pre>
-git remote add origin git@bitbucket.org:any_user/any_repo.git
+<pre>git remote add origin git@bitbucket.org:any_user/any_repo.git
 </pre>
 Переименовать ветку
-<pre>
-git branch -m master2 develop # - rename local branch
+<pre>git branch -m master2 develop # - rename local branch
 git push origin :master2 # - delete old remote branch
 git push --set-upstream origin develop # push renamed branch and change origin to new
 </pre>
 Посчитать количество строчек кода в *.java:
-<pre>
-git ls-files | grep -P ".*(java)" | xargs wc -l
+<pre>git ls-files | grep -P ".*(java)" | xargs wc -l
 </pre>

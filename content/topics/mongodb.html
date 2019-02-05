@@ -1,92 +1,75 @@
-<h4>Работа в консоли</h4>
+Добавляем ключ
+<pre>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+</pre>
+Добавляем репозиторий
+<pre>echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+</pre>
+Устанавливаем монгу
+<pre>sudo apt-get install -y mongodb-org
+</pre>
 Коннект к шелу
-<pre>
-mongo --port 27017
+<pre>mongo --port 27017
 </pre>
 Выбор схемы
-<pre>
-use my_db
+<pre>use my_db
 </pre>
 Пример селекта
-<pre>
-db.my_table.find().sort({"_id":-1}).limit(2).pretty()
+<pre>db.my_table.find().sort({"_id":-1}).limit(2).pretty()
 </pre>
-
-<hr>
-
-<h4>Экспорт и импорт</h4>
 Пример экспорта
-<pre>
-mongoexport -h localhost:27017 -d my_db -c my_collection -o output.json
+<pre>mongoexport -h localhost:27017 -d my_db -c my_collection -o output.json
 </pre>
 Пример импорта
-<pre>
-mongoimport -h localhost:27017 -d my2_db -c my_collection --file output.json
+<pre>mongoimport -h localhost:27017 -d my2_db -c my_collection --file output.json
 </pre>
-
-<hr>
-
-<h4>Запросы</h4>
+<pre>db.collection.find({"fields":{$elemMatch:{field1:5,field2:"A"}}})
+</pre>
 Поиск not null значений
-<pre>
-db.mycollection.find({"IMAGE URL":{$exists:true}});
+<pre>db.collection.find({"IMAGE URL":{$exists:true}});
 </pre>
-Поиск регуляркой, альтернатива like:
-<pre>
-db.mycollection.find({name: /regular/});
+Поиск регуляркой, альтернатива like
+<pre>db.collection.find({name: /regular/});
 </pre>
 Поиск 'in'
-<pre>
-db.mycollection.find({ field: { $in: ["one","two","123"]}});
+<pre>db.collection.find({ field: { $in: ["one","two","123"]}});
 </pre>
 Сортировка desc
-<pre>
-db.getCollection('my_collection').find({}).sort({"_id": -1})
+<pre>db.collection.find({}).sort({"_id": -1})
 </pre>
 Поиск 'not in' with sort desc
-<pre>
-db.getCollection('my_collection').find({"any_field": {$nin: ["any_value"]}}).sort({"_id": -1})
+<pre>db.collection.find({"any_field": {$nin: ["any_value"]}}).sort({"_id": -1})
 </pre>
 Массовый апдейт
-<pre>
-db.mycollection.updateMany(
-{
-    field5: { $in : ["fieldany","ANY_VALUE"]},
-    $or:[
-        {"fields.field5" : null},
-        {"fields.field3" : null},
-        {"fields.field4" : null}, 
-        {
+<pre>db.collection.updateMany({
+    field5: { $in : ["fieldany", "ANY_VALUE"]},
+    $or:[{
+            "fields.field5" : null 
+        }, {
             $and:[{
                 "fields.field1" : false
             },{
                 "fields.field2" : null
             }]
         }
-    ]}, 
-{ 
-    $set: {
-        "currentStep" : "ANY_FIELD",
-        "finished" : false
-    }
+    ]}, { 
+        $set: {
+            "currentStep" : "ANY_FIELD",
+            "finished" : false
+        }
 });
 </pre>
 Массовый апдейт c find, используя фишки js
-<pre>
-db.mycollection.find({
+<pre>db.collection.find({
     "fields.snils":/-/
 }).forEach(function(e,i) {
     e.fields.snils = e.fields.snils.replace(/-/g, '');
-    db.mycollection.save(e);
+    db.collection.save(e);
 });
 </pre>
-Разовые апдейты
-<pre>
-db.mycollection.update(
-{ 
+Разовый апдейты
+<pre>db.collection.update({ 
     _id: id
-}, 
-{
+}, {
     $set: { 
         "finished": false 
     },
@@ -95,85 +78,108 @@ db.mycollection.update(
     }
 })
 </pre>
-<pre>
-db.mycollection.findAndModify({
-    query: {"uuid":"8fd8052e-5377-40ce-a941-76865f178c82"},
-    sort: {"_id": -1 },
-    update: {$set: {"field2": false}}
-})
-</pre>
-
-<hr>
-
-<h4>Профайлинг</h4>
-1) Включаем профайлинг медленных запросов
+Включаем профайлинг медленных запросов
 <pre>
 db.setProfilingLevel(1, { slowms: 2000 })
 </pre>
-2) Через 1 минуту выключаем
+Через 1 минуту выключаем
 <pre>
 db.setProfilingLevel(0)
 </pre>
-3) Cмотрим последний профайл
+Cмотрим последний профайл
 <pre>
 db.system.profile.find().limit(10).sort( { ts : -1 } ).pretty()
 </pre>
-
-<hr>
-
-<h4>Создание индекса</h4>
-1) Устанавливаем index !!!!ванжо!!!!! c background mode иначе залочит все
-<pre>
-db.getCollection('rawUserStat').createIndex( { "extra.name": 1 }, { background: true } )
+Создание индекса
+<pre>db.collection.createIndex( { "extra.name": 1 }, { background: true } )
 </pre>
-2) Просмотр статуса создания индекса (Просмотр активностей)
+Пример агрегации
 <pre>
-db.currentOp()
-</pre>
-
-<hr>
-
-<h4>Примеры агрегации</h4>
-<pre>
-db.getCollection('my_collection').aggregate([{
-$match: { $and: [
-{ entityType: 'ANY_FIELD' }, 
-{ unloadDate: ISODate("2018-01-04 21:00:00.000Z") }
-]}
+db.collection.aggregate([{
+    $match: { 
+        $and: [{ 
+            entityType: 'ANY_FIELD' 
+        }, { 
+            unloadDate: ISODate("2018-01-04 21:00:00.000Z") 
+        }
+    ]}
 }, {
-$group: {
-_id: {
-"entityType": "$entityType",
-"part": "$part",
-"unloadDate": "$unloadDate"
-},
-aggregate: {
-$push: {
-ids: "$ids",
-value: "$info"
-}
-},
-counts: {
-$sum: 1
-}
-}
+    $group: {
+        _id: {
+            "entityType": "$entityType",
+            "part": "$part",
+            "unloadDate": "$unloadDate"
+        },
+        aggregate: {
+            $push: {
+                ids: "$ids",
+                value: "$info"
+            }
+        },
+        counts: {
+            $sum: 1
+        }
+    }
 }]);
 </pre>
-
-<hr>
-
-<h4>Установка MongoDB</h4>
-Добавляем ключ
-<pre>
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+Основной пример мапредюса
+<pre>db.system.js.save({ _id: "Sum" ,
+value: function(key, values) {
+    var total = 0;
+    for(var i = 0; i &lt; values.length; i++)
+        total += values[i];
+    return total;
+}});
+db.collection.mapReduce(function() {
+    if(this.value_for_expression == "some_expression") {
+        emit(this.entityType, this.value_for_aggregation - 0) // convert to int
+    }
+},
+function(key, value) {
+    return Sum(key, value)
+},
+{ out: "map_reduce_example" }
+)
+db.getCollection('map_reduce_example').find({})
 </pre>
-Добавляем репозиторий
-<pre>
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+Суммирование
+<pre>db.system.js.save({ _id: "Sum" ,
+value: function(key, values) {
+    var total = 0;
+    for(var i = 0; i &lt; values.length; i++)
+        total += values[i];
+    return total;
+}});
 </pre>
-Устанавливаем монгу
-<pre>
-sudo apt-get install -y mongodb-org
+Среднее
+<pre>db.system.js.save({ _id: "Avg" ,
+value: function(key, values) {
+    var total = Sum(key, values);
+    var mean = total / values.length;
+    return mean;
+}});
 </pre>
-
-<hr>
+Максимальное значение
+<pre>db.system.js.save({ _id: "Max" ,
+value: function(key, values) {
+    var maxValue = values[0];
+    for(var i=1; i &lt; values.length; i++) {
+        if(values[i] &gt; maxValue) {
+            maxValue = values[i];
+        }
+    }
+    returnmaxValue;
+}});
+</pre>
+Минимальное значение
+<pre>db.system.js.save({ _id: "Min" ,
+value: function(key, values) {
+    var minValue=values[0];
+    for(var i=1;i &lt; values.length;i++) {
+        if(values[i] &lt; minValue) {
+            minValue = values[i];
+        }
+    }
+    return minValue;
+}});
+</pre>
