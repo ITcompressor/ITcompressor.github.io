@@ -30,19 +30,6 @@ var contents = [
     ]
   },
   {
-    "id": "samba",
-    "updated_at": "2018-09-08 00:24",
-    "heading": "Раздать папку с фалами на linux в локальной сети с помощью samba",
-    "content": "Установка, настройка и возможный фикс",
-    "uri": "samba.html",
-    "tags": [
-      "samba",
-      "share",
-      "folder",
-      "linux"
-    ]
-  },
-  {
     "id": "grep",
     "updated_at": "2018-09-24 20:40",
     "heading": "grep в linux",
@@ -135,8 +122,7 @@ var contents = [
       "scp",
       "tunel",
       "forwarding",
-      "port",
-      "network"
+      "port"
     ]
   },
   {
@@ -298,7 +284,7 @@ var contents = [
   },
   {
     "id": "network",
-    "updated_at": "2019-01-22 18:33",
+    "updated_at": "2019-02-07 19:33",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
       "Сканирование доменов по общему сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
@@ -322,11 +308,11 @@ var contents = [
     "heading": "Полезные установки",
     "content": "Установка gnome shell (графическая оболочка), установка net-tools (ifconfig), " +
       "установка и настройка wine (для запуска виндовс игр и приложений), " +
-      "установка insomnia (аналог postman), установка mongoDB, " +
+      "установка insomnia (аналог postman), установка samba," +
       "установка sdkman для управления версиями утилит, установка pip для python и т.д.",
     "uri": "any-install.html",
     "tags": [
-      "install mongodb",
+      "samba",
       "update-alternatives",
       "cmd",
       "bash",
@@ -378,37 +364,21 @@ var contents = [
     "content": "Общая информация о мускуле, уровни изоляции",
     "uri": "mysql-info.html",
     "tags": [
-      "database",
-      "mysql",
       "уровни изоляции",
       "transaction-isolation-level"
     ]
   },
   {
-    "id": "mysql-backups",
-    "updated_at": "2018-10-08 23:14",
-    "heading": "MySQL Backups",
-    "content": "Работа с бэкапами мускула",
-    "uri": "mysql-backups.html",
+    "id": "MySQL",
+    "updated_at": "2019-02-07 19:26",
+    "heading": "MySQL",
+    "content": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
+    "uri": "mysql.html",
     "tags": [
-      "database",
-      "mysql",
-      "backups"
-    ]
-  },
-  {
-    "id": "mysql-queries",
-    "updated_at": "2018-10-08 23:26",
-    "heading": "MySQL Queries",
-    "content": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула",
-    "uri": "mysql-queries.html",
-    "tags": [
-      "database",
-      "mysql",
-      "alter table",
+      "backup",
       "index",
       "unsafe",
-      "permissions",
+      "permissions"
     ]
   },
   {

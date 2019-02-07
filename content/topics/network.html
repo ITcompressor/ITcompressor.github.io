@@ -1,87 +1,57 @@
 Посмотреть активности в сети
-<pre>
-netstat -an
+<pre>netstat -an
 </pre>
-
-<hr>
-
-<h4>Использование утилиты nc</h4>
-Запрос на 80 порт
-<pre>
-printf "HEAD / HTTP/1.0\r\n\r\n" | nc tut.by 80
+Запрос на 80 порт с помощью nc
+<pre>printf "HEAD / HTTP/1.0\r\n\r\n" | nc tut.by 80
 </pre>
-Запрос с отправкой контента из файла
-<pre>
-nc localhost 1234 &lt; test.txt
+Запрос с отправкой контента из файла с помощью nc
+<pre>nc localhost 1234 &lt; test.txt
 </pre>
-
-<hr>
-
-<h4>Использование утилиты curl</h4>
-<pre>
-curl -X GET -H "Content-Type: [any_headers]" -d "{body=[any_params|body]}" https://itcompressor.github.io
+Использование утилиты curl
+<pre>curl -X GET -H "Content-Type: [any_headers]" -d "{body=[any_params|body]}" https://itcompressor.github.io
 </pre>
-
-<hr>
-
-<h4>Использование утилиты nmap</h4>
-<pre>
-nmap -A -T4 ya.ru
+Использование утилиты nmap (А - палевный вариант)
+<pre>nmap -A -T4 ya.ru
 </pre>
-ICMP пинг
-<pre>
-nmap -sn 192.168.1.0/24
+ICMP пинг с помощью nmap
+<pre>nmap -sn 192.168.1.0/24
 </pre>
-TCP SYN Пинг
-<pre>
-nmap -sn -PS 192.168.1.0/24
+TCP SYN Пинг с помощью nmap
+<pre>nmap -sn -PS 192.168.1.0/24
 </pre>
-TCP ACK Пинг
-<pre>
-nmap -sn -PA 192.168.1.0/24
+TCP ACK Пинг с помощью nmap
+<pre>nmap -sn -PA 192.168.1.0/24
 </pre>
-UDP Пинг
+UDP Пинг с помощью nmap
+<pre>nmap -sn -PU 192.168.1.0/24
 </pre>
-nmap -sn -PU 192.168.1.0/24
+Пинг по IP Протоколу с помощью nmap
+<pre>nmap -sn -PO 192.168.1.0/24
 </pre>
-Пинг по IP Протоколу
-<pre>
-nmap -sn -PO 192.168.1.0/24
+ARP Пинг с помощью nmap
+<pre>nmap -sn -PR 192.168.1.0/24
 </pre>
-ARP Пинг
-<pre>
-nmap -sn -PR 192.168.1.0/24
-</pre>
-Скан по портам
-<pre>
-nmap localhost -p 34000-36000
+Скан по портам с помощью nmap
+<pre>nmap localhost -p 34000-36000
 nmap localhost -p 8080
 </pre>
-
-<hr>
-
-<h4>Другие способы сканирования</h4>
 Сканирование локальной сети на доступные машины
-<pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"</pre>
-Путь пакета к ресурсу
-<pre>traceroute &lt;any_ip_or_domain&gt;</pre>
-Сканирование всех доменов по сертификату определенного домена
-<pre>
-true | openssl s_client -showcerts -connect habrahabr.ru:443 2>&1 |openssl x509 -text | grep -o 'DNS:[^,]*' | cut -f2 -d:
+<pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"
 </pre>
-
-<hr>
-
-<h4>Использование wget</h4>
-Скачать front-end (без rest запросов)
-<pre>wget -r -k -l 7 -p -E -nc https://itcompressor.github.io/</pre>
-"Скачать и запустить"
-<pre>wget -q -O – https://fixubuntu.com/fixubuntu.sh | bash</pre>
+Путь пакета к ресурсу
+<pre>traceroute &lt;any_ip_or_domain&gt;
+</pre>
+Сканирование всех доменов по сертификату определенного домена
+<pre>true | openssl s_client -showcerts -connect habrahabr.ru:443 2>&1 |openssl x509 -text | grep -o 'DNS:[^,]*' | cut -f2 -d:
+</pre>
+Скачать front-end (без rest запросов) c помощью wget
+<pre>wget -r -k -l 7 -p -E -nc https://itcompressor.github.io/
+</pre>
+"Скачать и запустить" c помощью wget
+<pre>wget -q -O – https://fixubuntu.com/fixubuntu.sh | bash
+</pre>
 Изменение mac-адреса в Linux с помощью утилиты ifconfig, где wlp3s0 название сетевого интерфейса
-<pre>
-sudo ifconfig wlp3s0 down
+<pre>sudo ifconfig wlp3s0 down
 sudo ifconfig wlp3s0 hw ether 00:18:f3:4c:d6:6d
 sudo ifconfig wlp3s0 up
 </pre>
-
-<hr>

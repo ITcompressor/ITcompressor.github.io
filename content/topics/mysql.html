@@ -1,0 +1,66 @@
+Делаем бекап(дамп базы данных)
+<pre>mysqldump -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql
+</pre>
+Создаём структуру базы без данных
+<pre>mysqldump —no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql
+</pre>
+Если нужно сделать дамп только одной или нескольких таблиц
+<pre>mysqldump -u USER -pPASSWORD DATABASE TABLE1 TABLE2 TABLE3 > /path/to/file/dump_table.sql
+</pre>
+Создание бекапа и сразу его архивируем с указанием его даты
+<pre>mysqldump -u USER -pPASSWORD DATABASE | gzip > `date +/path/to/outputfile.sql.%Y%m%d.%H%M%S.gz`
+</pre>
+Заливаем бекап в базу данных
+<pre>mysql -u USER -pPASSWORD DATABASE &lt; /path/to/dump.sql
+</pre>
+Заливаем архив бекапа в базу
+<pre>gunzip &lt; /path/to/outputfile.sql.gz | mysql -u USER -pPASSWORD DATABASE
+</pre>
+Создаём новую базу данных
+<pre>mysqladmin -u USER -pPASSWORD create NEWDATABASE
+</pre>
+Так можно посмотреть список таблиц базы
+<pre>
+mysqlshow -u USER -pPASSWORD DATABASE
+</pre>
+Создаём нового пользователя
+<pre>CREATE USER 'qwer'@'%' IDENTIFIED BY 'password';
+</pre>
+Разрешаем внешние подключения(remote access)
+<pre>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
+</pre>
+Даём полный контроль
+<pre>GRANT GRANT OPTION ON *.* TO 'qwer'@'%';
+GRANT ALL PRIVILEGES ON * . * TO 'qwer'@'%';
+FLUSH PRIVILEGES;
+</pre>
+Изменение пароля
+<pre>SET PASSWORD FOR 'user-name-here'@'hostname' = PASSWORD('new-password');
+</pre>
+Изменение пароля в новых версия mysql 8+
+<pre>ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+</pre>
+Пример небезопасной вставки данных с помощью SQL_SAFE_UPDATES
+<pre>
+SET SQL_SAFE_UPDATES = 0;
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+SET SQL_SAFE_UPDATES = 1;
+</pre>
+Пример обновления данных
+<pre>UPDATE Customers
+SET ContactName='Alfred Schmidt', City='Hamburg'
+WHERE CustomerName='Alfreds Futterkiste';
+</pre>
+Добавление столбца с созданием индекса
+<pre>ALTER TABLE mytable
+ADD COLUMN myarguments VARCHAR(255),
+ADD INDEX (myarguments);
+</pre>
+Добавление столбца с созданием вторичного ключа (ссылки) на другую таблицу
+<pre>ALTER TABLE `my_table`
+ADD COLUMN `my_new_columnt` BIGINT(20) DEFAULT NULL,
+ADD CONSTRAINT FK_EXTERNAL_COLUMN_IDX FOREIGN KEY (my_new_columnt) REFERENCES external_table (id_field);
+</pre>
+<img src="img/sql-joins.png" alt="How use sql join"/>
+
