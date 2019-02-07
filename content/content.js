@@ -424,7 +424,7 @@ var contents = [
   {
     "id": "android",
     "updated_at": "2019-02-05 12:58",
-    "heading": "Android и его секреты",
+    "heading": "Android",
     "content": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
       "Монтирование для записи system раздела. Редактирование автозагрузки.",
     "uri": "android.html",
