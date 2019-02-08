@@ -59,3 +59,6 @@ Cкрипта в автозагрузке
 И при помощи ADB можно запустить на мобильном устройстве самый настоящий шелл Unix.
 <pre>adb shell
 </pre>
+Открыть настройки через команду в шеле
+<pre>adb shell am start -a android.intent.action.MAIN -n com.android.settings/.Settings
+</pre>

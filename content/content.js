@@ -393,7 +393,7 @@ var contents = [
   },
   {
     "id": "android",
-    "updated_at": "2019-02-05 12:58",
+    "updated_at": "2019-02-08 14:58",
     "heading": "Android",
     "content": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
       "Монтирование для записи system раздела. Редактирование автозагрузки.",
