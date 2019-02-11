@@ -328,13 +328,16 @@ var contents = [
   },
   {
     "id": "windows",
-    "updated_at": "2019-02-11 22:45",
+    "updated_at": "2019-02-12 01:20",
     "heading": "Windows",
     "content": "О особенностях винды и специфичных для её утилитах",
     "uri": "windows.html",
+    "external": "https://www.kv.by/post/1055116-chto-delat-esli-zabyl-parol-ot-windows-10",
     "tags": [
       "users",
-      "shutdown"
+      "shutdown",
+      "utilman",
+      "hack"
     ]
   },
   {
