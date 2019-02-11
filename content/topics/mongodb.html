@@ -22,7 +22,11 @@
 Пример импорта
 <pre>mongoimport -h localhost:27017 -d my2_db -c my_collection --file output.json
 </pre>
+Поиск в внутреннем массиве
 <pre>db.collection.find({"fields":{$elemMatch:{field1:5,field2:"A"}}})
+</pre>
+Поиск в внутреннем массиве, если примитивный тип внутри
+<pre>db.collection.find({"fields":{$elemMatch:{"$eq":679207}}})
 </pre>
 Поиск not null значений
 <pre>db.collection.find({"IMAGE URL":{$exists:true}});
