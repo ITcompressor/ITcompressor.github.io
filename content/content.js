@@ -229,6 +229,16 @@ var contents = [
     ]
   },
   {
+    "id": "vpn",
+    "updated_at": "2019-02-13 15:00",
+    "heading": "VPN",
+    "content": "Подключение к VPN в различных ОС в картинках",
+    "uri": "vpn.html",
+    "tags": [
+      "openvpn"
+    ]
+  },
+  {
     "id": "regular",
     "updated_at": "1999-12-31 23:59",
     "heading": "Регулярные выражения",
