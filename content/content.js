@@ -235,6 +235,7 @@ var contents = [
     "content": "Подключение к VPN в различных ОС в картинках",
     "uri": "vpn.html",
     "tags": [
+      "pptp",
       "openvpn"
     ]
   },
