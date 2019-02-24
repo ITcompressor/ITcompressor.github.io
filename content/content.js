@@ -1,5 +1,19 @@
 var contents = [
   {
+    "id": "MySQL",
+    "updated_at": "2019-02-24 21:18",
+    "heading": "MySQL",
+    "content": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
+    "uri": "mysql.html",
+    "tags": [
+      "backup",
+      "index",
+      "unsafe",
+      "duplicates",
+      "permissions"
+    ]
+  },
+  {
     "id": "brutespray",
     "updated_at": "2019-01-12 01:07",
     "heading": "Брутим по взрослому с помощью brutespray.py",
@@ -365,20 +379,6 @@ var contents = [
     "tags": [
       "уровни изоляции",
       "transaction-isolation-level"
-    ]
-  },
-  {
-    "id": "MySQL",
-    "updated_at": "2019-02-24 21:18",
-    "heading": "MySQL",
-    "content": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
-    "uri": "mysql.html",
-    "tags": [
-      "backup",
-      "index",
-      "unsafe",
-      "duplicates",
-      "permissions"
     ]
   },
   {
