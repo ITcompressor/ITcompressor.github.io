@@ -369,7 +369,7 @@ var contents = [
   },
   {
     "id": "MySQL",
-    "updated_at": "2019-02-07 19:26",
+    "updated_at": "2019-02-24 21:18",
     "heading": "MySQL",
     "content": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
     "uri": "mysql.html",
@@ -377,6 +377,7 @@ var contents = [
       "backup",
       "index",
       "unsafe",
+      "duplicates",
       "permissions"
     ]
   },

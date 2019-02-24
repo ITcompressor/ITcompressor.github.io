@@ -40,6 +40,12 @@ FLUSH PRIVILEGES;
 Изменение пароля в новых версия mysql 8+
 <pre>ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 </pre>
+Пример поиска дубликатов
+<pre>SELECT name, COUNT(*) c
+FROM my_table
+GROUP BY name
+HAVING c > 1;
+</pre>
 Пример небезопасной вставки данных с помощью SQL_SAFE_UPDATES
 <pre>
 SET SQL_SAFE_UPDATES = 0;
