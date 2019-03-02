@@ -4,7 +4,7 @@ var contents = [
     "updated_at": "2019-03-02 12:27",
     "heading": "Некоторые уловки для игры в CTF",
     "content": "Наборы команд, rce (Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома.",
-    "uri": "screen.html",
+    "uri": "ctf.html",
     "tags": [
       "rce",
       "lfi"
