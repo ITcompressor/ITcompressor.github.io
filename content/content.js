@@ -1,5 +1,16 @@
 var contents = [
   {
+    "id": "ctf",
+    "updated_at": "2019-03-02 12:27",
+    "heading": "Некоторые уловки для игры в CTF",
+    "content": "Наборы команд, rce (Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома.",
+    "uri": "screen.html",
+    "tags": [
+      "rce",
+      "lfi"
+    ]
+  },
+  {
     "id": "screen",
     "updated_at": "2019-03-02 12:15",
     "heading": "screen",
