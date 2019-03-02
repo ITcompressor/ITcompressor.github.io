@@ -1,13 +1,24 @@
 var contents = [
   {
+    "id": "git",
+    "updated_at": "2019-03-02 16:08",
+    "heading": "GIT",
+    "content": "Полезности для гит + основные команды",
+    "uri": "git.html",
+    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
+    "tags": [
+      "reset hard"
+    ]
+  },
+  {
     "id": "ctf",
     "updated_at": "2019-03-02 12:27",
     "heading": "Некоторые уловки для игры в CTF",
-    "content": "Наборы команд, rce (Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома.",
+    "content": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома.",
     "uri": "ctf.html",
     "tags": [
-      "rce",
-      "lfi"
+      "RCE(Remote Code Execution)",
+      "LFI(Local File Inclusion)"
     ]
   },
   {
@@ -399,16 +410,6 @@ var contents = [
     "tags": [
       "уровни изоляции",
       "transaction-isolation-level"
-    ]
-  },
-  {
-    "id": "git",
-    "updated_at": "2018-08-01 22:55",
-    "heading": "GIT",
-    "content": "Полезности для гит + основные команды",
-    "uri": "git.html",
-    "tags": [
-      "git"
     ]
   },
   {
