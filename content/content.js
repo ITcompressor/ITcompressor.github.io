@@ -1,5 +1,17 @@
 var contents = [
   {
+    "id": "camera",
+    "updated_at": "2019-03-02 17:11",
+    "heading": "Использование камеры в браузере",
+    "content": "Пример использование камеры в браузере + ссылка на демо внутри",
+    "uri": "camera.html",
+    "external":"https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
+    "tags": [
+      "camera",
+      "html5"
+    ]
+  },
+  {
     "id": "git",
     "updated_at": "2019-03-02 16:08",
     "heading": "GIT",

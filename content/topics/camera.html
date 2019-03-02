@@ -1,0 +1,16 @@
+<h1>Демо <a href="/content/topics/camera_demo.html">тут</a>!!!</h1><br>
+хтмл тег для отображения
+<pre>&#x3C;video autoplay=&#x22;true&#x22; id=&#x22;videoElement&#x22;&#x3E;&#x3C;/video&#x3E;
+</pre>
+JS  для отображения
+<pre>var video = document.querySelector("#videoElement");
+if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+            console.log("Something went wrong!");
+        });
+}
+</pre>
