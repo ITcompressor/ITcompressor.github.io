@@ -1,15 +1,22 @@
+Автологин -> вместо myusername подставляем имя нашего пользователя
+<pre>mkdir /etc/systemd/system/getty@tty1.service.d    
+nano /etc/systemd/system/getty@tty1.service.d/override.conf
+</pre>
+<pre>[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --noissue --autologin myusername %I $TERM
+Type=idle
+</pre>
 Добавить нового пользователя
 <pre>sudo adduser newuser
 </pre>
 Редактирование привилегий пользователей
 <pre>sudo /usr/sbin/visudo
 </pre>
-Получение списка пользователей имеющих права суперпользователя
-<pre>grep -Po '^sudo.+:\K.*$' /etc/group
-</pre>
 Примеры использования утилиты dd
 <pre>dd if=kali.iso of=/dev/sdb bs=512k
-sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync
+</pre>
+<pre>sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync
 </pre>
 Восстановление ntfs
 <pre>sudo ntfsfix  /dev/sdb1
@@ -32,16 +39,9 @@ sudo dd if=/path/to/iso/windows.iso of=/dev/sdg bs=4M; sync
 Разархивироваие *.rar
 <pre>unrar e file.rar
 </pre>
-Шифрования(пароль - apples, файл - picture.jpg)
-<pre>aescrypt -e -p apples picture.jpg
-</pre>
-Дешифровка(пароль - apples, файл - pictures.jpg.aes)
-<pre>aescrypt -d -p apples picture.jpg.aes    
-</pre>
-Редактирование задачи в кроне
+Редактирование задачи в кроне -> стартовать скрипт каждые 10 минут
 <pre>crontab -e 
 </pre>
-Стартовать скрипт каждые 10 минут
 <pre>*/10 * * * * /usr/bin/python ~/script_path/script.py
 </pre>
 Рекурсивный вывод содержимого файлов
@@ -69,17 +69,13 @@ sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
 Посмотреть информацию о подключенных дисках
 <pre>sudo fstab -l
 </pre>
-Редактирование автомонтирования разделов
+Редактирование автомонтирования разделов -> добавление диска ext4
 <pre>sudo nano /etc/fstab
 </pre>
-Атомонтирование раздела ext4
 <pre>/dev/sda1 /home/qwer/DATA   ext4  defaults       0  0
 </pre>
 Пример монтирования расшаренной виндой директорий
 <pre>nautilus smb://winda-pc/
-</pre>
-Пример команды для запуска в скрине
-<pre>screen -dmS $SCREEN_NAME /bin/bash -c "/opt/somescrip.sh 2>&1 > /opt/mylog.log"
 </pre>
 Манипуляции для включения rc.local (актуально для новых версий убунту 18+)
 <pre># touch /etc/rc.local
