@@ -1,7 +1,3 @@
-Установка net-tools (ifconfig)
-<pre>
-apt install net-tools
-</pre>
 Установка sdkman для управления версиями утилит
 <pre>
 curl -s "https://get.sdkman.io" | bash
@@ -97,16 +93,4 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 # Refresh repository sources and install Insomnia
 sudo apt-get update
 sudo apt-get install insomnia
-</pre>
-
-<hr>
-
-Установка samba
-<pre>sudo apt install system-config-samba
-</pre>
-Запуск samba
-<pre>sudo system-config-samba
-</pre>
-Возможный фикс samba, если не находит нужного файла
-<pre>sudo touch /etc/libuser.conf
 </pre>

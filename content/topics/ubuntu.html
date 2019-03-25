@@ -1,3 +1,33 @@
+Установка samba
+<pre>sudo apt install system-config-samba
+</pre>
+Запуск samba
+<pre>sudo system-config-samba
+</pre>
+Возможный фикс samba, если не находит нужного файла
+<pre>sudo touch /etc/libuser.conf
+</pre>
+Установка bash-completion для автокомплита в консоли
+<pre>apt install bash-completion
+</pre>
+Настройки для .bashrc (если не работает автокомплит + цветовая схема терминала)
+<pre>if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+</pre>
+Установка net-tools (ifconfig)
+<pre>
+apt install net-tools
+</pre>
 Автологин -> вместо myusername подставляем имя нашего пользователя
 <pre>mkdir /etc/systemd/system/getty@tty1.service.d    
 nano /etc/systemd/system/getty@tty1.service.d/override.conf

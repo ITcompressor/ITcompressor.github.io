@@ -1,13 +1,35 @@
 var contents = [
   {
     "id": "ubuntu",
-    "updated_at": "2019-03-25 16:10",
+    "updated_at": "2019-03-25 18:37",
     "heading": "Ubuntu",
-    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки",
+    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале." +
+      " Установка net-tools (ifconfig), samba",
     "uri": "ubuntu.html",
     "tags": [
+      "samba",
+      "bash-completion",
       "autologin",
       "autostart"
+    ]
+  },
+  {
+    "id": "any-install",
+    "updated_at": "2019-03-25 18:35",
+    "heading": "Полезные установки",
+    "content": "Установка gnome shell (графическая оболочка), wine (для запуска виндовс игр и приложений), " +
+      "insomnia (аналог postman), sdkman для управления версиями утилит, pip для python и т.д.",
+    "uri": "any-install.html",
+    "tags": [
+      "update-alternatives",
+      "pip",
+      "python",
+      "wine",
+      "run win32 apps",
+      "sdkman",
+      "gnome-shell",
+      "insomnia",
+      "desktop"
     ]
   },
   {
@@ -363,33 +385,6 @@ var contents = [
       "bash",
       "wget",
       "netstat"
-    ]
-  },
-  {
-    "id": "any-install",
-    "updated_at": "2019-01-05 16:41",
-    "heading": "Полезные установки",
-    "content": "Установка gnome shell (графическая оболочка), установка net-tools (ifconfig), " +
-      "установка и настройка wine (для запуска виндовс игр и приложений), " +
-      "установка insomnia (аналог postman), установка samba," +
-      "установка sdkman для управления версиями утилит, установка pip для python и т.д.",
-    "uri": "any-install.html",
-    "tags": [
-      "samba",
-      "update-alternatives",
-      "cmd",
-      "bash",
-      "aes",
-      "linux",
-      "lamp",
-      "pip",
-      "python",
-      "wine",
-      "run win32 apps",
-      "sdkman",
-      "gnome-shell",
-      "insomnia",
-      "desktop"
     ]
   },
   {
