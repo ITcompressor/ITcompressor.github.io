@@ -1,11 +1,52 @@
 var contents = [
   {
+    "id": "ubuntu",
+    "updated_at": "2019-03-25 16:10",
+    "heading": "Ubuntu",
+    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки",
+    "uri": "ubuntu.html",
+    "tags": [
+      "autologin",
+      "autostart"
+    ]
+  },
+  {
+    "id": "linux",
+    "updated_at": "2019-03-25 16:09",
+    "heading": "Linux",
+    "content": "Автомонтирование разделов, просмотр процессов, информации о свободном месте на дисках. " +
+      "Шифрование файлов, подключение к VPN, работа с cron, добавление пользователей, " +
+      "редактирование их прав, утилита dd, пример создания ссылок, создания архивов, " +
+      "изменение владельцов файлов, использование утилиты find и многое другое",
+    "uri": "linux.html",
+    "tags": [
+      "automount",
+      "cron",
+      "adduser",
+      "recursively find",
+      "watch",
+      "tail",
+      "rar",
+      "chmod",
+      "chown",
+      "hosts",
+      "dd",
+      "ntfs",
+      "zip",
+      "fstab",
+      "df",
+      "zerofree",
+      "ext4",
+      "smb"
+    ]
+  },
+  {
     "id": "camera",
     "updated_at": "2019-03-02 17:11",
     "heading": "Использование камеры в браузере",
     "content": "Пример использование камеры в браузере + ссылка на демо внутри",
     "uri": "camera.html",
-    "external":"https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
+    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
     "tags": [
       "camera",
       "html5"
@@ -43,38 +84,6 @@ var contents = [
     "tags": [
       "screen",
       "mutlisessions"
-    ]
-  },
-  {
-    "id": "linux",
-    "updated_at": "2019-03-02 12:00",
-    "heading": "Linux",
-    "content": "Автомонтирование разделов, автологин, просмотр автозапуска, просмотр процессов, информации о свободном месте на дисках, " +
-      "автозагрузк скриптов. шифрование файлов, подключение к VPN, работа с Cron, добавление пользователей, " +
-      "редактирование их прав, утилита dd, пример создания ссылок, создания архивов, " +
-      "изменение владельцов файлов, использование утилиты find и многое другое.",
-    "uri": "linux.html",
-    "tags": [
-      "autologin",
-      "automount",
-      "autostart",
-      "cron",
-      "adduser",
-      "recursively find",
-      "watch",
-      "tail",
-      "rar",
-      "chmod",
-      "chown",
-      "hosts",
-      "dd",
-      "ntfs",
-      "zip",
-      "fstab",
-      "df",
-      "zerofree",
-      "ext4",
-      "smb"
     ]
   },
   {
