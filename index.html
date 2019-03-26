@@ -14,13 +14,65 @@
 
 <body id='ng-app' ng-app="core-app" ng-controller="CoreController">
 
-    <h2 ng-show="{{ false }}">
-        Если вы видете этот текст, то у вас мб:<br>
-        -медленный интернет
-        <br>-вы выключили JS 
-        <br>-вам не повезло с браузером (скорее всего у вас Safari). 
-        <br>Включите JS или используйте другой браузер, чтобы пользоваться сайтом! =(
-    </h2>
+    <div ng-show="{{ false }}">
+        На сайте вы найдете:
+        [<b>samba,bash-completion,autologin,autostart</b>] Автологин, отключение сессии гостя, скрипты для автозагрузки,
+        автодоплонение команд в терминале. Установка net-tools (ifconfig), samba
+        ,[<b>update-alternatives,pip,python,wine,run win32 apps,sdkman,gnome-shell,insomnia,desktop</b>] Установка gnome
+        shell (графическая оболочка), wine (для запуска виндовс игр и приложений), insomnia (аналог postman), sdkman для
+        управления версиями утилит, pip для python и т.д. ,[<b>automount,cron,adduser,recursively
+            find,watch,tail,rar,chmod,chown,hosts,dd,ntfs,zip,fstab,df,zerofree,ext4,smb</b>] Автомонтирование разделов,
+        просмотр процессов, информации о свободном месте на дисках. Шифрование файлов, подключение к VPN, работа с cron,
+        добавление пользователей, редактирование их прав, утилита dd, пример создания ссылок, создания архивов,
+        изменение владельцов файлов, использование утилиты find и многое другое ,[<b>camera,html5</b>] Пример
+        использование камеры в браузере + ссылка на демо внутри ,[<b>reset hard</b>] Полезности для гит + основные
+        команды ,[<b>RCE(Remote Code Execution),LFI(Local File Inclusion)</b>] Наборы команд, RCE(Remote Code
+        Execution), LFI(Local File Inclusion) и наблюдений для взлома. ,[<b>screen,mutlisessions</b>] Нужна для
+        параллельной работы с другими утилитами в консоли. Например нужно запустить сервер(просматривать его лог) и в
+        тоже время смотреть нагрузку машины. ,[<b>backup,index,unsafe,duplicates,permissions</b>] Пимеры запросов (также
+        выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами
+        мускула. ,[<b>brutespray,hacking,nmap,ssh..</b>] Пример брута паролей для различных сервисов с помощью утилиты
+        brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.
+        ,[<b>docker,containers,virtualization,install,hello world,docker-compose</b>] Удаление старой версии докера,
+        установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера.Пример создание собственного
+        докер имейджа, а также публикация его на докер хаб ,[<b>grep,ls,поиск</b>] Утилита grep это вполне возможно
+        самая популярная из существующих команд в Unix/Linux. Многие бы с этим поспорили, но стоит начать использовать
+        grep, эта команда будет присутствовать почти во всех ваших скриптах для консоли Linux. grep расшифровывается как
+        ‘global regular expression printer‘.Иными словами grep выдрезает нужные вам строки из текстовых файлов которые
+        содержат указаный пользователем текст. ,[<b>letsencrypt,certificates,https,ssl,nginx</b>] Конфиг https для nginx
+        для платного кастомного сертификата. Плюс настройка бесплатного летсэнкрипт. ,[<b>loader,grub</b>] Алгоритм
+        восстановления груб на линукс (например после установки винды) ,[<b>vnc,remote,desktop,linux</b>] Поднятие внс
+        сервера на линуксе (удаленый гуи\рабочий стол) ,[<b>vnc,remote desktop,macOS</b>] Кастом и настройка среды для
+        MacOS ,[<b>rabbitmq,events,event bus</b>] RabbitMQ — платформа, реализующая систему обмена сообщениями между
+        компонентами программной системы (Message Oriented Middleware) на основе стандарта AMQP (Advanced Message
+        Queuing Protocol). RabbitMQ выпускается под Mozilla Public License. ,[<b>ssh,generate
+            ssh,scp,tunel,forwarding,port</b>] Использование ssh, добавление ключей ,[<b>jdk,jstack,maven,jmap</b>]
+        Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.
+        ,[<b>map,reduce,aggregation,sort,select,query,index,profiler,nosql</b>] Примеры запросов, апдейтов, сортировка,
+        настройка профайлинга для мониторинга медленных запросов, создание индексов, экспорт в файл и импорт из файла,
+        легкая агрегация, примеры работы через консоль и тп. ,[<b>search,google</b>] Чтобы получать более точные
+        результаты, вы можете использовать в запросах специальные символы или слова.Google Поиск обычно не учитывает
+        знаки препинания, не относящиеся к операторам поиска.Не добавляйте пробел между словом или символом и поисковым
+        запросом.Подробнее под катом. + часть статьи от IT Hack ,[<b>vim,editor</b>] Хоткеи и основы консольной идеи вим
+        ,[<b>secure,keys,keyserver</b>] Генерация и экспорт GPG ключей. Обычно используется для шифрования почты, в моем
+        же случае я генерировал GPG ключи, чтобы подписывать ими jar файлы при заливки их в репозитории.
+        ,[<b>pptp,openvpn</b>] Подключение к VPN в различных ОС в картинках ,[<b>regular,expressions,string</b>] Сборка
+        полезных регулярных выражений ,[<b>Hacking Team,hacking,docs,get started</b>] Интересная история о реальном
+        взломе (на английском) ,[<b>linux,grub,bash,hack</b>] Алгоритм сброса пароля на линуксе
+        ,[<b>traceroute,nmap,nc,ifconfig,mac,curl,bash,wget,netstat</b>] Примеры использования curl, wget, nmap, nc,
+        traceroute. Команда сканирования локальной сети на доступные машины. Сканирование доменов по общему сертификату.
+        Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.
+        ,[<b>users,shutdown,utilman,hack</b>] О особенностях винды и специфичных для её утилитах
+        ,[<b>replication,database,mysql,example,debian8,ubuntu14.04,linux</b>] Делаем реплику mysql бд на примере,
+        имеем... ,[<b>уровни изоляции,transaction-isolation-level</b>] Общая информация о мускуле, уровни изоляции
+        ,[<b>android,fastboot,hosts,autostart,autorun,adb,ban ip</b>] Собранны команды выполняемые через приложение
+        Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot.Монтирование для записи
+        system раздела. Редактирование автозагрузки. ,[<b>Ubuntu 14.04 LTS,Hotspot,Wi-fi</b>] Below I will show you how
+        to use Unity's default network manager to create a wireless hotspot with Androiddevices support, tested in
+        64-bit Ubuntu 1404 with Nexus 4 and Sumsung Galaxy ace3. ,[<b>Ubuntu 14.04 LTS,Ruby 2.2.3,rbenv,bundler</b>]
+        Установка окружения для руби ,[<b>database,PostgreSQL 9.4,linux</b>] PostgreSQL (произносится
+        «Пост-Грэс-Кью-Эл») — свободная объектно-реляционная система управления базами данных (СУБД).
+    </div>
 
     <div id="center" class="fix-top">
         <div class="container">
@@ -36,9 +88,9 @@
                         </span> &nbsp;
                     </span>
                     <span>⌚ {{ doc.updated_at | date:'medium' }}</span>
-                        <h4>
-                            {{ doc.content }}
-                        </h4>
+                    <h4>
+                        {{ doc.content }}
+                    </h4>
                     <span>
                         <span ng-show="doc.external">
                             <a class="btn btn-default" ng-href="{{ doc.external }}" role="button"> Источник &raquo; </a>
@@ -70,33 +122,36 @@
     <script type="text/javascript" src="js/app.js"></script>
 
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter50640967 = new Ya.Metrika2({
-                    id:50640967,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter50640967 = new Ya.Metrika2({
+                        id: 50640967,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) { }
+            });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/50640967" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+        console.log(window.contents.map(function (item) { return "[<b>" + item.tags + "</b>] " + item.content + " " }) + "")
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/50640967" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
 </body>
 
