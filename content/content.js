@@ -1,15 +1,26 @@
 var contents = [
   {
+    "id": "ctf",
+    "updated_at": "2019-03-31 18:27",
+    "heading": "Некоторые уловки для игры в CTF",
+    "content": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
+    " просмотр и редактирование файлов в бинармно виде.",
+    "uri": "ctf.html",
+    "tags": [
+      "binary",
+      "RCE(Remote Code Execution)",
+      "LFI(Local File Inclusion)"
+    ]
+  },
+  {
     "id": "ubuntu",
     "updated_at": "2019-03-31 17:37",
     "heading": "Ubuntu",
-    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале," +
-      " просмотр файла в бинармно виде." +
+    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале." +
       " Установка net-tools (ifconfig), samba",
     "uri": "ubuntu.html",
     "tags": [
       "samba",
-      "binary",
       "bash-completion",
       "autologin",
       "autostart"
@@ -98,17 +109,6 @@ var contents = [
     "external": "https://habr.com/ru/company/skillbox/blog/442260/",
     "tags": [
       "reset hard"
-    ]
-  },
-  {
-    "id": "ctf",
-    "updated_at": "2019-03-02 12:27",
-    "heading": "Некоторые уловки для игры в CTF",
-    "content": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома.",
-    "uri": "ctf.html",
-    "tags": [
-      "RCE(Remote Code Execution)",
-      "LFI(Local File Inclusion)"
     ]
   },
   {
