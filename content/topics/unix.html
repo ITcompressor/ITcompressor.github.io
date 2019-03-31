@@ -1,0 +1,17 @@
+Добавить папку с исполняемыми файлами в баш для быстрого доступа
+<pre>export PATH=$PATH:~/s/
+</pre>
+Настройки для .bashrc (если не работает автокомплит + цветовая схема терминала)
+<pre>if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+</pre>

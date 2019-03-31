@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "unix",
+    "updated_at": "2019-03-31 16:37",
+    "heading": "Unix",
+    "content": "Общие команды присущие unix совместимх ОС: Android, Linux, MacOS. Добавление папки с исполняемыми файлами +" +
+      "автокомплит баша",
+    "uri": "unix.html",
+    "tags": [
+      "bash",
+      "terminal",
+      "bash-completion"
+    ]
+  },
+  {
     "id": "ubuntu",
     "updated_at": "2019-03-25 18:37",
     "heading": "Ubuntu",
