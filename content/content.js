@@ -1,5 +1,21 @@
 var contents = [
   {
+    "id": "ubuntu",
+    "updated_at": "2019-03-31 17:37",
+    "heading": "Ubuntu",
+    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале," +
+      " просмотр файла в бинармно виде." +
+      " Установка net-tools (ifconfig), samba",
+    "uri": "ubuntu.html",
+    "tags": [
+      "samba",
+      "binary",
+      "bash-completion",
+      "autologin",
+      "autostart"
+    ]
+  },
+  {
     "id": "unix",
     "updated_at": "2019-03-31 16:37",
     "heading": "Unix",
@@ -10,20 +26,6 @@ var contents = [
       "bash",
       "terminal",
       "bash-completion"
-    ]
-  },
-  {
-    "id": "ubuntu",
-    "updated_at": "2019-03-25 18:37",
-    "heading": "Ubuntu",
-    "content": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале." +
-      " Установка net-tools (ifconfig), samba",
-    "uri": "ubuntu.html",
-    "tags": [
-      "samba",
-      "bash-completion",
-      "autologin",
-      "autostart"
     ]
   },
   {
