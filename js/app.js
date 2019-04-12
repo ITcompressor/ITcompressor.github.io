@@ -19,9 +19,12 @@ app.controller("CoreController",
         }
 
         $scope.clickDoc = function (url, id) {
+            var doc = getDocById(id)
+            debugger;
             $scope.isTarget = true;
             $scope.docUrl = url;
-            $scope.docContent = getDocById(id).content
+            $scope.docContentRu = doc.content_ru 
+            $scope.docContentEn = doc.content_en
             $scope.target = id;
             setActualHash();
         }
