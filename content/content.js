@@ -1,5 +1,16 @@
 var contents = [
   {
+    "id": "git",
+    "updated_at": "2019-04-012 14:32",
+    "heading": "GIT",
+    "content": "Полезности для гит + основные команды",
+    "uri": "git.html",
+    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
+    "tags": [
+      "revert reset hard"
+    ]
+  },
+  {
     "id": "ctf",
     "updated_at": "2019-03-31 18:27",
     "heading": "Некоторые уловки для игры в CTF",
@@ -98,17 +109,6 @@ var contents = [
     "tags": [
       "camera",
       "html5"
-    ]
-  },
-  {
-    "id": "git",
-    "updated_at": "2019-03-02 16:08",
-    "heading": "GIT",
-    "content": "Полезности для гит + основные команды",
-    "uri": "git.html",
-    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
-    "tags": [
-      "reset hard"
     ]
   },
   {
