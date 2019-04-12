@@ -4,6 +4,9 @@
 Создаём структуру базы без данных
 <pre>mysqldump —no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql
 </pre>
+Получение дампа схемы в mysql (Get dump)
+<pre>mysqldump -h10.1.1.56 -uyouruser -pyourpass -P3306 yourdb > yourdb.sql
+</pre>
 Если нужно сделать дамп только одной или нескольких таблиц
 <pre>mysqldump -u USER -pPASSWORD DATABASE TABLE1 TABLE2 TABLE3 > /path/to/file/dump_table.sql
 </pre>
