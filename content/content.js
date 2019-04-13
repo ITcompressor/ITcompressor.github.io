@@ -4,7 +4,7 @@ var contents = [
     "updated_at": "2019-04-14 00:40",
     "heading": "Glassfish",
     "content_ru": "Базовая информация для работы с сервером приложений",
-    "content_en": "Basic info about popula web-application server",
+    "content_en": "Basic info about popular web-application server",
     "external": "https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html",
     "uri": "glassfish.html",
     "tags": [
