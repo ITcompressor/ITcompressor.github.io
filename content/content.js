@@ -1,5 +1,19 @@
 var contents = [
   {
+    "id": "glassfish",
+    "updated_at": "2019-04-14 00:40",
+    "heading": "Glassfish",
+    "content_ru": "Базовая информация для работы с сервером приложений",
+    "content_en": "Basic info about popula web-application server",
+    "external": "https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html",
+    "uri": "glassfish.html",
+    "tags": [
+      "web",
+      "java ee",
+      "server"
+    ]
+  },
+  {
     "id": "unix",
     "updated_at": "2019-04-12 14:40",
     "heading": "Unix",
@@ -30,7 +44,7 @@ var contents = [
     "updated_at": "2019-03-31 18:27",
     "heading": "Некоторые уловки для игры в CTF",
     "content_ru": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
-    " просмотр и редактирование файлов в бинармно виде.",
+      " просмотр и редактирование файлов в бинармно виде.",
     "uri": "ctf.html",
     "tags": [
       "binary",
