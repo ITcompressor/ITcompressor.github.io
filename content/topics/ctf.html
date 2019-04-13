@@ -1,8 +1,18 @@
-Показать файл в бинарном виде
+Показать файл в бинарном виде (view binary)
 <pre>xxd file.php
 </pre>
-Редактирование файла
+Редактирование файла (edit binary)
 <pre>hexedit file.php
+</pre>
+Установка утилиты для работы с метаданными (install util for work with metadata)
+<pre>apt-get install libimage-exiftool-perl
+</pre>
+Просмотр метаданных (view metadata)
+<pre>exiftool "file name".jpeg
+</pre>
+Примеры удаления метаданных (remove metadata examples)
+<pre>exiftool -all= "file name".jpeg
+exiftool -all= "folder".jpeg
 </pre>
 Magic numbers для разных типов файлов
 <pre>Adobe Illustrator 	.ai 	25 50 44 46 [%PDF]
@@ -59,7 +69,7 @@ Zlib File               .zlib 	78 9C
 SDF File                .sdf 	78 9C
 </pre>
 Файлы бекапов, которые мб на сервере, в частности при запросе такого файла произойдет скачивание, а не выполнение. 
-Имея исходники на руках проще обойти защиту
+Имея исходники на руках проще обойти защиту (Classic file backups in server)
 <pre>backup.zip
 backup.tar.gz
 index.zip
@@ -70,6 +80,6 @@ index.phps
 index.php~
 </pre>
 Если видно, что на вход аргумента принимается скрипт *.php, то можно предположить что это LFI(Local File Inclusion).
-С помощью фильтров можно получить содержимое файла в base64 (как декодировать можно найти в интернете)
+С помощью фильтров можно получить содержимое файла в base64 (как декодировать можно найти в интернете) (You can past filter for view php file on server)
 <pre>php://filter/convert.base64-encode/resource=
 </pre>
