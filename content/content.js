@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "android",
+    "updated_at": "2019-04-14 16:58",
+    "heading": "Android",
+    "content_ru": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
+      "Монтирование для записи system раздела. Редактирование автозагрузки.",
+    "content_en": "Basic commands and tricks for android.",
+    "uri": "android.html",
+    "tags": [
+      "disable apps",
+      "android",
+      "fastboot",
+      "hosts",
+      "autostart",
+      "autorun",
+      "adb",
+      "ban ip"
+    ]
+  },
+  {
     "id": "ctf",
     "updated_at": "2019-04-14 00:55",
     "heading": "Некоторые уловки для игры в CTF",
@@ -459,23 +478,6 @@ var contents = [
     "tags": [
       "уровни изоляции",
       "transaction-isolation-level"
-    ]
-  },
-  {
-    "id": "android",
-    "updated_at": "2019-02-08 14:58",
-    "heading": "Android",
-    "content_ru": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
-      "Монтирование для записи system раздела. Редактирование автозагрузки.",
-    "uri": "android.html",
-    "tags": [
-      "android",
-      "fastboot",
-      "hosts",
-      "autostart",
-      "autorun",
-      "adb",
-      "ban ip"
     ]
   },
   {
