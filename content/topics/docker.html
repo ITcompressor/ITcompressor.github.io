@@ -1,4 +1,4 @@
-Установка докера
+Установка докера (Docker installation)
 <pre>sudo apt-get remove docker docker-engine docker.io
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -10,27 +10,47 @@ sudo docker run hello-world
 sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 </pre>
-Просмотр всех контейнеров
-<pre>docker ps -a</pre>
-Просмотр запущенных контейнеров
-<pre>docker ps</pre>
-Запуск контейнера
-<pre>docker start $container_name</pre>
-Просмотр информации о контейнере
-<pre>docker inspect $conainer_name</pre>
-Собрать контейнер по Dockerfile
-<pre>docker build .</pre>
-Просмотр лога контейнера
-<pre>docker log $container_name</pre>
-Удаление контейнера
-<pre>docker rm $container_name</pre>
-Создание контейнера через имейдж с форвардингом портов, где 8080 порт хоста, а 80 порт контейнера
-<pre>docker run -d -p 8080:80 $container</pre>
-Консоль к контейнеру
-<pre>docker exec -it $container_name bash</pre>
-Удаление всех неактивных контейнеров
-<pre>docker rm -v $(docker ps -aq -f status=exited)</pre>
-Создание собственного имеджа
+Уловки для запуска докера не из под рута (run docker without root)
+<pre>sudo usermod -aG docker $USER
+newgrp docker
+sudo systemctl restart docker
+sudo chmod 666 /var/run/docker.sock
+</pre>
+Просмотр всех контейнеров (view all containers)
+<pre>docker ps -a
+</pre>
+Просмотр запущенных контейнеров (view all running containers)
+<pre>docker ps
+</pre>
+Запуск контейнера (start container)
+<pre>docker start $container_name
+</pre>
+Просмотр информации о контейнере (view information about container)
+<pre>docker inspect $conainer_name
+</pre>
+Собрать контейнер по Dockerfile (build dockerfile)
+<pre>docker build .
+</pre>
+Просмотр лога контейнера (view container log)
+<pre>docker log $container_name
+</pre>
+Удаление контейнера (remove container)
+<pre>docker rm $container_name
+</pre>
+Создание контейнера через имейдж с форвардингом портов, где 8080 порт хоста, а 80 порт контейнера (run container with
+forward ports)
+<pre>docker run -d -p 8080:80 $container
+</pre>
+Консоль к контейнеру (run a docker container's bash)
+<pre>docker exec -it $container_name bash
+</pre>
+Пример запуска утилиты для докер контейнера (example run util in docker container)
+<pre>docker exec infra_mongodb_1 mongoexport -d devbot -c botLog -o /root/test.json
+</pre>
+Удаление всех неактивных контейнеров (remove all inactive containers)
+<pre>docker rm -v $(docker ps -aq -f status=exited)
+</pre>
+Создание собственного имеджа (create custom image)
 <pre>docker run -it --name myapp --hostname myapp ubuntu bash
 apt update
 apt install cowsay

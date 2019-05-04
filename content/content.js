@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "docker",
+    "updated_at": "2019-05-04 8:18",
+    "heading": "Docker",
+    "content_ru": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
+      + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
+    "content_en": "Install docker, docker-compose. Basic docker commands.",
+    "uri": "docker.html",
+    "tags": [
+      "docker",
+      "containers",
+      "virtualization",
+      "install",
+      "hello world",
+      "docker-compose"
+    ]
+  },
+  {
     "id": "ubuntu",
     "updated_at": "2019-05-04 8:01",
     "heading": "Ubuntu",
@@ -208,22 +225,6 @@ var contents = [
       "hacking",
       "nmap",
       "ssh.."
-    ]
-  },
-  {
-    "id": "docker",
-    "updated_at": "2019-02-05 22:43",
-    "heading": "Docker",
-    "content_ru": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
-      + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
-    "uri": "docker.html",
-    "tags": [
-      "docker",
-      "containers",
-      "virtualization",
-      "install",
-      "hello world",
-      "docker-compose"
     ]
   },
   {
