@@ -1,5 +1,23 @@
 var contents = [
   {
+    "id": "ubuntu",
+    "updated_at": "2019-05-04 8:01",
+    "heading": "Ubuntu",
+    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале. " +
+      "Установка net-tools (ifconfig), samba, skype",
+    "content_en": "Autologin, disable guest session, scripts for autorun, autocomplete in terminal. " +
+      "Install net-tools (ifconfig), samba, skype",
+    "uri": "ubuntu.html",
+    "tags": [
+      "samba",
+      "skype",
+      "snap",
+      "bash-completion",
+      "autologin",
+      "autostart"
+    ]
+  },
+  {
     "id": "glassfish",
     "updated_at": "2019-05-04 07:53",
     "heading": "Glassfish",
@@ -89,20 +107,6 @@ var contents = [
     "external": "https://habr.com/ru/company/skillbox/blog/442260/",
     "tags": [
       "revert reset hard"
-    ]
-  },
-  {
-    "id": "ubuntu",
-    "updated_at": "2019-03-31 17:37",
-    "heading": "Ubuntu",
-    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале." +
-      " Установка net-tools (ifconfig), samba",
-    "uri": "ubuntu.html",
-    "tags": [
-      "samba",
-      "bash-completion",
-      "autologin",
-      "autostart"
     ]
   },
   {
