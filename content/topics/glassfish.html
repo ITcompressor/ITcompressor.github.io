@@ -13,9 +13,18 @@
 Раздеплоить .war файл (Undeploy .war file)
 <pre>as-install/bin/asadmin undeploy war-name
 </pre>
+Установка пароля на админку (set admin's panel password)
+<pre>as-install/bin/asadmin change-admin-password
+</pre>
+Включить доступность админки для внешних подключений (enable admin panel for external connections)
+<pre>as-install/bin/asadmin enable-secure-admin
+</pre>
 Расположение админки (Admin panel)
 <pre>http://localhost:4848
 </pre>
-Путь к автодеплю (Autodeploy path)
+Путь к автодеплю (autodeploy path)
 <pre>as-install/domains/domain1/autodeploy
+</pre>
+Путь к настройке переменных среды, там можно установить путь к джаве (env config path, example for JVM_HOME)
+<pre>as-install/config/asenv.conf
 </pre>
