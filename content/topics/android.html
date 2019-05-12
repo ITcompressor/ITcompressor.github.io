@@ -46,6 +46,18 @@ Cкрипта в автозагрузке
 Удаление пакета  с помощью adb
 <pre>adb uninstall &lt;package&gt;
 </pre>
+Пример отключения приложений (disable any app)
+<pre>adb shell pm disable-user --user 0 com.huawei.iconnect
+</pre>
+Полное удаление приложения (remove any app)
+<pre>adb shell pm uninstall -k --user 0 com.huawei.iconnect
+</pre>
+Пример включения приложений (example for enable app)
+<pre>adb shell pm enable com.huawei.iconnect
+</pre>
+Просмотреть список всех отключенных приложений (list diabled apps)
+<pre>adb shell pm list packages -d
+</pre>
 Загрузить файл на устройство с помощью adb
 <pre>adb push /path/to/local/file /mnt/sdcard/path/to/file
 </pre>

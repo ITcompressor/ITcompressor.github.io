@@ -17,6 +17,107 @@ var contents = [
     ]
   },
   {
+    "id": "docker",
+    "updated_at": "2019-05-04 8:18",
+    "heading": "Docker",
+    "content_ru": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
+      + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
+    "content_en": "Install docker, docker-compose. Basic docker commands.",
+    "uri": "docker.html",
+    "tags": [
+      "docker",
+      "containers",
+      "virtualization",
+      "install",
+      "hello world",
+      "docker-compose"
+    ]
+  },
+  {
+    "id": "ubuntu",
+    "updated_at": "2019-05-04 8:01",
+    "heading": "Ubuntu",
+    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале. " +
+      "Установка net-tools (ifconfig), samba, skype",
+    "content_en": "Autologin, disable guest session, scripts for autorun, autocomplete in terminal. " +
+      "Install net-tools (ifconfig), samba, skype",
+    "uri": "ubuntu.html",
+    "tags": [
+      "samba",
+      "skype",
+      "snap",
+      "bash-completion",
+      "autologin",
+      "autostart"
+    ]
+  },
+  {
+    "id": "glassfish",
+    "updated_at": "2019-05-04 07:53",
+    "heading": "Glassfish",
+    "content_ru": "Базовая информация для работы с сервером приложений",
+    "content_en": "Basic info about popular web-application server",
+    "external": "https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html",
+    "uri": "glassfish.html",
+    "tags": [
+      "web",
+      "gf3",
+      "gf5",
+      "java ee",
+      "server"
+    ]
+  },
+  {
+    "id": "ssh",
+    "updated_at": "2019-04-30 12:47",
+    "heading": "SSH и его друзья",
+    "content_ru": "Использование ssh, добавление ключей",
+    "content_en": "How use ssh. Port forwarding and etc",
+    "uri": "ssh.html",
+    "tags": [
+      "ssh",
+      "generate ssh",
+      "scp",
+      "tunel",
+      "forwarding",
+      "port"
+    ]
+  },
+  {
+    "id": "android",
+    "updated_at": "2019-04-14 16:58",
+    "heading": "Android",
+    "content_ru": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
+      "Монтирование для записи system раздела. Редактирование автозагрузки.",
+    "content_en": "Basic commands and tricks for android.",
+    "uri": "android.html",
+    "tags": [
+      "disable apps",
+      "android",
+      "fastboot",
+      "hosts",
+      "autostart",
+      "autorun",
+      "adb",
+      "ban ip"
+    ]
+  },
+  {
+    "id": "ctf",
+    "updated_at": "2019-04-14 00:55",
+    "heading": "Некоторые уловки для игры в CTF",
+    "content_ru": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
+      " просмотр и редактирование файлов в бинармно виде.",
+    "content_en": "Some tricks for CTF and another hacking.",
+    "uri": "ctf.html",
+    "tags": [
+      "file metadata",
+      "binary",
+      "RCE(Remote Code Execution)",
+      "LFI(Local File Inclusion)"
+    ]
+  },
+  {
     "id": "unix",
     "updated_at": "2019-04-12 14:40",
     "heading": "Unix",
@@ -168,22 +269,6 @@ var contents = [
       "hacking",
       "nmap",
       "ssh.."
-    ]
-  },
-  {
-    "id": "docker",
-    "updated_at": "2019-02-05 22:43",
-    "heading": "Docker",
-    "content_ru": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
-      + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
-    "uri": "docker.html",
-    "tags": [
-      "docker",
-      "containers",
-      "virtualization",
-      "install",
-      "hello world",
-      "docker-compose"
     ]
   },
   {
@@ -445,23 +530,6 @@ var contents = [
     "tags": [
       "уровни изоляции",
       "transaction-isolation-level"
-    ]
-  },
-  {
-    "id": "android",
-    "updated_at": "2019-02-08 14:58",
-    "heading": "Android",
-    "content_ru": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
-      "Монтирование для записи system раздела. Редактирование автозагрузки.",
-    "uri": "android.html",
-    "tags": [
-      "android",
-      "fastboot",
-      "hosts",
-      "autostart",
-      "autorun",
-      "adb",
-      "ban ip"
     ]
   },
   {
