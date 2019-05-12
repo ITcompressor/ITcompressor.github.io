@@ -20,7 +20,6 @@ app.controller("CoreController",
 
         $scope.clickDoc = function (url, id) {
             var doc = getDocById(id)
-            debugger;
             $scope.isTarget = true;
             $scope.docUrl = url;
             $scope.docContentRu = doc.content_ru 
