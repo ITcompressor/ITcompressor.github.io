@@ -22,3 +22,6 @@ ssh -L 27017:localhost:27017 user@site.com
 <pre>
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 </pre>
+Правильные права для ключей (set right permissions for ssh keys)
+<pre>chmod 600 .ssh/ -R
+</pre>

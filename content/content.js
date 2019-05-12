@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "ssh",
+    "updated_at": "2019-05-12 11:27",
+    "heading": "SSH",
+    "content_ru": "Использование ssh, добавление ключей, возможный фикс прав доступа к ключам",
+    "content_en": "Generate, add and fix permissions for keys",
+    "uri": "ssh.html",
+    "tags": [
+      "ssh",
+      "chmod",
+      "generate ssh",
+      "scp",
+      "tunel",
+      "forwarding",
+      "port"
+    ]
+  },
+  {
     "id": "unix",
     "updated_at": "2019-04-12 14:40",
     "heading": "Unix",
@@ -30,7 +47,7 @@ var contents = [
     "updated_at": "2019-03-31 18:27",
     "heading": "Некоторые уловки для игры в CTF",
     "content_ru": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
-    " просмотр и редактирование файлов в бинармно виде.",
+      " просмотр и редактирование файлов в бинармно виде.",
     "uri": "ctf.html",
     "tags": [
       "binary",
@@ -247,21 +264,6 @@ var contents = [
       "rabbitmq",
       "events",
       "event bus"
-    ]
-  },
-  {
-    "id": "ssh",
-    "updated_at": "2018-05-09 00:36",
-    "heading": "SSH и его друзья",
-    "content_ru": "Использование ssh, добавление ключей",
-    "uri": "ssh.html",
-    "tags": [
-      "ssh",
-      "generate ssh",
-      "scp",
-      "tunel",
-      "forwarding",
-      "port"
     ]
   },
   {
