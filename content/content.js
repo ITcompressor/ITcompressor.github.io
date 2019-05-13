@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "git",
+    "updated_at": "2019-05-13 19:27",
+    "heading": "GIT",
+    "content_ru": "Полезности для гит + основные команды",
+    "content_en": "Basic git commands and trics",
+    "uri": "git.html",
+    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
+    "tags": [
+      "revert reset hard",
+      "https url with creds"
+    ]
+  },
+  {
     "id": "ssh",
     "updated_at": "2019-05-12 11:27",
     "heading": "SSH",
@@ -114,17 +127,6 @@ var contents = [
       "terminal",
       "bash-completion",
       "filesize du"
-    ]
-  },
-  {
-    "id": "git",
-    "updated_at": "2019-04-12 14:32",
-    "heading": "GIT",
-    "content_ru": "Полезности для гит + основные команды",
-    "uri": "git.html",
-    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
-    "tags": [
-      "revert reset hard"
     ]
   },
   {

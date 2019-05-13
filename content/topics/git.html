@@ -50,6 +50,9 @@ git push -f
 Добавление репозитория для отправки изменений
 <pre>git remote add origin git@bitbucket.org:any_user/any_repo.git
 </pre>
+Можно использовать такое представление урла чтобы не использовать креды (url pattern with creds)
+<pre>https://user:pass@domain/repo
+</pre>
 Переименовать ветку
 <pre>git branch -m master2 develop # - rename local branch
 git push origin :master2 # - delete old remote branch
