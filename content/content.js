@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "python",
+    "updated_at": "2019-05-23 13:18",
+    "heading": "Python",
+    "content_ru": "Полезности для python",
+    "content_en": "Useful materials for python",
+    "uri": "python.html",
+    "tags": [
+      "native execution",
+      "ml",
+      "machine learning"
+    ]
+  },
+  {
     "id": "git",
     "updated_at": "2019-05-13 19:27",
     "heading": "GIT",
