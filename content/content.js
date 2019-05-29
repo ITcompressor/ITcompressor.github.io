@@ -1,7 +1,7 @@
 var contents = [
   {
     "id": "python",
-    "updated_at": "2019-05-23 13:18",
+    "updated_at": "2019-05-29 12:11",
     "heading": "Python",
     "content_ru": "Полезности для python",
     "content_en": "Useful materials for python",
