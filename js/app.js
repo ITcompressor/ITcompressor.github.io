@@ -75,7 +75,6 @@ app.controller("CoreController",
         $scope.docs = contents;
         $scope.docs.forEach(function (doc) {
             doc.full_content = "content/topics/" + doc.uri;
-            doc.updated_at = new Date(doc.updated_at) - 0;
         });
         if ($scope.target != null) {
             var doc = getDocById($scope.target)
