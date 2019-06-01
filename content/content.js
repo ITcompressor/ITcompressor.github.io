@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "mysq-locks",
+    "updated_at": "2019-06-01 13:42",
+    "heading": "MySQL Locks",
+    "content_ru": "Просмотр локов, информации по процесса и транзакциям mysql",
+    "content_en": "Show locks and another info a mysql db info",
+    "uri": "mysql-locks.html",
+    "tags": [
+      "locks",
+      "processes",
+      "transactions"
+    ]
+  },
+  {
     "id": "python",
     "updated_at": "2019-05-29 12:11",
     "heading": "Python",
