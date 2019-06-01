@@ -16,8 +16,9 @@
 
     <div ng-show="{{ false }}">
         На сайте вы найдете:
-        [native execution,ml,machine learning] Useful materials for python Полезности для python,[revert reset
-        hard,https url with creds] Basic git commands and trics Полезности для гит + основные
+        [locks,processes,transactions] Show locks and another info a mysql db info Просмотр локов, информации по
+        процесса и транзакциям mysql,[native execution,ml,machine learning] Useful materials for python Полезности для
+        python,[revert reset hard,https url with creds] Basic git commands and trics Полезности для гит + основные
         команды,[ssh,chmod,generate ssh,scp,tunel,forwarding,port] Generate, add and fix permissions for keys
         Использование ssh, добавление ключей, возможный фикс прав доступа к
         ключам,[docker,containers,virtualization,install,hello world,docker-compose] Install docker, docker-compose.
@@ -85,7 +86,7 @@
         manager to create a wireless hotspot with Androiddevices support, tested in 64-bit Ubuntu 1404 with Nexus 4 and
         Sumsung Galaxy ace3.,[Ubuntu 14.04 LTS,Ruby 2.2.3,rbenv,bundler] undefined Установка окружения для
         руби,[database,PostgreSQL 9.4,linux] undefined PostgreSQL (произносится «Пост-Грэс-Кью-Эл») — свободная
-        объектно-реляционная система управления базами данных (СУБД).
+        объектно-реляционная система управления базами данных (СУБД). 0.0.0.0:8000:167:17
     </div>
 
     <div id="center" class="fix-top">
@@ -94,14 +95,14 @@
                 <input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search"
                     placeholder="Поиск">
 
-                <div ng-repeat="doc in docs|filter:search| orderBy: '-updated_at':false" class="row">
+                <div ng-repeat="doc in docs|filter:search" class="row">
                     <h1>{{ doc.heading }}</h1>
                     <span ng-repeat="tag in doc.tags">
                         <span class="label label-default">
                             {{ tag }}
                         </span> &nbsp;
                     </span>
-                    <span>⌚ {{ doc.updated_at | date:'medium' }}</span>
+                    <span>⌚ doc.updated_at </span>
                     <h4>
                         <b>RU:</b> {{ doc.content_ru }}
                         <br>
