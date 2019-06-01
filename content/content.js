@@ -256,7 +256,7 @@ var contents = [
     ]
   },
   {
-    "id": "MySQL",
+    "id": "MySQL Basics",
     "updated_at": "2019-02-24 21:18",
     "heading": "MySQL",
     "content_ru": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
@@ -520,7 +520,7 @@ var contents = [
   {
     "id": "mysql-replication",
     "updated_at": "2018-07-18 23:26",
-    "heading": "Репликация MySQL",
+    "heading": "MySQL Replications",
     "content_ru": "Делаем реплику mysql бд на примере, имеем...",
     "uri": "mysql-replication.html",
     "tags": [
