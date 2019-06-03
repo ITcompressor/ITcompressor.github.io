@@ -4,7 +4,7 @@ var contents = [
     "updated_at": "2019-06-01 13:42",
     "heading": "MySQL Locks",
     "content_ru": "Просмотр локов, информации по процесса и транзакциям mysql",
-    "content_en": "Show locks and another info a mysql db info",
+    "content_en": "Show locks and another a mysql db info",
     "uri": "mysql-locks.html",
     "tags": [
       "locks",
