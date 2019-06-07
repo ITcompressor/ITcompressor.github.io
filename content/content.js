@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "java",
+    "updated_at": "2018-06-08 03:14",
+    "heading": "Java and JVM",
+    "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
+    "content_en": "Notes about java, dump, maven, bytecode",
+    "uri": "java.html",
+    "tags": [
+      "jdk",
+      "jstack",
+      "bytecode",
+      "maven",
+      "jmap"
+    ]
+  },
+  {
     "id": "mysq-locks",
     "updated_at": "2019-06-01 13:42",
     "heading": "MySQL Locks",
@@ -361,19 +376,6 @@ var contents = [
       "rabbitmq",
       "events",
       "event bus"
-    ]
-  },
-  {
-    "id": "java",
-    "updated_at": "2018-03-09 17:14",
-    "heading": "Java",
-    "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
-    "uri": "java.html",
-    "tags": [
-      "jdk",
-      "jstack",
-      "maven",
-      "jmap"
     ]
   },
   {
