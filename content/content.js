@@ -186,19 +186,6 @@ var contents = [
     ]
   },
   {
-    "id": "ctf",
-    "updated_at": "2019-03-31 18:27",
-    "heading": "Некоторые уловки для игры в CTF",
-    "content_ru": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
-      " просмотр и редактирование файлов в бинармно виде.",
-    "uri": "ctf.html",
-    "tags": [
-      "binary",
-      "RCE(Remote Code Execution)",
-      "LFI(Local File Inclusion)"
-    ]
-  },
-  {
     "id": "ubuntu",
     "updated_at": "2019-03-31 17:37",
     "heading": "Ubuntu",
