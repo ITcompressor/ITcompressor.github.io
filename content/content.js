@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "MacOS",
+    "updated_at": "2018-10-18 16:50",
+    "heading": "MacOS",
+    "content_ru": "Кастом и настройка MacOS. Запуск VNC сервера.",
+    "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
+    "uri": "mac.html",
+    "tags": [
+      "vnc",
+      "terminal",
+      "shutdown",
+      "remote desktop",
+      "macOS"
+    ]
+  },
+  {
     "id": "encryption",
     "updated_at": "2019-06-12 17:46",
     "heading": "Encryption and Certificates",
@@ -353,18 +368,6 @@ var contents = [
       "remote",
       "desktop",
       "linux"
-    ]
-  },
-  {
-    "id": "MacOS",
-    "updated_at": "2018-10-18 16:50",
-    "heading": "MacOS",
-    "content_ru": "Кастом и настройка среды для MacOS",
-    "uri": "mac.html",
-    "tags": [
-      "vnc",
-      "remote desktop",
-      "macOS"
     ]
   },
   {
