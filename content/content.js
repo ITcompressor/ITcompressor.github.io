@@ -1,7 +1,7 @@
 var contents = [
   {
     "id": "MacOS",
-    "updated_at": "2018-10-18 16:50",
+    "updated_at": "2019-06-17 16:50",
     "heading": "MacOS",
     "content_ru": "Кастом и настройка MacOS. Запуск VNC сервера.",
     "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
