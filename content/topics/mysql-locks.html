@@ -12,7 +12,7 @@ LEFT JOIN information_schema.innodb_trx itr ON itr.trx_id = il.lock_trx_id;
 <pre>SHOW FULL PROCESSLIST;
 </pre>
 Убить транзакцию (kill connection)
-<pre>kill connection 93309825;
+<pre>kill connection [trx_mysql_thread_id];
 </pre>
 Просмотр полного статуса бд (check full status)
 <pre>SHOW ENGINE INNODB STATUS;
