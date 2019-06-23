@@ -6,6 +6,7 @@ var contents = [
     "content_ru": "Кастом и настройка MacOS. Запуск VNC сервера.",
     "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
     "uri": "mac.html",
+    "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
     "tags": [
       "vnc",
       "fuse",
