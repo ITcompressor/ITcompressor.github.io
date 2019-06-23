@@ -1,17 +1,27 @@
 var contents = [
   {
     "id": "MacOS",
-    "updated_at": "2019-06-17 16:50",
+    "updated_at": "2019-06-23 18:50",
     "heading": "MacOS",
     "content_ru": "Кастом и настройка MacOS. Запуск VNC сервера.",
     "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
     "uri": "mac.html",
     "tags": [
       "vnc",
+      "fuse",
+      "ntfs",
       "terminal",
+      "shell",
       "shutdown",
       "remote desktop",
-      "macOS"
+      "macOS",
+      "внс",
+      "фьюс",
+      "нтфс",
+      "терминал",
+      "шел",
+      "удаленный рабочий стол",
+      "мак ос"
     ]
   },
   {
