@@ -212,20 +212,6 @@ var contents = [
     ]
   },
   {
-    "id": "ubuntu",
-    "updated_at": "2019-03-31 17:37",
-    "heading": "Ubuntu",
-    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале." +
-      " Установка net-tools (ifconfig), samba",
-    "uri": "ubuntu.html",
-    "tags": [
-      "samba",
-      "bash-completion",
-      "autologin",
-      "autostart"
-    ]
-  },
-  {
     "id": "any-install",
     "updated_at": "2019-03-25 18:35",
     "heading": "Полезные установки",
