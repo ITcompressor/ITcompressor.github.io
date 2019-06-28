@@ -1,5 +1,18 @@
 var contents = [
   {
+    "id": "nginx",
+    "updated_at": "2019-06-29 00:50",
+    "heading": "Nginx",
+    "content_ru": "Трюки в настройке nginx",
+    "content_en": "Nginx tricks",
+    "uri": "nginx.html",
+    "external": "http://kbeezie.com/protecting-folders-with-nginx/",
+    "tags": [
+      "nginx", "proxy", "server",
+      "нгинкс", "прокси", "сервер"
+    ]
+  },
+  {
     "id": "MacOS",
     "updated_at": "2019-06-23 18:50",
     "heading": "MacOS",
