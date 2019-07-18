@@ -1,6 +1,7 @@
 var contents = [
   {
     "id": "nginx",
+    "img": "img/logo.png",
     "updated_at": "2019-06-29 00:50",
     "heading": "Nginx",
     "content_ru": "Трюки в настройке nginx",
@@ -14,6 +15,7 @@ var contents = [
   },
   {
     "id": "MacOS",
+    "img": "img/logo.png",
     "updated_at": "2019-06-23 18:50",
     "heading": "MacOS",
     "content_ru": "Кастом и настройка MacOS. Запуск VNC сервера.",
@@ -40,6 +42,7 @@ var contents = [
   },
   {
     "id": "encryption",
+    "img": "img/logo.png",
     "updated_at": "2019-06-12 17:46",
     "heading": "Encryption and Certificates",
     "content_ru": "Команды для генерации сертификатов и тп",
@@ -55,6 +58,7 @@ var contents = [
   },
   {
     "id": "java",
+    "img": "img/logo.png",
     "updated_at": "2019-06-08 03:14",
     "heading": "Java and JVM",
     "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
@@ -70,6 +74,7 @@ var contents = [
   },
   {
     "id": "mysq-locks",
+    "img": "img/sql-joins.png",
     "updated_at": "2019-06-01 13:42",
     "heading": "MySQL Locks",
     "content_ru": "Просмотр локов, информации по процесса и транзакциям mysql",
@@ -83,6 +88,7 @@ var contents = [
   },
   {
     "id": "python",
+    "img": "img/logo.png",
     "updated_at": "2019-05-29 12:11",
     "heading": "Python",
     "content_ru": "Полезности для python",
@@ -96,6 +102,7 @@ var contents = [
   },
   {
     "id": "git",
+    "img": "img/logo.png",
     "updated_at": "2019-05-13 19:27",
     "heading": "GIT",
     "content_ru": "Полезности для гит + основные команды",
@@ -109,6 +116,7 @@ var contents = [
   },
   {
     "id": "ssh",
+    "img": "img/logo.png",
     "updated_at": "2019-05-12 11:27",
     "heading": "SSH",
     "content_ru": "Использование ssh, добавление ключей, возможный фикс прав доступа к ключам",
@@ -126,6 +134,7 @@ var contents = [
   },
   {
     "id": "docker",
+    "img": "img/logo.png",
     "updated_at": "2019-05-04 8:18",
     "heading": "Docker",
     "content_ru": "Удаление старой версии докера, установка новой с запуском хелоуворлда + докер-компос. Основные команды для докера."
@@ -143,6 +152,7 @@ var contents = [
   },
   {
     "id": "ubuntu",
+    "img": "img/logo.png",
     "updated_at": "2019-05-04 8:01",
     "heading": "Ubuntu",
     "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале. " +
@@ -161,6 +171,7 @@ var contents = [
   },
   {
     "id": "glassfish",
+    "img": "img/logo.png",
     "updated_at": "2019-05-04 07:53",
     "heading": "Glassfish",
     "content_ru": "Базовая информация для работы с сервером приложений",
@@ -177,6 +188,7 @@ var contents = [
   },
   {
     "id": "android",
+    "img": "img/logo.png",
     "updated_at": "2019-04-14 16:58",
     "heading": "Android",
     "content_ru": "Собранны команды выполняемые через приложение Телефон (Phone) на Android устройствах. Работа с adb (Android Debug Bridge) и fastboot." +
@@ -196,6 +208,7 @@ var contents = [
   },
   {
     "id": "ctf",
+    "img": "img/logo.png",
     "updated_at": "2019-04-14 00:55",
     "heading": "Некоторые уловки для игры в CTF",
     "content_ru": "Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и наблюдений для взлома," +
@@ -211,6 +224,7 @@ var contents = [
   },
   {
     "id": "unix",
+    "img": "img/logo.png",
     "updated_at": "2019-04-12 14:40",
     "heading": "Unix",
     "content_ru": "Общие команды присущие unix совместимх ОС: Android, Linux, MacOS. Добавление папки с исполняемыми файлами для баш +" +
@@ -226,6 +240,7 @@ var contents = [
   },
   {
     "id": "any-install",
+    "img": "img/logo.png",
     "updated_at": "2019-03-25 18:35",
     "heading": "Полезные установки",
     "content_ru": "Установка gnome shell (графическая оболочка), wine (для запуска виндовс игр и приложений), " +
@@ -245,6 +260,7 @@ var contents = [
   },
   {
     "id": "linux",
+    "img": "img/logo.png",
     "updated_at": "2019-03-25 16:09",
     "heading": "Linux",
     "content_ru": "Автомонтирование разделов, просмотр процессов, информации о свободном месте на дисках. " +
@@ -275,6 +291,7 @@ var contents = [
   },
   {
     "id": "camera",
+    "img": "img/logo.png",
     "updated_at": "2019-03-02 17:11",
     "heading": "Использование камеры в браузере",
     "content_ru": "Пример использование камеры в браузере + ссылка на демо внутри",
@@ -287,6 +304,7 @@ var contents = [
   },
   {
     "id": "screen",
+    "img": "img/logo.png",
     "updated_at": "2019-03-02 12:15",
     "heading": "screen",
     "content_ru": "Нужна для параллельной работы с другими утилитами в консоли. " +
@@ -299,6 +317,7 @@ var contents = [
   },
   {
     "id": "MySQL Basics",
+    "img": "img/sql-joins.png",
     "updated_at": "2019-02-24 21:18",
     "heading": "MySQL",
     "content_ru": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
@@ -313,6 +332,7 @@ var contents = [
   },
   {
     "id": "brutespray",
+    "img": "img/logo.png",
     "updated_at": "2019-01-12 01:07",
     "heading": "Брутим по взрослому с помощью brutespray.py",
     "content_ru": "Пример брута паролей для различных сервисов с помощью утилиты brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.",
@@ -327,6 +347,7 @@ var contents = [
   },
   {
     "id": "grep",
+    "img": "img/logo.png",
     "updated_at": "2019-02-08 14:53",
     "heading": "grep",
     "content_ru": "Утилита grep это вполне возможно самая популярная из существующих команд в Unix/Linux. " +
@@ -343,6 +364,7 @@ var contents = [
   },
   {
     "id": "ssl",
+    "img": "img/logo.png",
     "updated_at": "2018-12-27 17:01",
     "heading": "Настройка https на nginx",
     "content_ru": "Конфиг https для nginx для платного кастомного сертификата. Плюс настройка бесплатного летсэнкрипт.",
@@ -358,6 +380,7 @@ var contents = [
   },
   {
     "id": "grub",
+    "img": "img/logo.png",
     "updated_at": "2018-07-20 22:41",
     "heading": "Восстановление Grub2",
     "content_ru": "Алгоритм восстановления груб на линукс (например после установки винды)",
@@ -369,6 +392,7 @@ var contents = [
   },
   {
     "id": "linux-vnc",
+    "img": "img/logo.png",
     "updated_at": "2018-08-25 21:46",
     "heading": "VNC сервер для линукса на основе x11vnc",
     "content_ru": "Поднятие внс сервера на линуксе (удаленый гуи\\рабочий стол)",
@@ -382,6 +406,7 @@ var contents = [
   },
   {
     "id": "rabbitmq",
+    "img": "img/logo.png",
     "updated_at": "2018-06-12 19:06",
     "heading": "RabbitMQ",
     "content_ru": "RabbitMQ — платформа, реализующая систему обмена сообщениями между компонентами программной системы " +
@@ -395,6 +420,7 @@ var contents = [
   },
   {
     "id": "mongodb",
+    "img": "img/logo.png",
     "updated_at": "2019-02-11 23:17",
     "heading": "MongoDB",
     "content_ru": "Примеры запросов, апдейтов, сортировка, настройка профайлинга для мониторинга медленных запросов, " +
@@ -414,6 +440,7 @@ var contents = [
   },
   {
     "id": "google",
+    "img": "img/logo.png",
     "updated_at": "2018-03-19 17:49",
     "heading": "Google search",
     "content_ru": "Чтобы получать более точные результаты, вы можете использовать в запросах специальные символы или слова." +
@@ -429,6 +456,7 @@ var contents = [
   },
   {
     "id": "vim",
+    "img": "img/logo.png",
     "updated_at": "2018-10-10 22:19",
     "heading": "Vim",
     "content_ru": "Хоткеи и основы консольной идеи вим",
@@ -440,6 +468,7 @@ var contents = [
   },
   {
     "id": "gpg",
+    "img": "img/logo.png",
     "updated_at": "2019-01-11 19:54",
     "heading": "GPG",
     "content_ru": "Генерация и экспорт GPG ключей. Обычно используется для шифрования почты, в моем же случае я генерировал GPG ключи, чтобы подписывать ими " +
@@ -453,6 +482,7 @@ var contents = [
   },
   {
     "id": "vpn",
+    "img": "img/logo.png",
     "updated_at": "2019-02-13 15:00",
     "heading": "VPN",
     "content_ru": "Подключение к VPN в различных ОС в картинках",
@@ -464,6 +494,7 @@ var contents = [
   },
   {
     "id": "regular",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "Регулярные выражения",
     "content_ru": "Сборка полезных регулярных выражений",
@@ -476,6 +507,7 @@ var contents = [
   },
   {
     "id": "hacking-team",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "How Phineas Fisher hacked the \"Hacking Team\"?",
     "content_ru": "Интересная история о реальном взломе (на английском)",
@@ -489,6 +521,7 @@ var contents = [
   },
   {
     "id": "reset-password",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "Сброс пароля в Linux при физическом доступе",
     "content_ru": "Алгоритм сброса пароля на линуксе",
@@ -502,6 +535,7 @@ var contents = [
   },
   {
     "id": "network",
+    "img": "img/logo.png",
     "updated_at": "2019-02-07 19:33",
     "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
     "content_ru": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
@@ -522,6 +556,7 @@ var contents = [
   },
   {
     "id": "windows",
+    "img": "img/logo.png",
     "updated_at": "2019-02-12 01:20",
     "heading": "Windows",
     "content_ru": "О особенностях винды и специфичных для её утилитах",
@@ -536,6 +571,7 @@ var contents = [
   },
   {
     "id": "mysql-replication",
+    "img": "img/sql-joins.png",
     "updated_at": "2018-07-18 23:26",
     "heading": "MySQL Replications",
     "content_ru": "Делаем реплику mysql бд на примере, имеем...",
@@ -552,6 +588,7 @@ var contents = [
   },
   {
     "id": "mysql-info",
+    "img": "img/sql-joins.png",
     "updated_at": "2018-10-08 23:14",
     "heading": "MySQL Info",
     "content_ru": "Общая информация о мускуле, уровни изоляции",
@@ -563,6 +600,7 @@ var contents = [
   },
   {
     "id": "ubuntu-hotspot",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "Wi-fi hotspot Ubuntu",
     "content_ru": "Below I will show you how to use Unity's default network manager to create a wireless hotspot with Android" +
@@ -577,6 +615,7 @@ var contents = [
   },
   {
     "id": "ruby-rbenv-bundler",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "Готовим Ruby+Bundler",
     "content_ru": "Установка окружения для руби",
@@ -590,6 +629,7 @@ var contents = [
   },
   {
     "id": "postgresql",
+    "img": "img/logo.png",
     "updated_at": "1999-12-31 23:59",
     "heading": "PostgreSQL",
     "content_ru": "PostgreSQL (произносится «Пост-Грэс-Кью-Эл») — свободная объектно-реляционная система управления базами данных (СУБД). ",

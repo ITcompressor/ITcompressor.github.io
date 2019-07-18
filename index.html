@@ -5,140 +5,159 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="img/logo.png" />
-    <link href="css/styles.css" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>ITcompressor</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body id='ng-app' ng-app="core-app" ng-controller="CoreController">
 
-    <div ng-show="{{ false }}">
-        На сайте вы найдете:
-        [nginx,proxy,server,нгинкс,прокси,сервер] Nginx tricks Трюки в настройке
-        nginx,[vnc,fuse,ntfs,terminal,shell,shutdown,remote desktop,macOS,внс,фьюс,нтфс,терминал,шел,удаленный рабочий
-        стол,мак ос] Basic utils and custom for a MacOS. Run vnc server. Кастом и настройка MacOS. Запуск VNC
-        сервера.,[pkcs12,p12,ssl,https,certificates] Commands for generate certs and etc.. Команды для генерации
-        сертификатов и тп,[jdk,jstack,bytecode,maven,jmap] Notes about java, dump, maven, bytecode Полезности для java.
-        Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.,[locks,processes,transactions] Show
-        locks and another a mysql db info Просмотр локов, информации по процесса и транзакциям mysql,[native
-        execution,ml,machine learning] Useful materials for python Полезности для python,[revert reset hard,https url
-        with creds] Basic git commands and trics Полезности для гит + основные команды,[ssh,chmod,generate
-        ssh,scp,tunel,forwarding,port] Generate, add and fix permissions for keys Использование ssh, добавление ключей,
-        возможный фикс прав доступа к ключам,[docker,containers,virtualization,install,hello world,docker-compose]
-        Install docker, docker-compose. Basic docker commands. Удаление старой версии докера, установка новой с запуском
-        хелоуворлда + докер-компос. Основные команды для докера.Пример создание собственного докер имейджа, а также
-        публикация его на докер хаб,[samba,skype,snap,bash-completion,autologin,autostart] Autologin, disable guest
-        session, scripts for autorun, autocomplete in terminal. Install net-tools (ifconfig), samba, skype Автологин,
-        отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале. Установка net-tools
-        (ifconfig), samba, skype,[web,gf3,gf5,java ee,server] Basic info about popular web-application server Базовая
-        информация для работы с сервером приложений,[disable apps,android,fastboot,hosts,autostart,autorun,adb,ban ip]
-        Basic commands and tricks for android. Собранны команды выполняемые через приложение Телефон (Phone) на Android
-        устройствах. Работа с adb (Android Debug Bridge) и fastboot.Монтирование для записи system раздела.
-        Редактирование автозагрузки.,[file metadata,binary,RCE(Remote Code Execution),LFI(Local File Inclusion)] Some
-        tricks for CTF and another hacking. Наборы команд, RCE(Remote Code Execution), LFI(Local File Inclusion) и
-        наблюдений для взлома, просмотр и редактирование файлов в бинармно виде.,[bash,terminal,bash-completion,filesize
-        du] Basic utils in unix OS (MacOS, Linux, Android). Add folder with scripts in bash path + autocomplete bash
-        Общие команды присущие unix совместимх ОС: Android, Linux, MacOS. Добавление папки с исполняемыми файлами для
-        баш +автокомплит баша.,[update-alternatives,pip,python,wine,run win32 apps,sdkman,gnome-shell,insomnia,desktop]
-        undefined Установка gnome shell (графическая оболочка), wine (для запуска виндовс игр и приложений), insomnia
-        (аналог postman), sdkman для управления версиями утилит, pip для python и
-        т.д.,[automount,cron,adduser,recursively
-        find,watch,tail,rar,chmod,chown,hosts,dd,ntfs,zip,fstab,df,zerofree,ext4,smb] undefined Автомонтирование
-        разделов, просмотр процессов, информации о свободном месте на дисках. Шифрование файлов, подключение к VPN,
-        работа с cron, добавление пользователей, редактирование их прав, утилита dd, пример создания ссылок, создания
-        архивов, изменение владельцов файлов, использование утилиты find и многое другое,[camera,html5] undefined Пример
-        использование камеры в браузере + ссылка на демо внутри,[screen,mutlisessions] undefined Нужна для параллельной
-        работы с другими утилитами в консоли. Например нужно запустить сервер(просматривать его лог) и в тоже время
-        смотреть нагрузку машины.,[backup,index,unsafe,duplicates,permissions] undefined Пимеры запросов (также
-        выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами
-        мускула.,[brutespray,hacking,nmap,ssh..] undefined Пример брута паролей для различных сервисов с помощью утилиты
-        brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.,[grep,ls,поиск] undefined Утилита grep
-        это вполне возможно самая популярная из существующих команд в Unix/Linux. Многие бы с этим поспорили, но стоит
-        начать использовать grep, эта команда будет присутствовать почти во всех ваших скриптах для консоли Linux. grep
-        расшифровывается как ‘global regular expression printer‘.Иными словами grep выдрезает нужные вам строки из
-        текстовых файлов которые содержат указаный пользователем текст.,[letsencrypt,certificates,https,ssl,nginx]
-        undefined Конфиг https для nginx для платного кастомного сертификата. Плюс настройка бесплатного
-        летсэнкрипт.,[loader,grub] undefined Алгоритм восстановления груб на линукс (например после установки
-        винды),[vnc,remote,desktop,linux] undefined Поднятие внс сервера на линуксе (удаленый гуи\рабочий
-        стол),[rabbitmq,events,event bus] undefined RabbitMQ — платформа, реализующая систему обмена сообщениями между
-        компонентами программной системы (Message Oriented Middleware) на основе стандарта AMQP (Advanced Message
-        Queuing Protocol). RabbitMQ выпускается под Mozilla Public
-        License.,[map,reduce,aggregation,sort,select,query,index,profiler,nosql] undefined Примеры запросов, апдейтов,
-        сортировка, настройка профайлинга для мониторинга медленных запросов, создание индексов, экспорт в файл и импорт
-        из файла, легкая агрегация, примеры работы через консоль и тп.,[search,google] undefined Чтобы получать более
-        точные результаты, вы можете использовать в запросах специальные символы или слова.Google Поиск обычно не
-        учитывает знаки препинания, не относящиеся к операторам поиска.Не добавляйте пробел между словом или символом и
-        поисковым запросом.Подробнее под катом. + часть статьи от IT Hack,[vim,editor] undefined Хоткеи и основы
-        консольной идеи вим,[secure,keys,keyserver] undefined Генерация и экспорт GPG ключей. Обычно используется для
-        шифрования почты, в моем же случае я генерировал GPG ключи, чтобы подписывать ими jar файлы при заливки их в
-        репозитории.,[pptp,openvpn] undefined Подключение к VPN в различных ОС в картинках,[regular,expressions,string]
-        undefined Сборка полезных регулярных выражений,[Hacking Team,hacking,docs,get started] undefined Интересная
-        история о реальном взломе (на английском),[linux,grub,bash,hack] undefined Алгоритм сброса пароля на
-        линуксе,[traceroute,nmap,nc,ifconfig,mac,curl,bash,wget,netstat] undefined Примеры использования curl, wget,
-        nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. Сканирование доменов по общему
-        сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью
-        netstat.,[users,shutdown,utilman,hack] undefined О особенностях винды и специфичных для её
-        утилитах,[replication,database,mysql,example,debian8,ubuntu14.04,linux] undefined Делаем реплику mysql бд на
-        примере, имеем...,[уровни изоляции,transaction-isolation-level] undefined Общая информация о мускуле, уровни
-        изоляции,[Ubuntu 14.04 LTS,Hotspot,Wi-fi] undefined Below I will show you how to use Unity's default network
-        manager to create a wireless hotspot with Androiddevices support, tested in 64-bit Ubuntu 1404 with Nexus 4 and
-        Sumsung Galaxy ace3.,[Ubuntu 14.04 LTS,Ruby 2.2.3,rbenv,bundler] undefined Установка окружения для
-        руби,[database,PostgreSQL 9.4,linux] undefined PostgreSQL (произносится «Пост-Грэс-Кью-Эл») — свободная
-        объектно-реляционная система управления базами данных (СУБД).
-    </div>
+    <!-- Nav -->
+    <div id="nav" th:fragment="header">
+        <!-- Main Nav -->
+        <div id="nav-fixed">
+            <div class="container">
+                <!-- logo -->
+                <div class="nav-logo">
+                    <a href="/" class="logo"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <!-- /logo -->
 
-    <div id="center" class="fix-top">
-        <div class="container">
-            <div ng-show="!isTarget">
-                <input type="text" ng-model="search" ng-change="changeSearch(search)" class="form-control search"
-                    placeholder="Поиск">
-
-                <div ng-repeat="doc in docs|filter:search" class="row">
-                    <h1>{{ doc.heading }}</h1>
-                    <span ng-repeat="tag in doc.tags">
-                        <span class="label label-default">
-                            {{ tag }}
-                        </span> &nbsp;
-                    </span>
-                    <span>⌚ {{ doc.updated_at }} </span>
-                    <h4>
-                        <b>RU:</b> {{ doc.content_ru }}
-                        <br>
-                        <b>EN:</b> {{ doc.content_en }}
-                    </h4>
-                    <span>
-                        <span ng-show="doc.external">
-                            <a class="btn btn-default" ng-href="{{ doc.external }}" role="button"> Источник &raquo; </a>
-                        </span>
-                        <span>
-                            <button class="btn btn-default" ng-click="clickDoc(doc.full_content, doc.id)"> Подробнее
-                                &raquo;</button>
-                        </span>
-                    </span>
+                <!-- search & aside toggle -->
+                <div class="nav-btns">
+                    <button class="aside-btn"><i class="fa fa-bars"></i></button>
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    <div class="search-form">
+                        <input class="search-input" type="text" name="search" ng-model="search"
+                            ng-change="changeSearch(search)" placeholder="Начни свой поиск ...">
+                        <button class="search-close"><i class="fa fa-times"></i></button>
+                    </div>
                 </div>
-                <br>
-            </div>
-            <div ng-show="isTarget">
-                <div class="container">
-                    <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
-                </div>
-                <h4>
-                    <b>RU:</b> {{ docContentRu }}
-                    <br>
-                    <b>EN:</b> {{ docContentEn}}
-                </h4>
-                <div ng-include="docUrl"></div>
-                <div class="container">
-                    <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
-                </div>
+                <!-- /search & aside toggle -->
             </div>
         </div>
+        <!-- /Main Nav -->
+
+        <!-- Aside Nav -->
+        <div id="nav-aside">
+            <!-- /nav -->
+            <!-- widget posts -->
+            <div class="section-row">
+                <h3>Закреп</h3>
+                <div class="post post-widget">
+                    <a class="post-img" href="https://next-way.by">
+                        <img src="https://next-way.by/img/logo.png" alt=""></a>
+                    <div class="post-body">
+                        <h3 class="post-title">
+                            <a href="https://next-way.by">
+                                Блог автора https://next-way.by
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /widget posts -->
+
+            <!-- aside nav close -->
+            <button class="nav-aside-close"><i class="fa fa-times"></i></button>
+            <!-- /aside nav close -->
+        </div>
+        <!-- Aside Nav -->
     </div>
-    <script type="text/javascript" src="content/content.js"></script>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- /Nav -->
+
+    <!-- section -->
+    <div class="section" ng-show="isTarget">
+
+        <!-- container -->
+        <div class="container">
+            <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
+        </div>
+        <!-- container -->
+
+        <!-- container -->
+        <div class="container">
+            <h4>
+                <b>RU:</b> {{ docContentRu }}
+                <br>
+                <b>EN:</b> {{ docContentEn}}
+            </h4>
+            <div class="row" ng-include="docUrl"></div>
+        </div>
+        <!-- container -->
+
+        <!-- container -->
+        <div class="container">
+            <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
+        </div>
+        <!-- container -->
+    </div>
+    <!-- /section -->
+
+    <!-- section -->
+    <div class="section" ng-show="!isTarget">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- post -->
+                <div class="col-md-4" ng-repeat="doc in docs|filter:search">
+                    <div class="post">
+                        <a class="post-img" ng-click="clickDoc(doc.full_content, doc.id)">
+                            <img src="{{ doc.img }}" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                <a class="post-category cat-4" ng-click="clickDoc(doc.full_content, doc.id)">
+                                    {{ tag }}
+                                </a>
+                                <span class="post-date">{{ doc.updated_at }}</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a ng-click="clickDoc(doc.full_content, doc.id)">
+                                    {{ doc.heading }}
+                                </a>
+                            </h3>
+                            <b>RU:</b> {{ doc.content_ru }}
+                            <br>
+                            <b>EN:</b> {{ doc.content_en }}
+                        </div>
+                    </div>
+                </div>
+                <!-- /post -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /section -->
+
+    <!-- jQuery Plugins -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="content/content.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
