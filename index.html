@@ -125,12 +125,12 @@
                         <a class="post-img" ng-click="clickDoc(doc.full_content, doc.id)">
                             <img src="{{ doc.img }}" alt=""></a>
                         <div class="post-body">
-                            <div class="post-meta">
-                                <a class="post-category cat-4" ng-click="clickDoc(doc.full_content, doc.id)">
+                            <span class="post-meta" ng-repeat="tag in doc.tags">
+                                <a class="post-category cat-{{ doc.tags.indexOf(tag) % 5 + 1}}" ng-click="clickDoc(doc.full_content, doc.id)">
                                     {{ tag }}
                                 </a>
-                                <span class="post-date">{{ doc.updated_at }}</span>
-                            </div>
+                            </span>
+                            <span class="post-date">{{ doc.updated_at }}</span>
                             <h3 class="post-title">
                                 <a ng-click="clickDoc(doc.full_content, doc.id)">
                                     {{ doc.heading }}
