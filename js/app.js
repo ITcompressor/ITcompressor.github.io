@@ -25,6 +25,7 @@ app.controller("CoreController",
             $scope.docContentRu = doc.content_ru 
             $scope.docContentEn = doc.content_en
             $scope.target = id;
+            $scope.targetDoc = doc;
             setActualHash();
         }
 

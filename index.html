@@ -88,6 +88,8 @@
     <!-- section -->
     <div class="section" ng-show="isTarget">
 
+        <a class="post-img"><img src="{{ targetDoc.img }}" alt=""></a>
+
         <!-- container -->
         <div class="container">
             <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
@@ -126,8 +128,8 @@
                             <img src="{{ doc.img }}" alt=""></a>
                         <div class="post-body">
                             <span class="post-meta" ng-repeat="tag in doc.tags">
-                                <a class="post-category cat-{{ doc.tags.indexOf(tag) % 5 + 1}}" ng-click="clickDoc(doc.full_content, doc.id)">
-                                    {{ tag }}
+                                <a class="post-category cat-{{ tag[1] }}" ng-click="clickDoc(doc.full_content, doc.id)">
+                                    {{ tag[0] }}
                                 </a>
                             </span>
                             <span class="post-date">{{ doc.updated_at }}</span>

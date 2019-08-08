@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "grep",
+    "img": "img/logo.png",
+    "updated_at": "2019-08-08 18:53",
+    "heading": "grep",
+    "content_ru": "Утилита grep это вполне возможно самая популярная из существующих команд в Unix/Linux. " +
+      "Многие бы с этим поспорили, но стоит начать использовать grep, эта команда будет присутствовать почти " +
+      "во всех ваших скриптах для консоли Linux. grep расшифровывается как ‘global regular expression printer‘." +
+      "Иными словами grep выдрезает нужные вам строки из текстовых файлов которые содержат указаный пользователем текст.",
+    "uri": "grep.html",
+    "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
+    "tags": [
+      ["search", 1],
+      ["поиск", 1]
+    ],
+    "hiddenTags": [
+      "grep", "ls", "less", "поиск"
+    ]
+  },
+  {
     "id": "nginx",
     "img": "img/nginx.jpg",
     "updated_at": "2019-06-29 00:50",
@@ -9,6 +28,10 @@ var contents = [
     "uri": "nginx.html",
     "external": "http://kbeezie.com/protecting-folders-with-nginx/",
     "tags": [
+      ["server", 2],
+      ["сервер", 2]
+    ],
+    "hiddenhiddenTags": [
       "nginx", "proxy", "server",
       "нгинкс", "прокси", "сервер"
     ]
@@ -23,20 +46,16 @@ var contents = [
     "uri": "mac.html",
     "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
     "tags": [
-      "vnc",
-      "fuse",
-      "ntfs",
-      "terminal",
-      "shell",
-      "shutdown",
-      "remote desktop",
-      "macOS",
-      "внс",
-      "фьюс",
-      "нтфс",
-      "терминал",
-      "шел",
-      "удаленный рабочий стол",
+      ["OS", 0],
+      ["vnc", 2],
+      ["cmd", 3]
+    ],
+    "hiddenTags": [
+      "vnc", "fuse", "ntfs",
+      "terminal", "shell", "shutdown",
+      "remote desktop", "macOS", "внс",
+      "фьюс",  "нтфс", "терминал",
+      "шел", "удаленный рабочий стол",
       "мак ос"
     ]
   },
@@ -48,7 +67,7 @@ var contents = [
     "content_ru": "Команды для генерации сертификатов и тп",
     "content_en": "Commands for generate certs and etc..",
     "uri": "encryption.html",
-    "tags": [
+    "hiddenTags": [
       "pkcs12",
       "p12",
       "ssl",
@@ -64,7 +83,7 @@ var contents = [
     "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
     "content_en": "Notes about java, dump, maven, bytecode",
     "uri": "java.html",
-    "tags": [
+    "hiddenTags": [
       "jdk",
       "jstack",
       "bytecode",
@@ -80,7 +99,7 @@ var contents = [
     "content_ru": "Просмотр локов, информации по процесса и транзакциям mysql",
     "content_en": "Show locks and another a mysql db info",
     "uri": "mysql-locks.html",
-    "tags": [
+    "hiddenTags": [
       "locks",
       "processes",
       "transactions"
@@ -94,7 +113,7 @@ var contents = [
     "content_ru": "Полезности для python",
     "content_en": "Useful materials for python",
     "uri": "python.html",
-    "tags": [
+    "hiddenTags": [
       "native execution",
       "ml",
       "machine learning"
@@ -109,7 +128,7 @@ var contents = [
     "content_en": "Basic git commands and trics",
     "uri": "git.html",
     "external": "https://habr.com/ru/company/skillbox/blog/442260/",
-    "tags": [
+    "hiddenTags": [
       "revert reset hard",
       "https url with creds"
     ]
@@ -122,7 +141,7 @@ var contents = [
     "content_ru": "Использование ssh, добавление ключей, возможный фикс прав доступа к ключам",
     "content_en": "Generate, add and fix permissions for keys",
     "uri": "ssh.html",
-    "tags": [
+    "hiddenTags": [
       "ssh",
       "chmod",
       "generate ssh",
@@ -141,7 +160,7 @@ var contents = [
       + "Пример создание собственного докер имейджа, а также публикация его на докер хаб",
     "content_en": "Install docker, docker-compose. Basic docker commands.",
     "uri": "docker.html",
-    "tags": [
+    "hiddenTags": [
       "docker",
       "containers",
       "virtualization",
@@ -160,7 +179,7 @@ var contents = [
     "content_en": "Autologin, disable guest session, scripts for autorun, autocomplete in terminal. " +
       "Install net-tools (ifconfig), samba, skype",
     "uri": "ubuntu.html",
-    "tags": [
+    "hiddenTags": [
       "samba",
       "skype",
       "snap",
@@ -178,7 +197,7 @@ var contents = [
     "content_en": "Basic info about popular web-application server",
     "external": "https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html",
     "uri": "glassfish.html",
-    "tags": [
+    "hiddenTags": [
       "web",
       "gf3",
       "gf5",
@@ -195,7 +214,7 @@ var contents = [
       "Монтирование для записи system раздела. Редактирование автозагрузки.",
     "content_en": "Basic commands and tricks for android.",
     "uri": "android.html",
-    "tags": [
+    "hiddenTags": [
       "disable apps",
       "android",
       "fastboot",
@@ -215,7 +234,7 @@ var contents = [
       " просмотр и редактирование файлов в бинармно виде.",
     "content_en": "Some tricks for CTF and another hacking.",
     "uri": "ctf.html",
-    "tags": [
+    "hiddenTags": [
       "file metadata",
       "binary",
       "RCE(Remote Code Execution)",
@@ -231,7 +250,7 @@ var contents = [
       "автокомплит баша.",
     "content_en": " Basic utils in unix OS (MacOS, Linux, Android). Add folder with scripts in bash path + autocomplete bash",
     "uri": "unix.html",
-    "tags": [
+    "hiddenTags": [
       "bash",
       "terminal",
       "bash-completion",
@@ -246,7 +265,7 @@ var contents = [
     "content_ru": "Установка gnome shell (графическая оболочка), wine (для запуска виндовс игр и приложений), " +
       "insomnia (аналог postman), sdkman для управления версиями утилит, pip для python и т.д.",
     "uri": "any-install.html",
-    "tags": [
+    "hiddenTags": [
       "update-alternatives",
       "pip",
       "python",
@@ -268,7 +287,7 @@ var contents = [
       "редактирование их прав, утилита dd, пример создания ссылок, создания архивов, " +
       "изменение владельцов файлов, использование утилиты find и многое другое",
     "uri": "linux.html",
-    "tags": [
+    "hiddenTags": [
       "automount",
       "cron",
       "adduser",
@@ -297,7 +316,7 @@ var contents = [
     "content_ru": "Пример использование камеры в браузере + ссылка на демо внутри",
     "uri": "camera.html",
     "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
-    "tags": [
+    "hiddenTags": [
       "camera",
       "html5"
     ]
@@ -310,7 +329,7 @@ var contents = [
     "content_ru": "Нужна для параллельной работы с другими утилитами в консоли. " +
       "Например нужно запустить сервер(просматривать его лог) и в тоже время смотреть нагрузку машины.",
     "uri": "screen.html",
-    "tags": [
+    "hiddenTags": [
       "screen",
       "mutlisessions"
     ]
@@ -322,7 +341,7 @@ var contents = [
     "heading": "MySQL",
     "content_ru": "Пимеры запросов (также выполнение небезопасных запросов), работа с джоинами, работа с пользователями мускула. Работа с бэкапами мускула.",
     "uri": "mysql.html",
-    "tags": [
+    "hiddenTags": [
       "backup",
       "index",
       "unsafe",
@@ -338,28 +357,11 @@ var contents = [
     "content_ru": "Пример брута паролей для различных сервисов с помощью утилиты brutespray. Весь материал предназначен СУГУБО ДЛЯ ОЗНАКОМИТЕЛЬНЫХ ЦЕЛЕЙ.",
     "uri": "brutespray.html",
     "external": "https://github.com/x90skysn3k/brutespray",
-    "tags": [
+    "hiddenTags": [
       "brutespray",
       "hacking",
       "nmap",
       "ssh.."
-    ]
-  },
-  {
-    "id": "grep",
-    "img": "img/logo.png",
-    "updated_at": "2019-02-08 14:53",
-    "heading": "grep",
-    "content_ru": "Утилита grep это вполне возможно самая популярная из существующих команд в Unix/Linux. " +
-      "Многие бы с этим поспорили, но стоит начать использовать grep, эта команда будет присутствовать почти " +
-      "во всех ваших скриптах для консоли Linux. grep расшифровывается как ‘global regular expression printer‘." +
-      "Иными словами grep выдрезает нужные вам строки из текстовых файлов которые содержат указаный пользователем текст.",
-    "uri": "grep.html",
-    "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
-    "tags": [
-      "grep",
-      "ls",
-      "поиск"
     ]
   },
   {
@@ -370,7 +372,7 @@ var contents = [
     "content_ru": "Конфиг https для nginx для платного кастомного сертификата. Плюс настройка бесплатного летсэнкрипт.",
     "uri": "ssl.html",
     "external": "https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04",
-    "tags": [
+    "hiddenTags": [
       "letsencrypt",
       "certificates",
       "https",
@@ -385,7 +387,7 @@ var contents = [
     "heading": "Восстановление Grub2",
     "content_ru": "Алгоритм восстановления груб на линукс (например после установки винды)",
     "uri": "grub.html",
-    "tags": [
+    "hiddenTags": [
       "loader",
       "grub"
     ]
@@ -397,7 +399,7 @@ var contents = [
     "heading": "VNC сервер для линукса на основе x11vnc",
     "content_ru": "Поднятие внс сервера на линуксе (удаленый гуи\\рабочий стол)",
     "uri": "linux-vnc.html",
-    "tags": [
+    "hiddenTags": [
       "vnc",
       "remote",
       "desktop",
@@ -412,7 +414,7 @@ var contents = [
     "content_ru": "RabbitMQ — платформа, реализующая систему обмена сообщениями между компонентами программной системы " +
       "(Message Oriented Middleware) на основе стандарта AMQP (Advanced Message Queuing Protocol). RabbitMQ выпускается под Mozilla Public License.",
     "uri": "rabbitmq.html",
-    "tags": [
+    "hiddenTags": [
       "rabbitmq",
       "events",
       "event bus"
@@ -426,7 +428,7 @@ var contents = [
     "content_ru": "Примеры запросов, апдейтов, сортировка, настройка профайлинга для мониторинга медленных запросов, " +
       "создание индексов, экспорт в файл и импорт из файла, легкая агрегация, примеры работы через консоль и тп.",
     "uri": "mongodb.html",
-    "tags": [
+    "hiddenTags": [
       "map",
       "reduce",
       "aggregation",
@@ -449,7 +451,7 @@ var contents = [
       "Подробнее под катом. + часть статьи от IT Hack",
     "uri": "google.html",
     "external": "http://telegra.ph/Samouchitel-po-Google-02-11",
-    "tags": [
+    "hiddenTags": [
       "search",
       "google"
     ]
@@ -461,7 +463,7 @@ var contents = [
     "heading": "Vim",
     "content_ru": "Хоткеи и основы консольной идеи вим",
     "uri": "vim.html",
-    "tags": [
+    "hiddenTags": [
       "vim",
       "editor"
     ]
@@ -474,7 +476,7 @@ var contents = [
     "content_ru": "Генерация и экспорт GPG ключей. Обычно используется для шифрования почты, в моем же случае я генерировал GPG ключи, чтобы подписывать ими " +
       "jar файлы при заливки их в репозитории.",
     "uri": "gpg.html",
-    "tags": [
+    "hiddenTags": [
       "secure",
       "keys",
       "keyserver"
@@ -487,7 +489,7 @@ var contents = [
     "heading": "VPN",
     "content_ru": "Подключение к VPN в различных ОС в картинках",
     "uri": "vpn.html",
-    "tags": [
+    "hiddenTags": [
       "pptp",
       "openvpn"
     ]
@@ -499,7 +501,7 @@ var contents = [
     "heading": "Регулярные выражения",
     "content_ru": "Сборка полезных регулярных выражений",
     "uri": "regular.html",
-    "tags": [
+    "hiddenTags": [
       "regular",
       "expressions",
       "string"
@@ -512,7 +514,7 @@ var contents = [
     "heading": "How Phineas Fisher hacked the \"Hacking Team\"?",
     "content_ru": "Интересная история о реальном взломе (на английском)",
     "uri": "hacking-team.html",
-    "tags": [
+    "hiddenTags": [
       "Hacking Team",
       "hacking",
       "docs",
@@ -526,7 +528,7 @@ var contents = [
     "heading": "Сброс пароля в Linux при физическом доступе",
     "content_ru": "Алгоритм сброса пароля на линуксе",
     "uri": "reset-password.html",
-    "tags": [
+    "hiddenTags": [
       "linux",
       "grub",
       "bash",
@@ -542,7 +544,7 @@ var contents = [
       "Сканирование доменов по общему сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
     "uri": "network.html",
     "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
-    "tags": [
+    "hiddenTags": [
       "traceroute",
       "nmap",
       "nc",
@@ -562,7 +564,7 @@ var contents = [
     "content_ru": "О особенностях винды и специфичных для её утилитах",
     "uri": "windows.html",
     "external": "https://www.kv.by/post/1055116-chto-delat-esli-zabyl-parol-ot-windows-10",
-    "tags": [
+    "hiddenTags": [
       "users",
       "shutdown",
       "utilman",
@@ -576,7 +578,7 @@ var contents = [
     "heading": "MySQL Replications",
     "content_ru": "Делаем реплику mysql бд на примере, имеем...",
     "uri": "mysql-replication.html",
-    "tags": [
+    "hiddenTags": [
       "replication",
       "database",
       "mysql",
@@ -593,7 +595,7 @@ var contents = [
     "heading": "MySQL Info",
     "content_ru": "Общая информация о мускуле, уровни изоляции",
     "uri": "mysql-info.html",
-    "tags": [
+    "hiddenTags": [
       "уровни изоляции",
       "transaction-isolation-level"
     ]
@@ -607,7 +609,7 @@ var contents = [
       "devices support, tested in 64-bit Ubuntu 1404 with Nexus 4 and Sumsung Galaxy ace3.",
     "uri": "ubuntu-hotspot.html",
     "external": "http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
-    "tags": [
+    "hiddenTags": [
       "Ubuntu 14.04 LTS",
       "Hotspot",
       "Wi-fi"
@@ -620,7 +622,7 @@ var contents = [
     "heading": "Готовим Ruby+Bundler",
     "content_ru": "Установка окружения для руби",
     "uri": "ruby-rbenv-bundler.html",
-    "tags": [
+    "hiddenTags": [
       "Ubuntu 14.04 LTS",
       "Ruby 2.2.3",
       "rbenv",
@@ -634,7 +636,7 @@ var contents = [
     "heading": "PostgreSQL",
     "content_ru": "PostgreSQL (произносится «Пост-Грэс-Кью-Эл») — свободная объектно-реляционная система управления базами данных (СУБД). ",
     "uri": "postgresql.html",
-    "tags": [
+    "hiddenTags": [
       "database",
       "PostgreSQL 9.4",
       "linux"
