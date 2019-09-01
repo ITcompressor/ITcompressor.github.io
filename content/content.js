@@ -1,5 +1,38 @@
 var contents = [
   {
+    "id": "vbox",
+    "img": "img/vbox.png",
+    "updated_at": "2019-09-01 23:02",
+    "heading": "Virtual Box",
+    "content_ru": "Работа с Virtual Box",
+    "content_en": "Work with Virtual Box",
+    "uri": "vbox.html",
+    "tags": [
+      ["virtual box", 4]
+    ],
+    "hiddenTags": [
+      "virtualization"
+    ]
+  },
+  {
+    "id": "zip",
+    "img": "img/zip.jpeg",
+    "updated_at": "2019-09-01 23:01",
+    "heading": "Archives",
+    "content_ru": "Работа с различными видами архивов в командной строке",
+    "content_en": "Work with archives in a terminal",
+    "uri": "zip.html",
+    "tags": [
+      ["zip", 2],
+      ["rar", 2],
+      ["tar", 2],
+      ["bash", 0]
+    ],
+    "hiddenTags": [
+      "zip", "unrar", "tar", "gz", "bz2"
+    ]
+  },
+  {
     "id": "terminal",
     "img": "img/terminal.jpeg",
     "updated_at": "2019-09-01 22:13",
@@ -45,8 +78,8 @@ var contents = [
     "uri": "nginx.html",
     "external": "http://kbeezie.com/protecting-folders-with-nginx/",
     "tags": [
-      ["server", 2],
-      ["сервер", 2]
+      ["server", 0],
+      ["сервер", 0]
     ],
     "hiddenhiddenTags": [
       "nginx", "proxy", "server",
@@ -64,8 +97,7 @@ var contents = [
     "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
     "tags": [
       ["OS", 0],
-      ["vnc", 2],
-      ["cmd", 3]
+      ["vnc", 2]
     ],
     "hiddenTags": [
       "vnc", "fuse", "ntfs",
@@ -306,7 +338,6 @@ var contents = [
       "recursively find",
       "watch",
       "tail",
-      "rar",
       "chmod",
       "chown",
       "hosts",
