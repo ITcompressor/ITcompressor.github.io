@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "terminal",
+    "img": "img/terminal.jpeg",
+    "updated_at": "2019-09-01 22:13",
+    "heading": "Terminal",
+    "content_ru": "Кастомы которые я использую для разных unix подобных систем (Linux, MacOS, Android(Termux))",
+    "content_en": "Customs for shells (Linux, MacOS, Android(Termux))",
+    "uri": "terminal.html",
+    "tags": [
+      ["shell", 0],
+      ["bash", 0]
+    ],
+    "hiddenTags": [
+      "терминал", "bash", "shell", "linux", "macos", "командная строка", "cmd", "sh",
+      "bash", "автокомплит", "autocomplete", "bash-complete"
+    ]
+  },
+  {
     "id": "grep",
     "img": "img/logo.png",
     "updated_at": "2019-08-08 18:53",
@@ -54,7 +71,7 @@ var contents = [
       "vnc", "fuse", "ntfs",
       "terminal", "shell", "shutdown",
       "remote desktop", "macOS", "внс",
-      "фьюс",  "нтфс", "терминал",
+      "фьюс", "нтфс", "терминал",
       "шел", "удаленный рабочий стол",
       "мак ос"
     ]
@@ -174,16 +191,15 @@ var contents = [
     "img": "img/ubuntu.png",
     "updated_at": "2019-05-04 8:01",
     "heading": "Ubuntu",
-    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки, автодоплонение команд в терминале. " +
+    "content_ru": "Автологин, отключение сессии гостя, скрипты для автозагрузки. " +
       "Установка net-tools (ifconfig), samba, skype",
-    "content_en": "Autologin, disable guest session, scripts for autorun, autocomplete in terminal. " +
+    "content_en": "Autologin, disable guest session, scripts for autorun. " +
       "Install net-tools (ifconfig), samba, skype",
     "uri": "ubuntu.html",
     "hiddenTags": [
       "samba",
       "skype",
       "snap",
-      "bash-completion",
       "autologin",
       "autostart"
     ]
@@ -246,14 +262,10 @@ var contents = [
     "img": "img/unix.jpg",
     "updated_at": "2019-04-12 14:40",
     "heading": "Unix",
-    "content_ru": "Общие команды присущие unix совместимх ОС: Android, Linux, MacOS. Добавление папки с исполняемыми файлами для баш +" +
-      "автокомплит баша.",
-    "content_en": " Basic utils in unix OS (MacOS, Linux, Android). Add folder with scripts in bash path + autocomplete bash",
+    "content_ru": "Общие команды присущие unix совместимх ОС: Android, Linux, MacOS",
+    "content_en": "Basic utils in unix OS (MacOS, Linux, Android)",
     "uri": "unix.html",
     "hiddenTags": [
-      "bash",
-      "terminal",
-      "bash-completion",
       "filesize du"
     ]
   },

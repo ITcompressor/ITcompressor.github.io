@@ -6,12 +6,6 @@
 sudo mkdir /Volumes/NTFS
 sudo /usr/local/bin/ntfs-3g /dev/disk1s1 /Volumes/NTFS -olocal -oallow_other
 </pre>
-Для красивого терминала нужно добавить в .bash_profile (Add to .bash_profile for pretty terminal)
-<pre>export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GFh'
-</pre>
 Выключение через 15 минут (A 15-minute shutdown timer)
 <pre>sudo shutdown -h +15
 </pre>
