@@ -1,5 +1,21 @@
 var contents = [
   {
+    "id": "zip",
+    "img": "img/zip.jpeg",
+    "updated_at": "2019-09-04 23:12",
+    "heading": "Archives",
+    "content_ru": "Работа с различными видами архивов в командной строке",
+    "content_en": "Work with archives in a terminal",
+    "uri": "zip.html",
+    "tags": [
+      ["archives", 2],
+      ["bash", 0]
+    ],
+    "hiddenTags": [
+      "zip", "unrar", "tar", "gz", "bz2", "rar", "7zip"
+    ]
+  },
+  {
     "id": "vbox",
     "img": "img/vbox.png",
     "updated_at": "2019-09-01 23:02",
@@ -12,24 +28,6 @@ var contents = [
     ],
     "hiddenTags": [
       "virtualization"
-    ]
-  },
-  {
-    "id": "zip",
-    "img": "img/zip.jpeg",
-    "updated_at": "2019-09-01 23:01",
-    "heading": "Archives",
-    "content_ru": "Работа с различными видами архивов в командной строке",
-    "content_en": "Work with archives in a terminal",
-    "uri": "zip.html",
-    "tags": [
-      ["zip", 2],
-      ["rar", 2],
-      ["tar", 2],
-      ["bash", 0]
-    ],
-    "hiddenTags": [
-      "zip", "unrar", "tar", "gz", "bz2"
     ]
   },
   {
