@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "nginx",
+    "img": "img/nginx.jpg",
+    "updated_at": "2019-09-09 20:50",
+    "heading": "Nginx",
+    "content_ru": "Трюки в настройке nginx",
+    "content_en": "Nginx tricks",
+    "uri": "nginx.html",
+    "external": "http://kbeezie.com/protecting-folders-with-nginx/",
+    "tags": [
+      ["server", 0],
+      ["сервер", 0]
+    ],
+    "hiddenhiddenTags": [
+      "nginx", "proxy", "server",
+      "нгинкс", "прокси", "сервер",
+      "real ip", "реальный айпи", "прокидывание"
+    ]
+  },
+  {
     "id": "zip",
     "img": "img/zip.jpeg",
     "updated_at": "2019-09-04 23:12",
@@ -64,24 +83,6 @@ var contents = [
     ],
     "hiddenTags": [
       "grep", "ls", "less", "поиск"
-    ]
-  },
-  {
-    "id": "nginx",
-    "img": "img/nginx.jpg",
-    "updated_at": "2019-06-29 00:50",
-    "heading": "Nginx",
-    "content_ru": "Трюки в настройке nginx",
-    "content_en": "Nginx tricks",
-    "uri": "nginx.html",
-    "external": "http://kbeezie.com/protecting-folders-with-nginx/",
-    "tags": [
-      ["server", 0],
-      ["сервер", 0]
-    ],
-    "hiddenhiddenTags": [
-      "nginx", "proxy", "server",
-      "нгинкс", "прокси", "сервер"
     ]
   },
   {
