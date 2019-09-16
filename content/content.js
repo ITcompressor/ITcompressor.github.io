@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "network",
+    "img": "img/network.png",
+    "updated_at": "2019-09-16 13:00",
+    "heading": "Работа с сетью",
+    "content_ru": "Примеры использования базовых утилит для сканирование сетей, доменов по общему сертификату. " +
+      "Изменение mac-адреса. Просмотр текущей активности в сети и тд.",
+    "content_en": "Network scan examples. Check network activity and etc.",
+    "uri": "network.html",
+    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+    "tags": [
+      ["network", 1],
+      ["сеть", 1]
+    ],
+    "hiddenTags": [
+      "traceroute", "nmap", "nc", "ifconfig", "mac",
+      "curl", "wget", "netstat"
+    ]
+  },
+  {
     "id": "nginx",
     "img": "img/nginx.jpg",
     "updated_at": "2019-09-09 20:50",
@@ -575,27 +594,6 @@ var contents = [
       "grub",
       "bash",
       "hack"
-    ]
-  },
-  {
-    "id": "network",
-    "img": "img/network.png",
-    "updated_at": "2019-02-07 19:33",
-    "heading": "Работа с сетью. Сканирование сетей. Скрипты и утилиты",
-    "content_ru": "Примеры использования curl, wget, nmap, nc, traceroute. Команда сканирования локальной сети на доступные машины. " +
-      "Сканирование доменов по общему сертификату. Изменение mac-адреса. Просмотр текущей активности в сети с помощью netstat.",
-    "uri": "network.html",
-    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
-    "hiddenTags": [
-      "traceroute",
-      "nmap",
-      "nc",
-      "ifconfig",
-      "mac",
-      "curl",
-      "bash",
-      "wget",
-      "netstat"
     ]
   },
   {
