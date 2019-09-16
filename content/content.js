@@ -1,5 +1,25 @@
 var contents = [
   {
+    "id": "java",
+    "img": "img/jvm.jpg",
+    "updated_at": "2019-09-16 20:00",
+    "heading": "Java and JVM",
+    "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
+    "content_en": "Notes about java, dump, maven, bytecode",
+    "uri": "java.html",
+    "tags": [
+      ["java", 0],
+      ["jvm", 2]
+    ],
+    "hiddenTags": [
+      "jdk",
+      "jstack",
+      "bytecode",
+      "maven",
+      "jmap"
+    ]
+  },
+  {
     "id": "network",
     "img": "img/network.png",
     "updated_at": "2019-09-16 13:00",
@@ -140,22 +160,6 @@ var contents = [
       "ssl",
       "https",
       "certificates"
-    ]
-  },
-  {
-    "id": "java",
-    "img": "img/jvm.jpg",
-    "updated_at": "2019-06-08 03:14",
-    "heading": "Java and JVM",
-    "content_ru": "Полезности для java. Получения дампа процесса java. Работа с мавеном. Установка кастомных либ.",
-    "content_en": "Notes about java, dump, maven, bytecode",
-    "uri": "java.html",
-    "hiddenTags": [
-      "jdk",
-      "jstack",
-      "bytecode",
-      "maven",
-      "jmap"
     ]
   },
   {

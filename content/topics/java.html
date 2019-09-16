@@ -16,3 +16,6 @@ mvn install:install-file -Dfile=[path-to-file]
 Пример установки библиотеки для maven (example for install lib from maven)
 <pre>mvn install:install-file -Dfile=/path_to_jar/sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
 </pre>
+Запуск спринг бутового приложения с переопределенными пропертями (run spring boot app with overrided properties)
+<pre>java -jar conbot-idf.jar --spring.config.location=telegram-bot.properties,idf.properties
+</pre>
