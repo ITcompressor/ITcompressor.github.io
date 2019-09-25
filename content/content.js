@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "python",
+    "img": "img/python.jpg",
+    "updated_at": "2019-09-25 23:40",
+    "heading": "Python",
+    "content_ru": "Полезности для python",
+    "content_en": "Useful materials for python",
+    "uri": "python.html",
+    "tags": [
+      ["python", 0],
+      ["machine learning", 1]
+    ],
+    "hiddenTags": [
+      "native execution", "ml", "pip", "python3",
+      "tenserflow", "keras", "teano", "machine learning"
+    ]
+  },
+  {
     "id": "java",
     "img": "img/jvm.jpg",
     "updated_at": "2019-09-16 20:00",
@@ -174,20 +191,6 @@ var contents = [
       "locks",
       "processes",
       "transactions"
-    ]
-  },
-  {
-    "id": "python",
-    "img": "img/python.jpg",
-    "updated_at": "2019-05-29 12:11",
-    "heading": "Python",
-    "content_ru": "Полезности для python",
-    "content_en": "Useful materials for python",
-    "uri": "python.html",
-    "hiddenTags": [
-      "native execution",
-      "ml",
-      "machine learning"
     ]
   },
   {
