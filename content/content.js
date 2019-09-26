@@ -2,7 +2,7 @@ var contents = [
   {
     "id": "python",
     "img": "img/python.jpg",
-    "updated_at": "2019-09-25 23:40",
+    "updated_at": "2019-09-26 22:52",
     "heading": "Python",
     "content_ru": "Полезности для python",
     "content_en": "Useful materials for python",
@@ -13,7 +13,8 @@ var contents = [
     ],
     "hiddenTags": [
       "native execution", "ml", "pip", "python3",
-      "tenserflow", "keras", "teano", "machine learning"
+      "tenserflow", "keras", "teano", "machine learning",
+      "whl", "wheel"
     ]
   },
   {
