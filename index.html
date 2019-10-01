@@ -48,7 +48,7 @@
                     <button class="search-btn"><i class="fa fa-search"></i></button>
                     <div class="search-form active">
                         <input class="search-input" type="text" name="search" ng-model="search"
-                            ng-change="changeSearch(search)" placeholder="Начни свой поиск ...">
+                            ng-change="changeSearch(search)" placeholder="Search ...">
                         <button class="search-close" ng-click="changeSearch('')"><i class="fa fa-times"></i></button>
                     </div>
                 </div>
@@ -62,14 +62,14 @@
             <!-- /nav -->
             <!-- widget posts -->
             <div class="section-row">
-                <h3>Закреп</h3>
+                <h3>Pinned</h3>
                 <div class="post post-widget">
                     <a class="post-img" href="https://next-way.by">
                         <img src="https://next-way.by/img/logo.png" alt=""></a>
                     <div class="post-body">
                         <h3 class="post-title">
                             <a href="https://next-way.by">
-                                Блог автора https://next-way.by
+                                Author's blog: https://next-way.by
                             </a>
                         </h3>
                     </div>
@@ -90,16 +90,14 @@
 
         <!-- container -->
         <div class="container">
-            <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
+            <button class="btn btn-default" ng-click="backDoc()"> Back </button>
         </div>
         <!-- container -->
 
         <!-- container -->
         <div class="container">
             <h4>
-                <b>RU:</b> {{ docContentRu }}
-                <br>
-                <b>EN:</b> {{ docContentEn }}
+                {{ docContentEn }}
             </h4>
             <div class="row" ng-include="docUrl"></div>
         </div>
@@ -107,7 +105,7 @@
 
         <!-- container -->
         <div class="container">
-            <button class="btn btn-default" ng-click="backDoc()"> Назад</button>
+            <button class="btn btn-default" ng-click="backDoc()"> Back </button>
         </div>
 
         <br>
@@ -143,9 +141,7 @@
                                     {{ doc.heading }}
                                 </a>
                             </h3>
-                            <b>RU:</b> {{ doc.content_ru }}
-                            <br>
-                            <b>EN:</b> {{ doc.content_en }}
+                            {{ doc.content_en }}
                         </div>
                     </div>
                 </div>
