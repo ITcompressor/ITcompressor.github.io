@@ -8,7 +8,7 @@ var contents = [
       "Install net-tools (ifconfig), samba, skype, insomnia, sdkman, gnome shell, wine,",
     "uri": "ubuntu.html",
     "tags": [
-      ["desctop linux", 2]
+      ["desktop linux", 2]
     ],
     "hiddenTags": [
       "samba", "skype", "snap", "autologin", "autostart", "update-alternatives", "wine", "run win32 apps",
