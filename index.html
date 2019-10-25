@@ -87,6 +87,25 @@
     <!-- /Nav -->
 
     <!-- section -->
+    <div class="section" ng-show="false">
+
+        <!-- container -->
+        <div class="container">
+            <h4>
+                Hello! Thank you for visit! It's my tech notes. <br>
+                If you see the message then your browser has deactivated JavaScript. <br>
+                Or you are search bot =) <br> 
+                Or you have a extension for viewed hidden tags (=
+            </h4>
+            <div class="row" ng-include="docUrl"></div>
+        </div>
+        <!-- container -->
+
+    </div>
+    <!-- /section -->
+
+
+    <!-- section -->
     <div class="section" ng-show="isTarget">
 
         <!-- container -->
@@ -97,8 +116,7 @@
 
         <!-- container -->
         <div class="container">
-            <h4>
-                {{ docContentEn }}
+            <h4 ng-bind-html="docContentEn">
             </h4>
             <div class="row" ng-include="docUrl"></div>
         </div>
