@@ -1,23 +1,25 @@
-Переконфигурация пакетного менеджера apt, если что-то пошло не так
+Reconfig apt
 <pre>sudo dpkg --configure -a
 </pre>
-Установка(обновления) скайпа через snap по определенном каналу
+Install skype from snap
 <pre>snap refresh skype --channel=insider/stable
 </pre>
-Установка samba
+Install samba (smb)
 <pre>sudo apt install system-config-samba
 </pre>
-Запуск samba
+Run samba config
 <pre>sudo system-config-samba
 </pre>
-Возможный фикс samba, если не находит нужного файла
+Fix samba (if need)
 <pre>sudo touch /etc/libuser.conf
 </pre>
-Установка net-tools (ifconfig)
-<pre>
-apt install net-tools
+Install net-tools (ifconfig)
+<pre>apt install net-tools
 </pre>
-Автологин -> вместо myusername подставляем имя нашего пользователя
+
+<hr>
+
+Autologin in terminal
 <pre>mkdir /etc/systemd/system/getty@tty1.service.d    
 nano /etc/systemd/system/getty@tty1.service.d/override.conf
 </pre>
@@ -26,15 +28,20 @@ ExecStart=
 ExecStart=-/sbin/agetty --noissue --autologin myusername %I $TERM
 Type=idle
 </pre>
-Отключить сессию гостя в ubuntu
+
+<hr>
+
+Turn off guest session
 <pre>sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
 add "allow-guest=false"
 </pre>
-Манипуляции для включения rc.local (актуально для новых версий убунту 18+)
+
+<hr>
+
+Turn on rc.local (autostart script)
 <pre># touch /etc/rc.local
 # chmod +x /etc/rc.local
 </pre>
-добавляем это
 <pre>#!/bin/sh -e
 #
 # rc.local
@@ -50,11 +57,108 @@ add "allow-guest=false"
 
 exit 0
 </pre>
-активируем
 <pre>sudo systemctl enable rc-local
 </pre>
-Просмотр скрытых приложений в автозагрузке
-<pre>
-cd /etc/xdg/autostart
+
+<hr>
+
+List autostart
+<pre>cd /etc/xdg/autostart
 sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
 </pre>
+Remove service from autostart (for not all)
+<pre>sudo update-rc.d &lt;appname&gt; disable 
+</pre>
+
+<hr>
+
+Install and config sdkman
+<pre>curl -s "https://get.sdkman.io" | bash
+</pre>
+<pre>source "$HOME/.sdkman/bin/sdkman-init.sh"
+</pre>
+
+<hr>
+
+Install manually by update-alternatives
+<pre>sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+</pre>
+
+<hr>
+
+Install insomnia (aka postman)
+<pre>
+# Add to sources
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /"| sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+# Add public key used to verify code signature
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
+
+# Refresh repository sources and install Insomnia
+sudo apt-get update
+sudo apt-get install insomnia
+</pre>
+
+<hr>
+
+Install gnome-shell (графическая оболочка)
+<pre>sudo apt-get install gnome-shell gnome-session gnome-tweak-tool gdm
+</pre>
+<pre>gnome-shell --version
+</pre>
+Hotkey extension (win+1..10)
+<a href="https://extensions.gnome.org/extension/413/dash-hotkeys/">
+    https://extensions.gnome.org/extension/413/dash-hotkeys/
+</a>
+
+<hr>
+
+Install and config winep
+<pre>
+Run winetricks- Select the default wineprefix -Install a font. Select corefonts, fonfix and press OK. 
+Run winetricks- Select the default wineprefix -Install a Windows DLL op component. 
+</pre>
+select
+<pre>vcrun 2005
+vcrun 2008
+vcrun 2010
+vcrun 6
+vcrun 6 sp6
+d3dx9
+dotnet 20
+</pre>
+reboot and
+<pre>from folder Windows/Microsoft.NET/Framework remove v3.0 (if exist)
+vb5run, vb6run
+vcrun 2003
+dotnet 30
+</pre>
+reboot and
+<pre>d3xof
+devenum
+dinрut8
+direckmusik
+direcktplay
+directx9
+dxdiagn
+d3dx11_43
+mfs40, wsh56vb, wsh57. gdiplus
+physx
+gfw
+</pre>
+config registry. 
+<pre>Run winetricks -Select the default wineprefix -Change settings !
+</pre>
+set
+<pre>1. DirectDrawRender(ddr) opengl
+2. Direct3D Multisampling enabled
+3. OffscreenRenderingMode(orm) fbo
+4. PixelShaderMode(psm) enabled
+5. Render TargetLockMode(rtlm) auto
+6. UseGLSL(glsl) enabled (default)
+7. VertexShaders(vsm) hardware
+8. VideoMemorySize 1024 (select option for your videocard)
+9. MouseWarpOverride(mwo) enabled (force)
+</pre>
+
+<hr>

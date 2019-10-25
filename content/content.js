@@ -1,5 +1,21 @@
 var contents = [
   {
+    "id": "ubuntu",
+    "img": "img/ubuntu.png",
+    "updated_at": "2019-10-25 17:15",
+    "heading": "Ubuntu",
+    "content_en": "Autologin, disable guest session, scripts for autorun. " +
+      "Install net-tools (ifconfig), samba, skype, insomnia, sdkman, gnome shell, wine,",
+    "uri": "ubuntu.html",
+    "tags": [
+      ["desctop linux", 2]
+    ],
+    "hiddenTags": [
+      "samba", "skype", "snap", "autologin", "autostart", "update-alternatives", "wine", "run win32 apps",
+      "sdkman", "gnome-shell", "desktop"
+    ]
+  },
+  {
     "id": "android",
     "img": "img/android.jpg",
     "updated_at": "2019-10-25 17:15",
@@ -7,7 +23,7 @@ var contents = [
     "content_en": "Basic commands and tricks for android.",
     "uri": "android.html",
     "tags": [
-      ["device", 2]
+      ["mobile", 2]
     ],
     "hiddenTags": [
       "disable apps", "android", "fastboot", "hosts", "autostart", "autorun", "adb", "ban ip", "mount"
@@ -242,22 +258,6 @@ var contents = [
     ]
   },
   {
-    "id": "ubuntu",
-    "img": "img/ubuntu.png",
-    "updated_at": "2019-05-04 8:01",
-    "heading": "Ubuntu",
-    "content_en": "Autologin, disable guest session, scripts for autorun. " +
-      "Install net-tools (ifconfig), samba, skype",
-    "uri": "ubuntu.html",
-    "hiddenTags": [
-      "samba",
-      "skype",
-      "snap",
-      "autologin",
-      "autostart"
-    ]
-  },
-  {
     "id": "glassfish",
     "img": "img/glassfish.png",
     "updated_at": "2019-05-04 07:53",
@@ -296,25 +296,6 @@ var contents = [
     "uri": "unix.html",
     "hiddenTags": [
       "filesize du"
-    ]
-  },
-  {
-    "id": "any-install",
-    "img": "img/software.jpg",
-    "updated_at": "2019-03-25 18:35",
-    "heading": "Useful installs (RU)",
-    "content_en": "Install gnome shell, wine, insomnia (aka postman), sdkman and etc",
-    "uri": "any-install.html",
-    "hiddenTags": [
-      "update-alternatives",
-      "pip",
-      "python",
-      "wine",
-      "run win32 apps",
-      "sdkman",
-      "gnome-shell",
-      "insomnia",
-      "desktop"
     ]
   },
   {
