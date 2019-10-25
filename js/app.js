@@ -22,10 +22,10 @@ app.controller("CoreController",
             var doc = getDocById(id)
             $scope.isTarget = true;
             $scope.docUrl = url;
-            $scope.docContentRu = doc.content_ru
             $scope.docContentEn = doc.content_en
             $scope.target = id;
             $scope.targetDoc = doc;
+            document.title = doc.content_en
             setActualHash();
         }
 
@@ -35,6 +35,7 @@ app.controller("CoreController",
 
         $scope.backDoc = function () {
             $scope.isTarget = false;
+            document.title = "ITcompressor"
             setActualHash();
         }
 
