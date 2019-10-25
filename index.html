@@ -27,6 +27,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body id='ng-app' ng-app="core-app" ng-controller="CoreController">
@@ -112,7 +113,9 @@
 
         <!-- container -->
         <div class="container">
-            <a class="post-img"><img src="{{ targetDoc.img }}" alt=""></a>
+            <a class="post-img">
+                <img ng-src="{{ targetDoc.img }}" alt="">
+            </a>
         </div>
         <!-- container -->
     </div>
@@ -128,7 +131,7 @@
                 <div class="col-md-4" ng-repeat="doc in docs|filter:search">
                     <div class="post">
                         <a class="post-img" ng-click="clickDoc(doc.full_content, doc.id)">
-                            <img src="{{ doc.img }}" alt=""></a>
+                            <img ng-src="{{ doc.img }}" alt=""></a>
                         <div class="post-body">
                             <span class="post-meta" ng-repeat="tag in doc.tags">
                                 <a class="post-category cat-{{ tag[1] }}" ng-click="clickDoc(doc.full_content, doc.id)">
@@ -154,7 +157,6 @@
     </div>
     <!-- /section -->
 
-    <!-- jQuery Plugins -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

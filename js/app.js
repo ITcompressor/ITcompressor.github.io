@@ -1,8 +1,8 @@
 var app = angular.module("core-app", []);
 app.controller("CoreController",
-    ["$scope", "$filter",  function ($scope, $filter) {
+    ["$scope", "$filter", function ($scope, $filter) {
 
-        var getDocById = function(id) {
+        var getDocById = function (id) {
             return $scope.docs.filter(function (d) {
                 return d.id == id;
             })[0];
@@ -22,11 +22,15 @@ app.controller("CoreController",
             var doc = getDocById(id)
             $scope.isTarget = true;
             $scope.docUrl = url;
-            $scope.docContentRu = doc.content_ru 
+            $scope.docContentRu = doc.content_ru
             $scope.docContentEn = doc.content_en
             $scope.target = id;
             $scope.targetDoc = doc;
             setActualHash();
+        }
+
+        $scope.getImg = function () {
+            return "https://itcompressor.github.io/img/logo.png"
         }
 
         $scope.backDoc = function () {
@@ -61,9 +65,9 @@ app.controller("CoreController",
 
         searchAny();
 
-        window.onhashchange = function() {
+        window.onhashchange = function () {
             var params = getQueryParams(document.location.hash);
-            if(!params.target) {
+            if (!params.target) {
                 setActualHash();
                 $scope.backDoc();
             } else {
