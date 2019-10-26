@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "python",
+    "img": "img/python.jpg",
+    "updated_at": "2019-10-26 14:24",
+    "heading": "Python",
+    "content_en": "Useful materials for python",
+    "uri": "python.html",
+    "tags": [
+      ["python", 0],
+      ["machine learning", 1]
+    ],
+    "hiddenTags": [
+      "native execution", "ml", "pip", "python3",
+      "tenserflow", "keras", "teano", "machine learning",
+      "whl", "wheel"
+    ]
+  },
+  {
     "id": "encryption",
     "img": "img/cert_and_encrypt.png",
     "updated_at": "2019-10-26 14:02",
@@ -60,23 +77,6 @@ var contents = [
     ],
     "hiddenTags": [
       "disable apps", "android", "fastboot", "hosts", "autostart", "autorun", "adb", "ban ip", "mount"
-    ]
-  },
-  {
-    "id": "python",
-    "img": "img/python.jpg",
-    "updated_at": "2019-09-26 22:52",
-    "heading": "Python",
-    "content_en": "Useful materials for python",
-    "uri": "python.html",
-    "tags": [
-      ["python", 0],
-      ["machine learning", 1]
-    ],
-    "hiddenTags": [
-      "native execution", "ml", "pip", "python3",
-      "tenserflow", "keras", "teano", "machine learning",
-      "whl", "wheel"
     ]
   },
   {
