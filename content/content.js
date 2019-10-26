@@ -1,5 +1,19 @@
 var contents = [
   {
+    "id": "encryption",
+    "img": "img/cert_and_encrypt.png",
+    "updated_at": "2019-10-26 14:02",
+    "heading": "Encryption and Certificates",
+    "content_en": "Commands for generate certs, extract certs",
+    "uri": "encryption.html",
+    "tags": [
+      ["network", 1], ["openssl", 4]
+    ],
+    "hiddenTags": [
+      "pkcs12", "p12", "jks", "ssl", "https", "certificates"
+    ]
+  },
+  {
     "id": "network",
     "img": "img/network.png",
     "updated_at": "2019-10-26 10:32",
@@ -173,7 +187,7 @@ var contents = [
     "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
     "tags": [
       ["OS", 0],
-      ["vnc", 2]
+      ["vnc", 3]
     ],
     "hiddenTags": [
       "vnc", "fuse", "ntfs",
@@ -182,21 +196,6 @@ var contents = [
       "фьюс", "нтфс", "терминал",
       "шел", "удаленный рабочий стол",
       "мак ос"
-    ]
-  },
-  {
-    "id": "encryption",
-    "img": "img/cert_and_encrypt.png",
-    "updated_at": "2019-06-12 17:46",
-    "heading": "Encryption and Certificates",
-    "content_en": "Commands for generate certs and etc..",
-    "uri": "encryption.html",
-    "hiddenTags": [
-      "pkcs12",
-      "p12",
-      "ssl",
-      "https",
-      "certificates"
     ]
   },
   {
