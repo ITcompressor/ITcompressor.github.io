@@ -56,7 +56,7 @@ var contents = [
     "content_en": "Basic commands and tricks for android.",
     "uri": "android.html",
     "tags": [
-      ["mobile", 2]
+      ["mobile", 1]
     ],
     "hiddenTags": [
       "disable apps", "android", "fastboot", "hosts", "autostart", "autorun", "adb", "ban ip", "mount"
@@ -88,7 +88,7 @@ var contents = [
     "uri": "java.html",
     "tags": [
       ["java", 0],
-      ["jvm", 2]
+      ["jvm", 1]
     ],
     "hiddenTags": [
       "jdk",
@@ -107,8 +107,7 @@ var contents = [
     "uri": "nginx.html",
     "external": "http://kbeezie.com/protecting-folders-with-nginx/",
     "tags": [
-      ["server", 0],
-      ["сервер", 0]
+      ["server", 1]
     ],
     "hiddenhiddenTags": [
       "nginx", "proxy", "server",
@@ -124,7 +123,7 @@ var contents = [
     "content_en": "Work with archives in a terminal",
     "uri": "zip.html",
     "tags": [
-      ["archives", 2],
+      ["archives", 1],
       ["bash", 0]
     ],
     "hiddenTags": [
@@ -153,7 +152,7 @@ var contents = [
     "content_en": "Customs for shells (Linux, MacOS, Android(Termux))",
     "uri": "terminal.html",
     "tags": [
-      ["shell", 0],
+      ["shell", 1],
       ["bash", 0]
     ],
     "hiddenTags": [
@@ -170,8 +169,7 @@ var contents = [
     "uri": "grep.html",
     "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
     "tags": [
-      ["search", 1],
-      ["поиск", 1]
+      ["search", 2]
     ],
     "hiddenTags": [
       "grep", "ls", "less", "поиск"
@@ -186,7 +184,7 @@ var contents = [
     "uri": "mac.html",
     "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
     "tags": [
-      ["OS", 0],
+      ["OS", 1],
       ["vnc", 3]
     ],
     "hiddenTags": [
