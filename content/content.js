@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "brutespray",
+    "img": "img/brute.jpg",
+    "updated_at": "2019-10-26 17:32",
+    "heading": "Brootforce with brutespray.py",
+    "content_en": "ONLY FOR EDUCATION",
+    "uri": "brutespray.html",
+    "external": "https://github.com/x90skysn3k/brutespray",
+    "tags": [
+      ["network", 1], ["hack", 3]
+    ],
+    "hiddenTags": [
+      "brutespray", "hacking", "nmap", "ssh"
+    ]
+  },
+  {
     "id": "python",
     "img": "img/python.jpg",
     "updated_at": "2019-10-26 14:24",
@@ -323,21 +338,6 @@ var contents = [
       "unsafe",
       "duplicates",
       "permissions"
-    ]
-  },
-  {
-    "id": "brutespray",
-    "img": "img/brute.jpg",
-    "updated_at": "2019-01-12 01:07",
-    "heading": "Brootforce with brutespray.py (RU)",
-    "content_en": "ONLY FOR EDUCATION",
-    "uri": "brutespray.html",
-    "external": "https://github.com/x90skysn3k/brutespray",
-    "hiddenTags": [
-      "brutespray",
-      "hacking",
-      "nmap",
-      "ssh.."
     ]
   },
   {
