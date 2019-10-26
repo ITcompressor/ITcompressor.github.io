@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "camera",
+    "img": "img/camera.png",
+    "updated_at": "2019-10-26 17:54",
+    "heading": "Camera in browser",
+    "content_en": "Demo with link is inside",
+    "uri": "camera.html",
+    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
+    "tags": [
+      ["js", 0], ["html", 0], ["web", 1]
+    ],
+    "hiddenTags": [
+      "camera", "js", "html5"
+    ]
+  },
+  {
     "id": "brutespray",
     "img": "img/brute.jpg",
     "updated_at": "2019-10-26 17:32",
@@ -298,19 +313,6 @@ var contents = [
       "binary",
       "RCE(Remote Code Execution)",
       "LFI(Local File Inclusion)"
-    ]
-  },
-  {
-    "id": "camera",
-    "img": "img/cameras.jpg",
-    "updated_at": "2019-03-02 17:11",
-    "heading": "Camera in browser",
-    "content_en": "Demo with link inside",
-    "uri": "camera.html",
-    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
-    "hiddenTags": [
-      "camera",
-      "html5"
     ]
   },
   {
