@@ -1,60 +1,87 @@
-Посмотреть активности в сети (check activity)
+Start network network-manager
+<pre>sudo service network-manager start 
+</pre>
+Connect to wifi from terminal
+<pre>nmcli device wifi connect 'wifi_name_here' password 'wifi_password_here'
+</pre>
+Check network activity
 <pre>netstat -an
 </pre>
-Просмотр SSL у домена (check ssl)
+Check SSL for domain
 <pre>curl --insecure -v https://ya.ru 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
 </pre>
-Запрос на 80 порт с помощью nc (send http request)
+
+<hr>
+
+Send http(tcp) request to 80 port by nc 
 <pre>printf "HEAD / HTTP/1.0\r\n\r\n" | nc tut.by 80
 </pre>
-Запрос с отправкой контента из файла с помощью nc (send file by tcp)
+Send tcp request from file by nc
 <pre>nc localhost 1234 &lt; test.txt
 </pre>
-Использование утилиты curl (curl examplse)
+
+<hr>
+
+To instance curl GET request
 <pre>curl -X GET -H "Content-Type: [any_headers]" -d "{body=[any_params|body]}" https://itcompressor.github.io
 </pre>
-Использование утилиты nmap (А - палевный вариант) (Nmap scan if use -A - you will are detected)
+
+<hr>
+
+Nmap scan if use -A - you will are detected
 <pre>nmap -A -T4 ya.ru
 </pre>
-ICMP пинг с помощью nmap (icmp ping)
+icmp ping
 <pre>nmap -sn 192.168.1.0/24
 </pre>
-TCP SYN Пинг с помощью nmap (tcp syn ping)
+tcp syn ping
 <pre>nmap -sn -PS 192.168.1.0/24
 </pre>
-TCP ACK Пинг с помощью nmap (tcp ack ping)
+tcp ack ping
 <pre>nmap -sn -PA 192.168.1.0/24
 </pre>
-UDP Пинг с помощью nmap (udp ping)
+udp ping
 <pre>nmap -sn -PU 192.168.1.0/24
 </pre>
-Пинг по IP Протоколу с помощью nmap
+tcp/ip ping (effictive but need root)
 <pre>nmap -sn -PO 192.168.1.0/24
 </pre>
-ARP Пинг с помощью nmap (arp ping)
+arp ping 
 <pre>nmap -sn -PR 192.168.1.0/24
 </pre>
-Скан по портам с помощью nmap (scan ports)
+port scan
 <pre>nmap localhost -p 34000-36000
 nmap localhost -p 8080
 </pre>
-Сканирование локальной сети на доступные машины (scan network)
+
+<hr>
+
+Scan network script by ping
 <pre>echo 192.168.1.{1..254}|xargs -n1 -P0 ping -c1|grep "bytes from"
 </pre>
-Путь пакета к ресурсу (traceroute for resource)
+Traceroute
 <pre>traceroute &lt;any_ip_or_domain&gt;
 </pre>
-Сканирование всех доменов по сертификату определенного домена (see all certs)
+See domains by same serts
 <pre>true | openssl s_client -showcerts -connect habrahabr.ru:443 2>&1 |openssl x509 -text | grep -o 'DNS:[^,]*' | cut -f2 -d:
 </pre>
-Скачать front-end (без rest запросов) c помощью wget (download front-end)
+Download front-end (without restapi) by wget
 <pre>wget -r -k -l 7 -p -E -nc https://itcompressor.github.io/
 </pre>
-"Скачать и запустить" c помощью wget (download and run)
+Download and run by wget
 <pre>wget -q -O – https://fixubuntu.com/fixubuntu.sh | bash
 </pre>
-Изменение mac-адреса в Linux с помощью утилиты ifconfig, где wlp3s0 название сетевого интерфейса (change mac address)
+
+<hr>
+
+Install net-tools (ifconfig)
+<pre>apt install net-tools
+</pre>
+Change mac address by ifconfig
 <pre>sudo ifconfig wlp3s0 down
 sudo ifconfig wlp3s0 hw ether 00:18:f3:4c:d6:6d
 sudo ifconfig wlp3s0 up
+</pre>
+Edit local dns
+<pre>sudo nano /etc/hosts
 </pre>

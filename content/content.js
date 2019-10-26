@@ -1,5 +1,22 @@
 var contents = [
   {
+    "id": "network",
+    "img": "img/network.png",
+    "updated_at": "2019-10-26 10:32",
+    "heading": "Networks methodics",
+    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
+      "Change mac address.",
+    "uri": "network.html",
+    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+    "tags": [
+      ["network", 1]
+    ],
+    "hiddenTags": [
+      "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts",
+      "curl", "wget", "netstat", "certs", "nmcli"
+    ]
+  },
+  {
     "id": "ubuntu",
     "img": "img/ubuntu.png",
     "updated_at": "2019-10-25 17:15",
@@ -8,11 +25,13 @@ var contents = [
       "Install net-tools (ifconfig), samba, skype, insomnia, sdkman, gnome shell, wine,",
     "uri": "ubuntu.html",
     "tags": [
-      ["desktop linux", 2]
+      ["desktop linux", 2], ["linux", 1], ["unix", 1]
     ],
     "hiddenTags": [
       "samba", "skype", "snap", "autologin", "autostart", "update-alternatives", "wine", "run win32 apps",
-      "sdkman", "gnome-shell", "desktop"
+      "sdkman", "gnome-shell", "desktop", "automount", "cron", "adduser", "recursively find",
+      "watch", "tail", "chmod", "chown", "filesize du",
+      "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
     ]
   },
   {
@@ -63,24 +82,6 @@ var contents = [
       "bytecode",
       "maven",
       "jmap"
-    ]
-  },
-  {
-    "id": "network",
-    "img": "img/network.png",
-    "updated_at": "2019-09-16 13:00",
-    "heading": "Networks methodics",
-    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
-      "Change mac address.",
-    "uri": "network.html",
-    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
-    "tags": [
-      ["network", 1],
-      ["сеть", 1]
-    ],
-    "hiddenTags": [
-      "traceroute", "nmap", "nc", "ifconfig", "mac",
-      "curl", "wget", "netstat", "certs"
     ]
   },
   {
@@ -285,30 +286,6 @@ var contents = [
       "binary",
       "RCE(Remote Code Execution)",
       "LFI(Local File Inclusion)"
-    ]
-  },
-  {
-    "id": "unix",
-    "img": "img/unix.jpg",
-    "updated_at": "2019-04-12 14:40",
-    "heading": "Unix",
-    "content_en": "Basic utils in unix OS (MacOS, Linux, Android)",
-    "uri": "unix.html",
-    "hiddenTags": [
-      "filesize du"
-    ]
-  },
-  {
-    "id": "linux",
-    "img": "img/gnu_linux.png",
-    "updated_at": "2019-03-25 16:09",
-    "heading": "Linux",
-    "content_en": "Work in a Linux OS",
-    "uri": "linux.html",
-    "hiddenTags": [
-      "automount", "cron", "adduser", "recursively find",
-      "watch", "tail", "chmod", "chown", "hosts",
-      "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
     ]
   },
   {
