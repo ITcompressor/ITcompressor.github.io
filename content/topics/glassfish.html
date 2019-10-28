@@ -1,30 +1,33 @@
-Запуск сервера приложений (домена) в режиме дебага (Start web-server with debug)
+Start web-server (domain) in debug mode
 <pre>as-install/bin/asadmin start-domain --debug domain1
 </pre>
-Остановка сервера приложений (домена) (Stop web-server)
-<pre>as-install/bin/asadmin stop-domain 
+Stop web-server (domain)
+<pre>as-install/bin/asadmin stop-domain domain1
 </pre>
-Деплой .war файла (Depoloy .war file)
-<pre>as-install/bin/asadmin deploy war-name
+Depoloy application.war
+<pre>as-install/bin/asadmin deploy application.war
 </pre>
-Список задеплоиных приложений (List deployed applications)
+Depoloy application.war with context root
+<pre>as-install/bin/asadmin deploy --contextroot "/my_path" application.war
+</pre>
+List deployed applications
 <pre>as-install/bin/asadmin list-applications
 </pre>
-Раздеплоить .war файл (Undeploy .war file)
-<pre>as-install/bin/asadmin undeploy war-name
+Undeploy application.war
+<pre>as-install/bin/asadmin undeploy application.war
 </pre>
-Установка пароля на админку (set admin's panel password)
+Set admin's panel password
 <pre>as-install/bin/asadmin change-admin-password
 </pre>
-Включить доступность админки для внешних подключений (enable admin panel for external connections)
+Eenable admin panel for external connections
 <pre>as-install/bin/asadmin enable-secure-admin
 </pre>
-Расположение админки (Admin panel)
+Admin panel uri
 <pre>http://localhost:4848
 </pre>
-Путь к автодеплю (autodeploy path)
+Autodeploy path
 <pre>as-install/domains/domain1/autodeploy
 </pre>
-Путь к настройке переменных среды, там можно установить путь к джаве (env config path, example for JVM_HOME)
+Env config path, example for JVM_HOME
 <pre>as-install/config/asenv.conf
 </pre>
