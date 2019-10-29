@@ -10,7 +10,7 @@ var contents = [
       ["php", 0], ["web", 1], ["hack", 3]
     ],
     "hiddenTags": [
-      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)"
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "hexadecimal octet", "nc", "reverse"
     ]
   },
   {

