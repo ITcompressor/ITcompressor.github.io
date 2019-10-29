@@ -1,5 +1,33 @@
 var contents = [
   {
+    "id": "ctf_web",
+    "img": "img/ctf.jpg",
+    "updated_at": "2019-10-29 17:38",
+    "heading": "CTF web tricks",
+    "content_en": "Some tricks for web CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
+    "uri": "ctf_web.html",
+    "tags": [
+      ["php", 0], ["web", 1], ["hack", 3]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)"
+    ]
+  },
+  {
+    "id": "ctf_bin",
+    "img": "img/ctf.jpg",
+    "updated_at": "2019-10-29 17:38",
+    "heading": "CTF binary tricks",
+    "content_en": "Some tricks for binaries CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
+    "uri": "ctf_bin.html",
+    "tags": [
+      ["binary", 1], ["hack", 3]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary"
+    ]
+  },
+  {
     "id": "camera",
     "img": "img/camera.png",
     "updated_at": "2019-10-29 16:19",
@@ -298,20 +326,6 @@ var contents = [
       "install",
       "hello world",
       "docker-compose"
-    ]
-  },
-  {
-    "id": "ctf",
-    "img": "img/ctf.jpg",
-    "updated_at": "2019-04-14 00:55",
-    "heading": "Некоторые уловки для игры в CTF",
-    "content_en": "Some tricks for CTF and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
-    "uri": "ctf.html",
-    "hiddenTags": [
-      "file metadata",
-      "binary",
-      "RCE(Remote Code Execution)",
-      "LFI(Local File Inclusion)"
     ]
   },
   {

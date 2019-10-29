@@ -1,0 +1,14 @@
+Classic file backups on server
+<pre>backup.zip
+backup.tar.gz
+index.zip
+index.tar.gz
+index.php_
+index.php1
+index.phps
+index.php~
+</pre>
+If file contains input *.php, than it is mb a LFI(Local File Inclusion).
+You can past filter for view php file (base64 format) on server
+<pre>php://filter/convert.base64-encode/resource=
+</pre>

@@ -1,20 +1,26 @@
-Показать файл в бинарном виде (view binary)
+View binary
 <pre>xxd file.php
 </pre>
-Редактирование файла (edit binary)
+Edit binary
 <pre>hexedit file.php
 </pre>
-Установка утилиты для работы с метаданными (install util for work with metadata)
+
+<hr>
+
+Install util for work with metadata
 <pre>apt-get install libimage-exiftool-perl
 </pre>
-Просмотр метаданных (view metadata)
+View metadata
 <pre>exiftool "file name".jpeg
 </pre>
-Примеры удаления метаданных (remove metadata examples)
+Remove metadata (examples)
 <pre>exiftool -all= "file name".jpeg
 exiftool -all= "folder".jpeg
 </pre>
-Magic numbers для разных типов файлов
+
+<hr>
+
+Magic numbers by file types
 <pre>Adobe Illustrator 	.ai 	25 50 44 46 [%PDF]
 Bitmap graphic 	        .bmp 	42 4D [BM]
 Class File              .class 	CA FE BA BE
@@ -67,19 +73,4 @@ Jar File                .jar 	50 4B 03 04 14 00 08 00 08 00
 SLN File                .sln 	4D 69 63 72 6F 73 6F 66 74 20 56 69 73 75 61 6C 20 53 74 75 64 69 6F 20 53 6F 6C 75 74 69 6F 6E 20 46 69 6C 65
 Zlib File               .zlib 	78 9C
 SDF File                .sdf 	78 9C
-</pre>
-Файлы бекапов, которые мб на сервере, в частности при запросе такого файла произойдет скачивание, а не выполнение. 
-Имея исходники на руках проще обойти защиту (Classic file backups in server)
-<pre>backup.zip
-backup.tar.gz
-index.zip
-index.tar.gz
-index.php_
-index.php1
-index.phps
-index.php~
-</pre>
-Если видно, что на вход аргумента принимается скрипт *.php, то можно предположить что это LFI(Local File Inclusion).
-С помощью фильтров можно получить содержимое файла в base64 (как декодировать можно найти в интернете) (You can past filter for view php file on server)
-<pre>php://filter/convert.base64-encode/resource=
 </pre>
