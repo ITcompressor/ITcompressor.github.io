@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "camera",
+    "img": "img/camera.png",
+    "updated_at": "2019-10-29 16:19",
+    "heading": "Web-cameras",
+    "content_en": "Demo with link is inside. Google search queries",
+    "uri": "camera.html",
+    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
+    "tags": [
+      ["js", 0], ["html", 0], ["web", 1], ["hack", 3]
+    ],
+    "hiddenTags": [
+      "camera", "js", "html5", "google", "search"
+    ]
+  },
+  {
     "id": "glassfish",
     "img": "img/glassfish.png",
     "updated_at": "2019-10-28 10:53",
@@ -12,21 +27,6 @@ var contents = [
     ],
     "hiddenTags": [
       "web", "gf3", "gf5", "java ee", "server"
-    ]
-  },
-  {
-    "id": "camera",
-    "img": "img/camera.png",
-    "updated_at": "2019-10-26 17:54",
-    "heading": "Camera in browser",
-    "content_en": "Demo with link is inside",
-    "uri": "camera.html",
-    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
-    "tags": [
-      ["js", 0], ["html", 0], ["web", 1]
-    ],
-    "hiddenTags": [
-      "camera", "js", "html5"
     ]
   },
   {
