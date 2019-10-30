@@ -2,16 +2,20 @@ var contents = [
   {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
-    "updated_at": "2019-10-29 17:38",
+    "updated_at": "2019-10-30 10:11",
     "heading": "CTF web tricks",
     "content_en": "Some tricks for web CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
     "uri": "ctf_web.html",
     "tags": [
-      ["php", 0], ["web", 1], ["hack", 3]
+      ["php", 0], ["python", 0], ["web", 1], ["hack", 3]
     ],
     "hiddenTags": [
-      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "hexadecimal octet", "nc", "reverse"
-    ]
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT"
+    ],
+    "external": [[
+      "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
+    ]]
   },
   {
     "id": "ctf_bin",
@@ -34,7 +38,9 @@ var contents = [
     "heading": "Web-cameras",
     "content_en": "Demo with link is inside. Google search queries",
     "uri": "camera.html",
-    "external": "https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm",
+    "external": [
+      ["https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm", "Camera HTML5"]
+    ],
     "tags": [
       ["js", 0], ["html", 0], ["web", 1], ["hack", 3]
     ],
@@ -48,7 +54,9 @@ var contents = [
     "updated_at": "2019-10-28 10:53",
     "heading": "Glassfish",
     "content_en": "Basic info about popular web-application server",
-    "external": "https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html",
+    "external": [
+      ["https://docs.oracle.com/cd/E19798-01/821-1757/6nmni99aj/index.html", "GF Oracle docs"]
+    ],
     "uri": "glassfish.html",
     "tags": [
       ["java", 0], ["jvm", 1], ["web-server", 3]
@@ -64,7 +72,9 @@ var contents = [
     "heading": "Brootforce with brutespray.py",
     "content_en": "ONLY FOR EDUCATION",
     "uri": "brutespray.html",
-    "external": "https://github.com/x90skysn3k/brutespray",
+    "external": [
+      "https://github.com/x90skysn3k/brutespray", "https://github.com/x90skysn3k/brutespray"
+    ],
     "tags": [
       ["network", 1], ["hack", 3]
     ],
@@ -111,7 +121,10 @@ var contents = [
     "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
       "Change mac address.",
     "uri": "network.html",
-    "external": "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+    "external": [
+      ["https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+        "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/"]
+    ],
     "tags": [
       ["network", 1]
     ],
@@ -178,7 +191,10 @@ var contents = [
     "heading": "Nginx",
     "content_en": "Nginx tricks",
     "uri": "nginx.html",
-    "external": "http://kbeezie.com/protecting-folders-with-nginx/",
+    "external": [
+      ["http://kbeezie.com/protecting-folders-with-nginx/",
+        "http://kbeezie.com/protecting-folders-with-nginx/"]
+    ],
     "tags": [
       ["server", 1]
     ],
@@ -240,7 +256,10 @@ var contents = [
     "heading": "Utils: grep (RU)",
     "content_en": "How use grep",
     "uri": "grep.html",
-    "external": "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
+    "external": [
+      ["http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/",
+        "http://www.electronick.org.ua/articles/linux/kak-ispolzovat-komandu-grep-v-linux/"]
+    ],
     "tags": [
       ["search", 2]
     ],
@@ -255,7 +274,10 @@ var contents = [
     "heading": "MacOS",
     "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
     "uri": "mac.html",
-    "external": "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
+    "external": [
+      ["https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
+        "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G"]
+    ],
     "tags": [
       ["OS", 1],
       ["vnc", 3]
@@ -289,7 +311,10 @@ var contents = [
     "heading": "GIT",
     "content_en": "Basic git commands and trics",
     "uri": "git.html",
-    "external": "https://habr.com/ru/company/skillbox/blog/442260/",
+    "external": [
+      ["https://habr.com/ru/company/skillbox/blog/442260/",
+        "https://habr.com/ru/company/skillbox/blog/442260/"]
+    ],
     "hiddenTags": [
       "revert reset hard",
       "https url with creds"
@@ -303,13 +328,7 @@ var contents = [
     "content_en": "Generate, add and fix permissions for keys",
     "uri": "ssh.html",
     "hiddenTags": [
-      "ssh",
-      "chmod",
-      "generate ssh",
-      "scp",
-      "tunel",
-      "forwarding",
-      "port"
+      "ssh", "chmod", "generate ssh", "scp", "tunel", "forwarding", "port"
     ]
   },
   {
@@ -362,7 +381,10 @@ var contents = [
     "heading": "https config for nginx",
     "content_en": "Let's encrypt guideline for nginx",
     "uri": "ssl.html",
-    "external": "https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04",
+    "external": [
+      ["https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04",
+        "https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04"]
+    ],
     "hiddenTags": [
       "letsencrypt",
       "certificates",
@@ -436,7 +458,9 @@ var contents = [
     "heading": "Google search (RU)",
     "content_en": "How search in google",
     "uri": "google.html",
-    "external": "http://telegra.ph/Samouchitel-po-Google-02-11",
+    "external": [
+      ["http://telegra.ph/Samouchitel-po-Google-02-11", "http://telegra.ph/Samouchitel-po-Google-02-11"]
+    ],
     "hiddenTags": [
       "search",
       "google"
@@ -527,7 +551,10 @@ var contents = [
     "heading": "Windows",
     "content_en": "Microsoft Windows tricks",
     "uri": "windows.html",
-    "external": "https://www.kv.by/post/1055116-chto-delat-esli-zabyl-parol-ot-windows-10",
+    "external": [[
+      "https://www.kv.by/post/1055116-chto-delat-esli-zabyl-parol-ot-windows-10",
+      "https://www.kv.by/post/1055116-chto-delat-esli-zabyl-parol-ot-windows-10"
+    ]],
     "hiddenTags": [
       "users", "shutdown", "utilman", "microsoft", "hack"
     ]
@@ -563,7 +590,10 @@ var contents = [
     "content_en": "Below I will show you how to use Unity's default network manager to create a wireless hotspot with Android" +
       "devices support, tested in 64-bit Ubuntu 1404 with Nexus 4 and Sumsung Galaxy ace3.",
     "uri": "ubuntu-hotspot.html",
-    "external": "http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
+    "external": [
+      ["http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/",
+        "http://ubuntuhandbook.org/index.php/2014/09/3-ways-create-wifi-hotspot-ubuntu/"]
+    ],
     "hiddenTags": [
       "Ubuntu 14.04 LTS",
       "Hotspot",

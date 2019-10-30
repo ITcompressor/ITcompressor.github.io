@@ -94,7 +94,7 @@
             <h4>
                 Hello! Thank you for visit ITcompressor! It's my tech notes. <br>
                 If you see the message then your browser has deactivated JavaScript. <br>
-                Or you are search bot =) <br> 
+                Or you are search bot =) <br>
                 Or you have a extension for viewed hidden tags (=
             </h4>
             <div class="row" ng-include="docUrl"></div>
@@ -163,6 +163,11 @@
                                 </a>
                             </h3>
                             {{ doc.content_en }}
+                            <div ng-repeat="link in doc.external">
+                                <a ng-href="{{ link[0] }}">
+                                    {{ link[1] }}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
