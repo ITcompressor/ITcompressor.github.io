@@ -1,5 +1,33 @@
 var contents = [
   {
+    "id": "mysql-queries",
+    "img": "img/sql_joins.png",
+    "updated_at": "2019-11-11 18:12",
+    "heading": "MySQL Queries",
+    "content_en": "MySQL queries examples, joins",
+    "uri": "mysql.html",
+    "tags": [
+      ["mysql", 0], ["database", 1]
+    ],
+    "hiddenTags": [
+      "index", "unsafe", "duplicates", "queries"
+    ]
+  },
+  {
+    "id": "mysql_backups",
+    "img": "img/replication_mysql.jpg",
+    "updated_at": "2019-11-11 18:10",
+    "heading": "MySQL Backups",
+    "content_en": "MySQL users and backups.",
+    "uri": "mysql-backups.html",
+    "tags": [
+      ["mysql", 0], ["database", 1]
+    ],
+    "hiddenTags": [
+      "backup", "permissions"
+    ]
+  },
+  {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
     "updated_at": "2019-10-30 10:11",
@@ -357,21 +385,6 @@ var contents = [
     "hiddenTags": [
       "screen",
       "mutlisessions"
-    ]
-  },
-  {
-    "id": "mysql_basics",
-    "img": "img/sql_joins.png",
-    "updated_at": "2019-02-24 21:18",
-    "heading": "MySQL (RU)",
-    "content_en": "Queries examples, joins, users and backups.",
-    "uri": "mysql.html",
-    "hiddenTags": [
-      "backup",
-      "index",
-      "unsafe",
-      "duplicates",
-      "permissions"
     ]
   },
   {
