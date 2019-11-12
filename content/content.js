@@ -10,7 +10,7 @@ var contents = [
       ["mysql", 0], ["database", 1]
     ],
     "hiddenTags": [
-      "index", "unsafe", "duplicates", "queries"
+      "index", "unsafe", "duplicates", "queries", "alter table progress"
     ]
   },
   {

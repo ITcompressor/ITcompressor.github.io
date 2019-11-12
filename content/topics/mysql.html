@@ -26,4 +26,10 @@ Add column with create foreign key
 ADD COLUMN mytable_new_column BIGINT(20) DEFAULT NULL,
 ADD CONSTRAINT FK_EXTERNAL_COLUMN_IDX FOREIGN KEY (mytable_new_column) REFERENCES external_table (id_field);
 </pre>
-
+Check pogress (alter table and etc)
+<pre>SELECT EVENT_NAME,
+WORK_COMPLETED,
+WORK_ESTIMATED,
+WORK_COMPLETED / WORK_ESTIMATED * 100 as completed_percents
+FROM performance_schema.events_stages_current;
+</pre>
