@@ -2,7 +2,7 @@ var contents = [
   {
     "id": "mysql-queries",
     "img": "img/sql_joins.png",
-    "updated_at": "2019-11-11 18:12",
+    "updated_at": "2019-11-14",
     "heading": "MySQL Queries",
     "content_en": "MySQL queries examples, joins",
     "uri": "mysql.html",
@@ -10,7 +10,7 @@ var contents = [
       ["mysql", 0], ["database", 1]
     ],
     "hiddenTags": [
-      "index", "unsafe", "duplicates", "queries", "alter table progress"
+      "index", "unsafe", "duplicates", "queries", "alter table progress", "migration", "copy data"
     ]
   },
   {

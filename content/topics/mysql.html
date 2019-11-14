@@ -33,3 +33,7 @@ WORK_ESTIMATED,
 WORK_COMPLETED / WORK_ESTIMATED * 100 as completed_percents
 FROM performance_schema.events_stages_current;
 </pre>
+Copy data from table1 to table2
+<pre>INSERT INTO table2(id, field1, field2)
+select  id, field1, field2 from  table1;
+</pre>
