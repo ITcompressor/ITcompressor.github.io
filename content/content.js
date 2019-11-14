@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "ctf_web",
+    "img": "img/ctf.jpg",
+    "updated_at": "2019-11-14",
+    "heading": "CTF web tricks",
+    "content_en": "Some tricks for web CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
+    "uri": "ctf_web.html",
+    "tags": [
+      ["php", 0], ["python", 0], ["web", 1], ["hack", 3]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT",
+      "CRLF", "RTL Character (writes payloads backwards)", "Nullbyte"
+    ],
+    "external": [[
+      "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
+    ]]
+  },
+  {
     "id": "metasploit",
     "img": "img/msf.jpg",
     "updated_at": "2019-11-14",
@@ -44,24 +63,6 @@ var contents = [
     "hiddenTags": [
       "backup", "permissions"
     ]
-  },
-  {
-    "id": "ctf_web",
-    "img": "img/ctf.jpg",
-    "updated_at": "2019-10-30 10:11",
-    "heading": "CTF web tricks",
-    "content_en": "Some tricks for web CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
-    "uri": "ctf_web.html",
-    "tags": [
-      ["php", 0], ["python", 0], ["web", 1], ["hack", 3]
-    ],
-    "hiddenTags": [
-      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
-      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT"
-    ],
-    "external": [[
-      "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
-    ]]
   },
   {
     "id": "ctf_bin",
