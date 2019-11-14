@@ -1,5 +1,23 @@
 var contents = [
   {
+    "id": "metasploit",
+    "img": "img/msf.jpg",
+    "updated_at": "2019-11-14",
+    "heading": "Metasplot Framework",
+    "content_en": "Install guide + some trics",
+    "uri": "metasploit.html",
+    "tags": [
+      ["hack", 3], ["framework", 1]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT", "shell"
+    ],
+    "external": [[
+      "https://www.darkoperator.com/installing-metasploit-in-ubunt", "Origin install guide"
+    ]]
+  },
+  {
     "id": "mysql-queries",
     "img": "img/sql_joins.png",
     "updated_at": "2019-11-14",
