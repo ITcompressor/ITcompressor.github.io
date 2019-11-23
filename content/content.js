@@ -1,5 +1,27 @@
 var contents = [
   {
+    "id": "metasploit",
+    "img": "img/msf.jpg",
+    "updated_at": "2019-11-23",
+    "heading": "Metasplot Framework",
+    "content_en": "Install guide + some trics",
+    "uri": "metasploit.html",
+    "tags": [
+      ["hack", 3], ["framework", 1], ["msfvenom", 4]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT", "shell",
+      "meterpreter"
+    ],
+    "external": [[
+      "https://www.darkoperator.com/installing-metasploit-in-ubunt", "Origin install guide"
+    ], [
+      "https://telegra.ph/Skrytoe-upravlenie-kompyuterom-na-Windows-ispolzuya-Metasploit-CHast-2-11-14",
+      "Скрытое управление компьютером на Windows (используя Metasploit). Часть 2"
+    ]]
+  },
+  {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
     "updated_at": "2019-11-14",
@@ -16,24 +38,6 @@ var contents = [
     ],
     "external": [[
       "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
-    ]]
-  },
-  {
-    "id": "metasploit",
-    "img": "img/msf.jpg",
-    "updated_at": "2019-11-14",
-    "heading": "Metasplot Framework",
-    "content_en": "Install guide + some trics",
-    "uri": "metasploit.html",
-    "tags": [
-      ["hack", 3], ["framework", 1]
-    ],
-    "hiddenTags": [
-      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
-      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT", "shell"
-    ],
-    "external": [[
-      "https://www.darkoperator.com/installing-metasploit-in-ubunt", "Origin install guide"
     ]]
   },
   {
