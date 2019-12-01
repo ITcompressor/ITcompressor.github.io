@@ -1,5 +1,25 @@
 var contents = [
   {
+    "id": "network",
+    "img": "img/network.png",
+    "updated_at": "2019-12-01",
+    "heading": "Networks methodics",
+    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
+      "Change mac address.",
+    "uri": "network.html",
+    "external": [
+      ["https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+        "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/"]
+    ],
+    "tags": [
+      ["network", 1]
+    ],
+    "hiddenTags": [
+      "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts",
+      "curl", "wget", "netstat", "certs", "nmcli", "vulns"
+    ]
+  },
+  {
     "id": "ubuntu",
     "img": "img/ubuntu.png",
     "updated_at": "2019-12-01",
@@ -180,26 +200,6 @@ var contents = [
     ],
     "hiddenTags": [
       "pkcs12", "p12", "jks", "ssl", "https", "certificates"
-    ]
-  },
-  {
-    "id": "network",
-    "img": "img/network.png",
-    "updated_at": "2019-10-26 10:32",
-    "heading": "Networks methodics",
-    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
-      "Change mac address.",
-    "uri": "network.html",
-    "external": [
-      ["https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
-        "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/"]
-    ],
-    "tags": [
-      ["network", 1]
-    ],
-    "hiddenTags": [
-      "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts",
-      "curl", "wget", "netstat", "certs", "nmcli"
     ]
   },
   {

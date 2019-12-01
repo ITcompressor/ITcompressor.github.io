@@ -53,6 +53,14 @@ port scan
 <pre>nmap localhost -p 34000-36000
 nmap localhost -p 8080
 </pre>
+Usefull flags for nmap
+<pre>-PN - skip ping and force scan ports
+-sV - get info about services
+--script mysql-databases - list databases
+--script mysql-users - list users
+--script mysql-variables - list variables
+--script mysql-vuln-cve2012-2122 - check CVE-2012-2122 (broken authentication)
+</pre>
 
 <hr>
 
