@@ -1,5 +1,23 @@
 var contents = [
   {
+    "id": "ubuntu",
+    "img": "img/ubuntu.png",
+    "updated_at": "2019-12-01",
+    "heading": "Ubuntu",
+    "content_en": "Autologin, disable guest session, scripts for autorun. " +
+      "Install net-tools (ifconfig), samba, skype, insomnia, sdkman, gnome shell, wine,",
+    "uri": "ubuntu.html",
+    "tags": [
+      ["desktop linux", 2], ["linux", 1], ["unix", 1]
+    ],
+    "hiddenTags": [
+      "samba", "skype", "snap", "autologin", "autostart", "update-alternatives", "wine", "run win32 apps",
+      "sdkman", "gnome-shell", "desktop", "automount", "cron", "adduser", "recursively find",
+      "watch", "tail", "chmod", "chown", "filesize du", "disk usages",
+      "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
+    ]
+  },
+  {
     "id": "metasploit",
     "img": "img/msf.jpg",
     "updated_at": "2019-11-23",
@@ -182,24 +200,6 @@ var contents = [
     "hiddenTags": [
       "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts",
       "curl", "wget", "netstat", "certs", "nmcli"
-    ]
-  },
-  {
-    "id": "ubuntu",
-    "img": "img/ubuntu.png",
-    "updated_at": "2019-10-25 17:15",
-    "heading": "Ubuntu",
-    "content_en": "Autologin, disable guest session, scripts for autorun. " +
-      "Install net-tools (ifconfig), samba, skype, insomnia, sdkman, gnome shell, wine,",
-    "uri": "ubuntu.html",
-    "tags": [
-      ["desktop linux", 2], ["linux", 1], ["unix", 1]
-    ],
-    "hiddenTags": [
-      "samba", "skype", "snap", "autologin", "autostart", "update-alternatives", "wine", "run win32 apps",
-      "sdkman", "gnome-shell", "desktop", "automount", "cron", "adduser", "recursively find",
-      "watch", "tail", "chmod", "chown", "filesize du",
-      "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
     ]
   },
   {
