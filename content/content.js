@@ -15,7 +15,11 @@ var contents = [
       "sdkman", "gnome-shell", "desktop", "automount", "cron", "adduser", "recursively find",
       "watch", "tail", "chmod", "chown", "filesize du", "disk usages",
       "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
-    ]
+    ],
+    "external": [[
+      "https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd", 
+      "How to Enable /etc/rc.local with Systemd"
+    ]]
   },
   {
     "id": "mysql-queries",
