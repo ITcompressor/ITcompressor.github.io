@@ -37,3 +37,9 @@ Copy data from table1 to table2
 <pre>INSERT INTO table2(id, field1, field2)
 select  id, field1, field2 from  table1;
 </pre>
+Drop foreign keys + modify
+<pre>alter table table1
+drop foreign key fk_field1_id,
+drop foreign key fk_field2_id,
+MODIFY field1 varchar(50) null;
+</pre>

@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "mysql-queries",
+    "img": "img/sql_joins.png",
+    "updated_at": "2019-12-01",
+    "heading": "MySQL Queries",
+    "content_en": "MySQL queries examples, joins",
+    "uri": "mysql.html",
+    "tags": [
+      ["mysql", 0], ["database", 1]
+    ],
+    "hiddenTags": [
+      "index", "unsafe", "duplicates", "queries", "alter table progress", "migration", "copy data",
+      "drop foreign keys"
+    ]
+  },
+  {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
     "updated_at": "2019-12-01",
@@ -77,20 +92,6 @@ var contents = [
       "https://telegra.ph/Skrytoe-upravlenie-kompyuterom-na-Windows-ispolzuya-Metasploit-CHast-2-11-14",
       "Скрытое управление компьютером на Windows (используя Metasploit). Часть 2"
     ]]
-  },
-  {
-    "id": "mysql-queries",
-    "img": "img/sql_joins.png",
-    "updated_at": "2019-11-14",
-    "heading": "MySQL Queries",
-    "content_en": "MySQL queries examples, joins",
-    "uri": "mysql.html",
-    "tags": [
-      ["mysql", 0], ["database", 1]
-    ],
-    "hiddenTags": [
-      "index", "unsafe", "duplicates", "queries", "alter table progress", "migration", "copy data"
-    ]
   },
   {
     "id": "mysql_backups",
