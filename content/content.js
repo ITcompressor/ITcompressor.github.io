@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "reverse_shell",
+    "img": "img/terminal.jpeg",
+    "updated_at": "2019-12-06",
+    "heading": "Reverse Shell Cheat Sheet",
+    "content_en": "If you’re lucky enough to find a command execution vulnerability during a penetration test, pretty soon afterwards you’ll probably want an interactive shell.",
+    "uri": "reverse_shell.html",
+    "tags": [
+      ["hack", 3], ["linux", 1], ["unix", 1], ["windows", 1]
+    ],
+    "hiddenTags": [
+      "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "nc", "reverse shell", "netcat"
+    ],
+    "external": [[
+      "http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet", "http://pentestmonkey.net/"
+    ], [
+      "https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1", "nishang (github)"
+    ]]
+  },
+  {
     "id": "ubuntu",
     "img": "img/ubuntu.png",
     "updated_at": "2019-12-01",
@@ -17,7 +36,7 @@ var contents = [
       "dd", "ntfs", "zip", "fstab", "df", "zerofree", "ext4", "smb"
     ],
     "external": [[
-      "https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd", 
+      "https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd",
       "How to Enable /etc/rc.local with Systemd"
     ]]
   },
