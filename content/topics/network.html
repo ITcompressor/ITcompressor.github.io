@@ -4,6 +4,12 @@ Start network network-manager
 Connect to wifi from terminal
 <pre>nmcli device wifi connect 'wifi_name_here' password 'wifi_password_here'
 </pre>
+Connect a network manager connection
+<pre>nmcli con up id ConnectionName
+</pre>
+Disconnect a network manager connection
+<pre>nmcli con down id ConnectionName
+</pre>
 Check network activity
 <pre>netstat -an
 </pre>

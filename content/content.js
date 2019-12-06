@@ -1,5 +1,31 @@
 var contents = [
   {
+    "id": "network",
+    "img": "img/network.png",
+    "updated_at": "2019-12-06",
+    "heading": "Networks methodics",
+    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
+      "Change mac address.",
+    "uri": "network.html",
+    "external": [
+      [
+        "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
+        "Top 32 Nmap Command Examples For Linux Sys/Network Admins"
+      ],
+      [
+        "https://askubuntu.com/questions/57339/connect-disconnect-from-vpn-from-the-command-line",
+        "Connect/disconnect from VPN from the command line"
+      ]
+    ],
+    "tags": [
+      ["network", 1]
+    ],
+    "hiddenTags": [
+      "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts", "network-manager", "nmcli",
+      "curl", "wget", "netstat", "certs", "nmcli", "vulns"
+    ]
+  },
+  {
     "id": "reverse_shell",
     "img": "img/terminal.jpeg",
     "updated_at": "2019-12-06",
@@ -73,26 +99,6 @@ var contents = [
     "external": [[
       "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
     ]]
-  },
-  {
-    "id": "network",
-    "img": "img/network.png",
-    "updated_at": "2019-12-01",
-    "heading": "Networks methodics",
-    "content_en": "Network scan examples. Check network activity. Check domain's by common cert. " +
-      "Change mac address.",
-    "uri": "network.html",
-    "external": [
-      ["https://www.cyberciti.biz/security/nmap-command-examples-tutorials/",
-        "https://www.cyberciti.biz/security/nmap-command-examples-tutorials/"]
-    ],
-    "tags": [
-      ["network", 1]
-    ],
-    "hiddenTags": [
-      "traceroute", "nmap", "nc", "ifconfig", "mac", "hosts",
-      "curl", "wget", "netstat", "certs", "nmcli", "vulns"
-    ]
   },
   {
     "id": "metasploit",
