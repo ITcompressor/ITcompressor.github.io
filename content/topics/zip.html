@@ -1,24 +1,27 @@
-Создать архив (create zip archive)
+Create zip archive
 <pre>zip -r myarch.zip mydir/*
 </pre>
-Разархивироваие *.rar (unzip rar archive)
+Unzip rar archive
 <pre>unrar e file.rar
 </pre>
-Разархивировать *.rar сохраняя иерархию папок (unzip rar keeping hierarchy)
+Unzip rar with keeping hierarchy
 <pre>unrar x file.rar
 </pre>
-Создать tar контейнер
+Create tar container
 <pre>tar -cvf name.tar /path/to/file1 /path/to/file2 /path/to/file3
 </pre>
-Распаковать tar контейнер (unzip tar container\archives)
+Unzip tar container (archives)
 <pre>tar -xvf foo.tar
 tar -xvzf foo.tar.gz
 tar -xvjf foo.tar.bz2
 </pre>
-Установка 7z в debian like OS (Install 7z in debian like OS)
+Unzip tar.xz
+<pre>tar -xf file.tar.xz
+</pre>
+Install 7z in debian like OS
 <pre>apt install p7zip
 </pre>
-Примеры использования 7z (examples for 7z)
+Examples for 7z
 <pre>7z x -so yourfile.tar.7z | tar xf - -C target_dir
 7z x yourfile.7z
 </pre>

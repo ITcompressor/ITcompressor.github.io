@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "zip",
+    "img": "img/zip.jpeg",
+    "updated_at": "2019-12-08",
+    "heading": "Archives",
+    "content_en": "Work with archives in a terminal",
+    "uri": "zip.html",
+    "tags": [
+      ["archives", 1],
+      ["bash", 0]
+    ],
+    "hiddenTags": [
+      "zip", "unrar", "tar", "gz", "bz2", "rar", "7zip", "tar.xz"
+    ]
+  },
+  {
     "id": "network",
     "img": "img/network.png",
     "updated_at": "2019-12-06",
@@ -285,21 +300,7 @@ var contents = [
       "real ip", "реальный айпи", "прокидывание"
     ]
   },
-  {
-    "id": "zip",
-    "img": "img/zip.jpeg",
-    "updated_at": "2019-09-04 23:12",
-    "heading": "Archives",
-    "content_en": "Work with archives in a terminal",
-    "uri": "zip.html",
-    "tags": [
-      ["archives", 1],
-      ["bash", 0]
-    ],
-    "hiddenTags": [
-      "zip", "unrar", "tar", "gz", "bz2", "rar", "7zip"
-    ]
-  },
+
   {
     "id": "vbox",
     "img": "img/vbox.png",
