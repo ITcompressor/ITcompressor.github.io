@@ -1,5 +1,23 @@
 var contents = [
   {
+    "id": "postgresql",
+    "img": "img/postgresql.png",
+    "updated_at": "2019-12-09",
+    "heading": "PostgreSQL",
+    "content_en": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and technical standards compliance. It is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users. It is the default database for macOS Server, and is also available for Linux, FreeBSD, OpenBSD, and Windows.",
+    "uri": "postgresql.html",
+    "tags": [
+      ["psql", 4], ["database", 1]
+    ],
+    "hiddenTags": [
+      "database", "PSQL", "create index", "GiST", "GIN"
+    ],
+    "eternal": [
+      ["https://postgrespro.ru/docs/postgresql/9.6/sql-createindex", "CREATE INDEX docs (RU)"],
+      ["https://alvinalexander.com/blog/post/postgresql/log-in-postgresql-database", "Postgres login: How to log into a Postgresql database"]
+    ]
+  },
+  {
     "id": "zip",
     "img": "img/zip.jpeg",
     "updated_at": "2019-12-08",
@@ -679,19 +697,6 @@ var contents = [
       "Ruby 2.2.3",
       "rbenv",
       "bundler"
-    ]
-  },
-  {
-    "id": "postgresql",
-    "img": "img/postgresql.png",
-    "updated_at": "1999-12-31 23:59",
-    "heading": "PostgreSQL (RU)",
-    "content_en": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and technical standards compliance. It is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users. It is the default database for macOS Server, and is also available for Linux, FreeBSD, OpenBSD, and Windows.",
-    "uri": "postgresql.html",
-    "hiddenTags": [
-      "database",
-      "PostgreSQL 9.4",
-      "linux"
     ]
   }
 ]
