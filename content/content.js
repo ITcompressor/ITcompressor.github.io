@@ -1,5 +1,20 @@
 var contents = [
   {
+    "id": "jvm",
+    "img": "img/jvm.jpg",
+    "updated_at": "2019-09-16 20:00",
+    "heading": "JVM tools Cheat Sheet",
+    "content_en": "Notes about jvm languages. Get process dumps. Install localy a maven's lib. Get bytecode by class",
+    "uri": "jvm.html",
+    "tags": [
+      ["java", 0],
+      ["jvm", 1]
+    ],
+    "hiddenTags": [
+      "jdk", "jstack", "bytecode", "maven", "jmap", "gradle"
+    ]
+  },
+  {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
     "updated_at": "2019-12-01",
@@ -277,25 +292,6 @@ var contents = [
     ],
     "hiddenTags": [
       "disable apps", "android", "fastboot", "hosts", "autostart", "autorun", "adb", "ban ip", "mount"
-    ]
-  },
-  {
-    "id": "java",
-    "img": "img/jvm.jpg",
-    "updated_at": "2019-09-16 20:00",
-    "heading": "Java and JVM",
-    "content_en": "Notes about java. Get process dumps. Install localy a maven's lib. Get bytecode by class",
-    "uri": "java.html",
-    "tags": [
-      ["java", 0],
-      ["jvm", 1]
-    ],
-    "hiddenTags": [
-      "jdk",
-      "jstack",
-      "bytecode",
-      "maven",
-      "jmap"
     ]
   },
   {
