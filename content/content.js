@@ -2,7 +2,7 @@ var contents = [
   {
     "id": "jvm",
     "img": "img/jvm.jpg",
-    "updated_at": "2019-09-16 20:00",
+    "updated_at": "2019-12-15",
     "heading": "JVM tools Cheat Sheet",
     "content_en": "Notes about jvm languages. Get process dumps. Install localy a maven's lib. Get bytecode by class",
     "uri": "jvm.html",
@@ -17,7 +17,7 @@ var contents = [
   {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
-    "updated_at": "2019-12-01",
+    "updated_at": "2019-12-15",
     "heading": "CTF web tricks",
     "content_en": "Some tricks for web CTFs and another hacking. RCE(Remote Code Execution), LFI(Local File Inclusion)",
     "uri": "ctf_web.html",
