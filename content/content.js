@@ -1,5 +1,25 @@
 var contents = [
   {
+    "id": "payload",
+    "img": "img/payload.jpg",
+    "updated_at": "2019-12-17",
+    "heading": "Payloads Cheat Sheet",
+    "content_en": "In computing and telecommunications, the payload is the part of transmitted data that " +
+      "is the actual intended message. Headers and metadata are sent only to enable payload delivery.",
+    "uri": "payload.html",
+    "tags": [
+      ["hack", 3]
+    ],
+    "hiddenTags": [
+      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT",
+      "CRLF", "RTL Character (writes payloads backwards)", "Nullbyte", "alert", "reverse shell", "SVG"
+    ],
+    "external": [[
+      "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
+    ]]
+  },
+  {
     "id": "ctf_web",
     "img": "img/ctf.jpg",
     "updated_at": "2019-12-17",
@@ -11,12 +31,9 @@ var contents = [
     ],
     "hiddenTags": [
       "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
-      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT",
-      "CRLF", "RTL Character (writes payloads backwards)", "Nullbyte", "alert", "reverse shell", "SVG"
-    ],
-    "external": [[
-      "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
-    ]]
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "XSLT",
+      "CRLF",  "Nullbyte", "alert", "reverse shell", "SVG"
+    ]
   },
   {
     "id": "jvm",
