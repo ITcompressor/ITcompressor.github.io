@@ -11,9 +11,7 @@ var contents = [
       ["hack", 3]
     ],
     "hiddenTags": [
-      "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
-      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "payloads", "XSLT",
-      "CRLF", "RTL Character (writes payloads backwards)", "Nullbyte", "alert", "reverse shell", "SVG"
+      "payloads", "XSLT", "CRLF", "RTL Character (writes payloads backwards)", "Nullbyte", "alert", "reverse shell", "SVG"
     ],
     "external": [[
       "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
@@ -31,8 +29,8 @@ var contents = [
     ],
     "hiddenTags": [
       "file metadata", "binary", "RCE(Remote Code Execution)", "LFI(Local File Inclusion)", "truncation",
-      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections", "XSLT",
-      "CRLF",  "Nullbyte", "alert", "reverse shell", "SVG"
+      "hexadecimal octet", "nc", "reverse", "jwt", "mysql", "nosql", "injections",
+      "Nullbyte", "alert", "reverse shell", "SVG"
     ]
   },
   {
