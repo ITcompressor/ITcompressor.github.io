@@ -15,6 +15,8 @@ var contents = [
     ],
     "external": [[
       "https://github.com/swisskyrepo/PayloadsAllTheThings", "PayloadsAllTheThings"
+    ], [
+      "https://portswigger.net/web-security/cross-site-scripting/cheat-sheet", "Cross-site scripting (XSS) cheat sheet"
     ]]
   },
   {
