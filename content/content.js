@@ -1,5 +1,24 @@
 var contents = [
   {
+    "id": "MacOS",
+    "img": "img/macos.jpg",
+    "updated_at": "2019-12-24",
+    "heading": "MacOS",
+    "content_en": "Basic utils and custom for a MacOS. Run vnc server. Install live usbboot.",
+    "uri": "mac.html",
+    "external": [
+      ["https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
+        "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G"]
+    ],
+    "tags": [
+      ["OS", 1], ["vnc", 3]
+    ],
+    "hiddenTags": [
+      "vnc", "fuse", "ntfs", "terminal", "shell", "shutdown", "remote desktop", "macOS", "внс", "фьюс", "нтфс", "терминал",
+      "шел", "удаленный рабочий стол", "мак ос", "install"
+    ]
+  },
+  {
     "id": "payload",
     "img": "img/payload.jpg",
     "updated_at": "2019-12-17",
@@ -380,30 +399,6 @@ var contents = [
     ],
     "hiddenTags": [
       "grep", "ls", "less", "поиск"
-    ]
-  },
-  {
-    "id": "MacOS",
-    "img": "img/macos.jpg",
-    "updated_at": "2019-06-23 18:50",
-    "heading": "MacOS",
-    "content_en": "Basic utils and custom for a MacOS. Run vnc server.",
-    "uri": "mac.html",
-    "external": [
-      ["https://github.com/osxfuse/osxfuse/wiki/NTFS-3G",
-        "https://github.com/osxfuse/osxfuse/wiki/NTFS-3G"]
-    ],
-    "tags": [
-      ["OS", 1],
-      ["vnc", 3]
-    ],
-    "hiddenTags": [
-      "vnc", "fuse", "ntfs",
-      "terminal", "shell", "shutdown",
-      "remote desktop", "macOS", "внс",
-      "фьюс", "нтфс", "терминал",
-      "шел", "удаленный рабочий стол",
-      "мак ос"
     ]
   },
   {
