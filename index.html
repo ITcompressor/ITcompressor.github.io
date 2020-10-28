@@ -33,10 +33,6 @@
 
 <body id='ng-app' ng-app="core-app" ng-controller="CoreController">
 
- <audio controls autoplay>
-  <source src="kek.mp3" type="audio/mpeg">
- </audio> 
-
     <!-- Nav -->
     <div id="nav" th:fragment="header">
         <!-- Main Nav -->
@@ -52,7 +48,7 @@
                 <div class="nav-btns">
                     <button class="aside-btn"><i class="fa fa-bars"></i></button>
                     <button class="search-btn"><i class="fa fa-search"></i></button>
-                    <div class="search-form active">
+                    <div class="search-form">
                         <input class="search-input" type="text" name="search" ng-model="search"
                             ng-change="changeSearch(search)" placeholder="Search ...">
                         <button class="search-close" ng-click="changeSearch('')"><i class="fa fa-times"></i></button>
